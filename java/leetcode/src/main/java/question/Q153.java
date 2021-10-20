@@ -1,0 +1,34 @@
+package question;
+
+import annotation.Array;
+import annotation.BinarySearch;
+import company.Facebook;
+
+@Array
+@BinarySearch
+@Facebook
+public class Q153 {
+    /*
+    Time Complexity: O(log n)   Space Complexity: O(1)
+     */
+    public int findMin(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left < right) {
+            int mid = (left + right) / 2;
+
+            if (nums[mid] > nums[right]) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+
+        return nums[right];
+    }
+}
+
+/*
+153. Find Minimum in Rotated Sorted Array
+ */
