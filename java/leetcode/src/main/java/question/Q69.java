@@ -12,20 +12,23 @@ public class Q69 {
     public int mySqrt(int x) {
         if (x <= 1) return x;
 
-        int left = 0;
+        int left = 1;
         int right = x;
 
-        while (left < right) {
+        while (left <= right) {
             int mid = left + (right - left) / 2;
+            int quotient = x / mid;
 
-            if (x / mid >= mid) {
+            if (quotient == mid) {
+                return mid;
+            } else if (quotient > mid) {
                 left = mid + 1;
             } else {
-                right = mid;
+                right = mid - 1;
             }
         }
 
-        return left - 1;
+        return right;
     }
 }
 

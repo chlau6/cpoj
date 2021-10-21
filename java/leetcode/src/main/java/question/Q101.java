@@ -15,8 +15,6 @@ public class Q101 {
     Time Complexity: O(n)   Space Complexity: O(n)
      */
     public boolean isSymmetric(TreeNode root) {
-        if (root == null) return false;
-
         return helper(root.left, root.right);
     }
 

@@ -24,10 +24,9 @@ public class Q203 {
     Time Complexity: O(n)   Space Complexity: O(1)
      */
     public ListNode removeElements2(ListNode head, int val) {
-        ListNode dummy = new ListNode();
-        dummy.next = head;
+        if (head == null) return null;
 
-        ListNode pointer = dummy;
+        ListNode pointer = head;
 
         while (pointer.next != null) {
             if (pointer.next.val == val) {
@@ -37,7 +36,7 @@ public class Q203 {
             }
         }
 
-        return dummy.next;
+        return head.val == val ? head.next : head;
     }
 }
 

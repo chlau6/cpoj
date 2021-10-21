@@ -8,13 +8,13 @@ public class Q14 {
     Time Complexity: O(m * n)   Space Complexity: O(m)
      */
     public String longestCommonPrefix(String[] strs) {
-        StringBuilder builder = new StringBuilder();
+        var builder = new StringBuilder();
 
         for (int i = 0; i < strs[0].length(); i++) {
             char c = strs[0].charAt(i);
 
-            for (String str : strs) {
-                if (i >= str.length() || str.charAt(i) != c) {
+            for (int j = 1; j < strs.length; j++) {
+                if (i >= strs[j].length() || strs[j].charAt(i) != c) {
                     return builder.toString();
                 }
             }

@@ -10,25 +10,23 @@ public class Q125 {
     Time Complexity: O(n)   Space Complexity: O(1)
      */
     public boolean isPalindrome(String s) {
-        s = s.toLowerCase();
-
         int i = 0;
         int j = s.length() - 1;
+        s = s.toLowerCase();
 
         while (i < j) {
             char c1 = s.charAt(i);
             char c2 = s.charAt(j);
-            if (!Character.isLetterOrDigit(i)) {
+
+            if (!Character.isLetterOrDigit(c1)) {
                 i++;
-            } else if (!Character.isLetterOrDigit(j)) {
+            } else if (!Character.isLetterOrDigit(c2)) {
                 j--;
-            } else if (c1 != c2) {
+            } else if (s.charAt(i++) != s.charAt(j--)) {
                 return false;
-            } else {
-                i++;
-                j--;
             }
         }
+
         return true;
     }
 }
