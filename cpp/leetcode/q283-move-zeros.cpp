@@ -9,9 +9,9 @@ public:
         int length = nums.size();
 
         for (int i = 0; i < length; i++) {
-            int temp = nums[i];
-            nums[i] = nums[j];
-            nums[j++] = temp;
+            if (nums[i] != 0) {
+                swap(nums[i], nums[j++]);
+            }
         }
     }
 };

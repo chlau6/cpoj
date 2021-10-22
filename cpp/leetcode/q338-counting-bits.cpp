@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<int> countBits(int n) {
+        vector<int> dp(n + 1, 0);
+
+        for (int i = 1; i < n + 1; i++) {
+            dp[i] = dp[i & (i - 1)] + 1;
+        }
+
+        return dp;
+    }
+};
