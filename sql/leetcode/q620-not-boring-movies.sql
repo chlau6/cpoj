@@ -1,0 +1,1 @@
+SELECT * FROM Cinema C WHERE C.id % 2 > 0 AND description != 'boring' ORDER BY C.rating DESC;

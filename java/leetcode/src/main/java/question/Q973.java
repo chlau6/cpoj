@@ -87,7 +87,7 @@ public class Q973 {
 
     /*
     Array
-    Time Complexity: O(n log n) Space Complexity: O(1)
+    Time Complexity: O(n log n) Space Complexity: O(n)
      */
     public int[][] kClosest3(int[][] points, int k) {
         Arrays.sort(points, Comparator.comparing(a -> a[0] * a[0] + a[1] * a[1]));

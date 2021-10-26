@@ -1,0 +1,1 @@
+SELECT C.class FROM courses C GROUP BY C.class HAVING COUNT(DISTINCT C.student) >= 5;

@@ -1,34 +1,34 @@
 package question;
 
+import annotation.BinaryTree;
+import annotation.DepthFirstSearch;
+import annotation.Tree;
 import datastructure.TreeNode;
 
-import java.util.HashMap;
-import java.util.Map;
-
+@Tree
+@DepthFirstSearch
+@BinaryTree
 public class Q543 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)
      */
-    int diameter = 0;
+    int longest = 0;
 
     public int diameterOfBinaryTree(TreeNode root) {
-        Map<TreeNode, Integer> depthMap = new HashMap<>();
-        maxDepth(root, depthMap);
+        helper(root);
 
-        return diameter;
+        return longest;
     }
 
-    private int maxDepth(TreeNode root, Map<TreeNode, Integer> depthMap) {
+    public int helper(TreeNode root) {
         if (root == null) return 0;
-        if (depthMap.containsKey(root)) return depthMap.get(root);
-        int left = maxDepth(root.left, depthMap);
-        int right = maxDepth(root.right, depthMap);
 
-        diameter = Math.max(diameter, left + right);
+        int left = helper(root.left);
+        int right = helper(root.right);
 
-        int depth = Math.max(left, right) + 1;
-        depthMap.put(root, depth);
-        return depth;
+        longest = Math.max(longest, left + right);
+
+        return 1 + Math.max(left, right);
     }
 }
 

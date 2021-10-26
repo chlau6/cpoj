@@ -1,0 +1,1 @@
+UPDATE Salary S SET S.sex = CHAR(ASCII('f') + ASCII('m') - ASCII(sex));
