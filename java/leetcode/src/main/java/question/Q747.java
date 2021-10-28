@@ -24,7 +24,7 @@ public class Q747 {
             }
         }
 
-        return max >= 2 * secondMax ? index : -1;
+        return max - secondMax >= secondMax ? index : -1;
     }
 }
 

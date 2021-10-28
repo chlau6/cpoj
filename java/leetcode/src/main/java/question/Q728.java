@@ -1,13 +1,11 @@
 package question;
 
-import annotation.Array;
-import annotation.PrefixSum;
+import annotation.Maths;
 
-@Array
-@PrefixSum
-public class Q724 {
+@Maths
+public class Q728 {
     /*
-    Time Complexity: O(n)   Space Complexity: O(1)
+    Time Complexity: O(n log m)   Space Complexity: O(n)
      */
     public int pivotIndex(int[] nums) {
         int sum = 0;
@@ -26,5 +24,5 @@ public class Q724 {
 }
 
 /*
-724. Find Pivot Index
+728. Self Dividing Numbers
  */
