@@ -9,33 +9,30 @@ import annotation.Sorting;
 @CountingSort
 public class Q1051 {
     /*
-    Time Complexity: O(n)   Space Complexity: O(max(height))
+    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public int heightChecker(int[] heights) {
-        int[] bucket = new int[101];
+        int[] counts = new int[101];
 
         for (int height : heights) {
-            bucket[height]++;
+            counts[height]++;
         }
 
-        int index = 0;
-        int mismatch = 0;
+        int j = 0;
+        int result = 0;
 
-        for (int height : heights) {
-            while (bucket[index] == 0) {
-                index++;
-            }
+        for (int i = 0; i < heights.length; i++) {
+            while (counts[j] == 0) j++;
 
-            if (index != height) {
-                mismatch++;
-            }
-            bucket[index]--;
+            if (heights[i] != j) result++;
+
+            counts[j]--;
         }
 
-        return mismatch;
+        return result;
     }
 }
 
 /*
-
+1051. Height Checker
  */

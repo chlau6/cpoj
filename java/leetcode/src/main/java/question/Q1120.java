@@ -33,5 +33,5 @@ public class Q1120 {
 }
 
 /*
-1047. Remove All Adjacent Duplicates in String
+1120. Maximum Average Subtree
  */

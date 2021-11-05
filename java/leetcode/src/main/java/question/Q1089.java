@@ -27,6 +27,7 @@ public class Q1089 {
                 j--;
                 if (j < arr.length) arr[j] = arr[i];
             }
+
             i--;
             j--;
         }

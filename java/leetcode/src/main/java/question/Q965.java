@@ -1,0 +1,29 @@
+package question;
+
+import annotation.BinaryTree;
+import annotation.BreadthFirstSearch;
+import annotation.DepthFirstSearch;
+import annotation.Tree;
+import datastructure.TreeNode;
+
+@Tree
+@DepthFirstSearch
+@BreadthFirstSearch
+@BinaryTree
+public class Q965 {
+    /*
+    Time Complexity: O(n)  Space Complexity: O(n)
+     */
+    public boolean isUnivalTree(TreeNode root) {
+        if (root == null) return true;
+
+        if (root.left != null && root.val != root.left.val) return false;
+        if (root.right != null && root.val != root.right.val) return false;
+
+        return isUnivalTree(root.left) && isUnivalTree(root.right);
+    }
+}
+
+/*
+965. Univalued Binary Tree
+ */

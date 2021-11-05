@@ -37,12 +37,7 @@ public class Q599 {
             }
         }
 
-        String[] result = new String[list.size()];
-        for (int i = 0; i < result.length; i++) {
-            result[i] = list.get(i);
-        }
-
-        return result;
+        return list.toArray(new String[0]);
     }
 }
 
