@@ -1,28 +1,32 @@
 package question;
 
-import annotation.Array;
+import annotation.*;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Array
+@HashTable
+@TwoPointers
+@BinarySearch
+@Sorting
 public class Q1346 {
     /*
-    Time Complexity: O(n)   Space Complexity: O(1)
+    Time Complexity: O(n)   Space Complexity: O(n)
      */
-    public boolean validMountainArray(int[] arr) {
-        int i = 0;
-        int j = arr.length - 1;
+    public boolean checkIfExist(int[] arr) {
+        Set<Integer> set = new HashSet<>();
 
-        while (i < arr.length - 1 && arr[i] < arr[i + 1]) {
-            i++;
+        for (int num : arr) {
+            if (set.contains(num * 2) || num % 2 == 0 && set.contains(num / 2)) return true;
+
+            set.add(num);
         }
 
-        while (j > 0 && arr[j] < arr[j - 1]) {
-            j--;
-        }
-
-        return i > 0 && j < arr.length - 1 && i == j;
+        return false;
     }
 }
 
 /*
-941. Valid Mountain Array
+1346. Check If N and Its Double Exist
  */

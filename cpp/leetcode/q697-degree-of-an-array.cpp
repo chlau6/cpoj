@@ -13,7 +13,7 @@ public:
         for (int i = 0; i < length; i++) {
             ++count[nums[i]];
 
-            if (!startIndex.count(nums[i])) startIndex[nums[i]] = i;
+            startIndex.emplace(nums[i], i);
 
             int c = count[nums[i]];
 
