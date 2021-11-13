@@ -1,0 +1,27 @@
+package question;
+
+import annotation.Array;
+import annotation.Sorting;
+
+import java.util.Arrays;
+
+@Array
+@Sorting
+public class Q1502 {
+    /*
+    Time Complexity: O(n log n)  Space Complexity: O(n)
+     */
+    public boolean canMakeArithmeticProgression(int[] arr) {
+        Arrays.sort(arr);
+
+        for (int i = 2; i < arr.length; i++) {
+            if (arr[i] - arr[i - 1] != arr[i - 1] - arr[i - 2]) return false;
+        }
+
+        return true;
+    }
+}
+
+/*
+1502. Can Make Arithmetic Progression From Sequence
+ */
