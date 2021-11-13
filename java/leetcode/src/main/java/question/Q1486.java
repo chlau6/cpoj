@@ -1,0 +1,25 @@
+package question;
+
+import annotation.BitManipulation;
+import annotation.Maths;
+
+@Maths
+@BitManipulation
+public class Q1486 {
+    /*
+    Time Complexity: O(n)  Space Complexity: O(1)
+     */
+    public int xorOperation(int n, int start) {
+        int result = 0;
+
+        for (int i = 0; i < n; i++) {
+            result ^= start + 2 * i;
+        }
+
+        return result;
+    }
+}
+
+/*
+1486. XOR Operation in an Array
+ */
