@@ -15,7 +15,7 @@ import java.util.Map;
 @Sorting
 public class Q1636 {
     /*
-    Time Complexity: O(n)   Space Complexity: O(1)
+    Time Complexity: O(n log n)   Space Complexity: O(n)
      */
     public int[] frequencySort(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
