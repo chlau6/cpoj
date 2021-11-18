@@ -14,21 +14,18 @@ public:
 
         for (string word : words) {
             vector<int> a(26);
+            int length = word.size();
 
             copy(counts.begin(), counts.end(), a.begin());
 
-            int length = word.size();
-            int i;
-
-            for (i = 0; i < length; i++) {
+            for (int i = 0; i < length; i++) {
                 if (--a[word[i] - 'a'] < 0) {
+                    length = 0;
                     break;
                 }
             }
 
-            if (i == length) {
-                result += length;
-            }
+            result += length;
         }
 
         return result;

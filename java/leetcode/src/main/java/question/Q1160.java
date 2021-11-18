@@ -22,17 +22,15 @@ public class Q1160 {
         for (String word : words) {
             int[] a = counts.clone();
             int length = word.length();
-            int i;
 
-            for (i = 0; i < length; i++) {
+            for (int i = 0; i < length; i++) {
                 if (--a[word.charAt(i) - 'a'] < 0) {
+                    length = 0;
                     break;
                 }
             }
 
-            if (i == length) {
-                result += length;
-            }
+            result += length;
         }
 
         return result;

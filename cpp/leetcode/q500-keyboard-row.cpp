@@ -12,7 +12,7 @@ public:
         for (auto& word : words) {
             int row = map[tolower(word[0]) - 'a'];
             int length = word.size();
-            int i = 0;
+            int i;
 
             for (i = 1; i < length; i++) {
                 if (map[tolower(word[i]) - 'a'] != row) {
