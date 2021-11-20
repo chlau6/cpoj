@@ -4,17 +4,28 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> frequencySort(vector<int>& nums) {
-        unordered_map<int, int> count;
+    bool canFormArray(vector<int>& arr, vector<vector<int>>& pieces) {
+        unordered_map<int, vector<int>> map;
 
-        for (int num : nums) {
-            count[num]++;
+        for (auto& piece : pieces) {
+            map[piece[0]] = piece;
         }
 
-        sort(nums.begin(), nums.end(), [&](int a, int b) {
-            return count[a] == count[b] ? a > b : count[a] < count[b];
-        });
+        int n = arr.size();
+        int i = 0;
 
-        return nums;
+        while (i < n) {
+            if (!map.count(arr[i])) return false;
+
+            auto piece = map[arr[i]];
+
+            for (auto num : piece) {
+                if (num != arr[i]) return false;
+
+                i++;
+            }
+        }
+
+        return true;
     }
 };
