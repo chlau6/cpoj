@@ -5,7 +5,7 @@ import annotation.Array;
 @Array
 public class Q1317 {
     /*
-    Time Complexity: O(n log n)   Space Complexity: O(1)
+    Time Complexity: O(n log m)   Space Complexity: O(1)
      */
     public int[] getNoZeroIntegers(int n) {
         for (int i = 1; i <= n / 2; i++) {
