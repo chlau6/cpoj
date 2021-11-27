@@ -5,7 +5,7 @@ import annotation.Strings;
 @Strings
 public class Q1880 {
     /*
-    Time Complexity: O(m + n + o)   Space Complexity: O(1)
+    Time Complexity: O(l + m + n)   Space Complexity: O(1)
      */
     public boolean isSumEqual(String firstWord, String secondWord, String targetWord) {
         int firstSum = 0;

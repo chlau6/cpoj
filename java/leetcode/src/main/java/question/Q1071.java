@@ -7,7 +7,7 @@ import annotation.Strings;
 @Strings
 public class Q1071 {
     /*
-    Time Complexity: O(log n)   Space Complexity: O(n)
+    Time Complexity: O(m + n)   Space Complexity: O(n)
      */
     public String gcdOfStrings(String str1, String str2) {
         if (!(str1 + str2).equals(str2 + str1)) return "";
