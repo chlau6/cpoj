@@ -9,7 +9,7 @@ import java.util.Arrays;
 @Matrix
 public class Q1886 {
     /*
-    Time Complexity: O(n^2)   Space Complexity: O(1)
+    Time Complexity: O(mn)   Space Complexity: O(1)
      */
     public boolean findRotation(int[][] mat, int[][] target) {
         boolean[] r = new boolean[4];

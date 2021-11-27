@@ -19,11 +19,12 @@ public class Q1893 {
             line[r[1] + 1]--;
         }
 
-        int overlap = 0;
-        for (int i = left; i <= right; i++) {
-            overlap += line[i];
+        for (int i = 1; i < 52; i++) {
+            line[i] += line[i - 1];
+        }
 
-            if (overlap == 0) return false;
+        for (int i = left; i <= right; i++) {
+            if (line[i] == 0) return false;
         }
 
         return true;
