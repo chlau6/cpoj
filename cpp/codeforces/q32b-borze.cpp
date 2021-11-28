@@ -3,24 +3,20 @@
 using namespace std;
 
 int main() {
-    string encode;
-    string decode = "";
-    string zero = "0";
-    string one = "1";
-    string two = "2";
+    string s;
+    cin >> s;
 
-    cin >> encode;
-    int length = encode.size();
-    for (int i = 0; i < length; i++) {
-        if (encode[i] == '.') {
-            decode += zero;
-        } else if (encode[i] == '-' && encode[i + 1] == '.') {
-            decode += one;
-            i++;
+    int n = s.size();
+    string result;
+
+    for (int i = 0; i < n; i++) {
+        if (s[i] == '.') {
+            result += '0';
         } else {
-            decode += two;
+            result += (s[i + 1] == '.') ? '1' : '2';
             i++;
         }
     }
-    cout << decode;
+
+    cout << result;
 }

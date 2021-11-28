@@ -4,25 +4,18 @@ using namespace std;
 
 int main() {
     int n, t;
-    string queue;
-    cin >> n >> t >> queue;
+    string q;
 
-    int length = queue.size();
+    cin >> n >> t >> q;
 
     for (int i = 0; i < t; i++) {
-        bool isChanged = false;
-
-        for (int j = 0; j < queue.size() - 1; j++) {
-            if (queue[j] == 'B' && queue[j + 1] == 'G') {
-                queue[j] = 'G';
-                queue[j + 1] = 'B';
+        for (int j = 0; j < n - 1; j++) {
+            if (q[j] == 'B' && q[j + 1] == 'G') {
+                swap(q[j], q[j + 1]);
                 j++;
-                isChanged = true;
             }
         }
-
-        if (!isChanged) break;
     }
 
-    cout << queue;
+    cout << q;
 }

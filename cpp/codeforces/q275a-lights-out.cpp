@@ -2,76 +2,48 @@
 
 using namespace std;
 
-int convert(bool b) {
-    return b ? 1 : 0;
-}
-
 int main() {
-    bool l0, l1, l2, l3, l4, l5, l6, l7, l8;
-    l0 = l1 = l2 = l3 = l4 = l5 = l6 = l7 = l8 = true;
+    bool a, b, c, d, e, f, g, h, i;
+    a = b = c = d = e = f = g = h = i = true;
 
-    int a, b, c, d, e, f, g, h, i;
-    cin >> a >> b >> c >> d >> e >> f >> g >> h >> i;
+    int l1, l2, l3, l4, l5, l6, l7, l8, l9;
+    cin >> l1 >> l2 >> l3 >> l4 >> l5 >> l6 >> l7 >> l8 >> l9;
 
-    if (a % 2 != 0) {
-        l0 = !l0;
-        l1 = !l1;
-        l3 = !l3;
+    if ((l1 + l2 + l4) % 2 != 0) {
+        a = !a;
     }
 
-    if (b % 2 != 0) {
-        l0 = !l0;
-        l1 = !l1;
-        l2 = !l2;
-        l4 = !l4;
+    if ((l1 + l2 + l3 + l5) % 2 != 0) {
+        b = !b;
     }
 
-    if (c % 2 != 0) {
-        l1 = !l1;
-        l2 = !l2;
-        l5 = !l5;
+    if ((l2 + l3 + l6) % 2 != 0) {
+        c = !c;
     }
 
-    if (d % 2 != 0) {
-        l0 = !l0;
-        l3 = !l3;
-        l4 = !l4;
-        l6 = !l6;
+    if ((l1 + l4 + l5 + l7) % 2 != 0) {
+        d = !d;
     }
 
-    if (e % 2 != 0) {
-        l1 = !l1;
-        l3 = !l3;
-        l4 = !l4;
-        l5 = !l5;
-        l7 = !l8;
+    if ((l2 + l4 + l5 + l6 + l8) % 2 != 0) {
+        e = !e;
     }
 
-    if (f % 2 != 0) {
-        l2 = !l2;
-        l4 = !l4;
-        l5 = !l5;
-        l8 = !l8;
+    if ((l3 + l5 + l6 + l9) % 2 != 0) {
+        f = !f;
     }
 
-    if (g % 2 != 0) {
-        l3 = !l3;
-        l6 = !l6;
-        l7 = !l7;
+    if ((l4 + l7 + l8) % 2 != 0) {
+        g = !g;
     }
 
-    if (h % 2 != 0) {
-        l4 = !l4;
-        l6 = !l6;
-        l7 = !l7;
-        l8 = !l8;
+    if ((l5 + l7 + l8 + l9) % 2 != 0) {
+        h = !h;
     }
 
-    if (i % 2 != 0) {
-        l5 = !l5;
-        l7 = !l7;
-        l8 = !l8;
+    if ((l6 + l8 + l9) % 2 != 0) {
+        i = !i;
     }
 
-    cout << convert(l0) << convert(l1) << convert(l2) << "\n" << convert(l3) << convert(l4) << convert(l5) << "\n" << convert(l6) << convert(l7) << convert(l8) << "\n";
+    cout << a << b << c << "\n" << d << e << f << "\n" << g << h << i << "\n";
 }

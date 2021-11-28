@@ -3,19 +3,15 @@
 using namespace std;
 
 int main() {
-    vector<vector<int>> matrix(5, vector<int>(5));
+    int count = 0;
 
-    int xOne, yOne;
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
-            cin >> matrix[i][j];
+    while (true) {
+        int num;
+        cin >> num;
 
-            if (matrix[i][j] == 1) {
-                xOne = i;
-                yOne = j;
-            }
-        }
+        if (num == 1) break;
+        count++;
     }
 
-    cout << abs(2 - xOne) + abs(2 - yOne);
+    cout << (abs(2 - count / 5) + abs(2 - count % 5));
 }

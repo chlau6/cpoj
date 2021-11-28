@@ -3,18 +3,19 @@
 using namespace std;
 
 int main() {
-    int vectorNum;
-    cin >> vectorNum;
+    int line;
+    cin >> line;
 
-    int xSum = 0, ySum = 0, zSum = 0;
-    for (int i = 0; i < vectorNum; i++) {
-        int x, y, z;
-        cin >> x >> y >> z;
+    int x = 0, y = 0, z = 0;
 
-        xSum += x;
-        ySum += y;
-        zSum += z;
+    for (int i = 0; i < line; i++) {
+        int a, b, c;
+        cin >> a >> b >> c;
+
+        x += a;
+        y += b;
+        z += c;
     }
 
-    cout << (xSum == 0 && ySum == 0 && zSum == 0) ? "YES" :"NO" ;
+    cout << (x == 0 && y == 0 && z == 0 ? "YES" : "NO");
 }
