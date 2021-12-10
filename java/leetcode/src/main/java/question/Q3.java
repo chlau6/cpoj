@@ -14,22 +14,22 @@ public class Q3 {
     Time Complexity: O(n)   Space Complexity: O(128)
      */
     public int lengthOfLongestSubstring(String s) {
-        int globalMax = 0;
-        int left = -1;
+        int[] pos = new int[128];
+        Arrays.fill(pos, -1);
 
-        int[] ascii = new int[128];
-        Arrays.fill(ascii, -1);
+        int n = s.length();
+        int start = -1;
+        int result = 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
+        for (int i = 0; i < n; i++) {
+            int c = s.charAt(i);
 
-            left = Math.max(left, ascii[c]);
-            ascii[c] = i;
-
-            globalMax = Math.max(i - left, globalMax);
+            start = Math.max(start, pos[c]);
+            result = Math.max(result, i - start);
+            pos[c] = i;
         }
 
-        return globalMax;
+        return result;
     }
 
     public static void main(String[] args) {
