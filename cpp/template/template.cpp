@@ -23,7 +23,6 @@ string replace(string str, char i, char j, char k) {
 
 int main() {
     int c;
-
     cin >> c;
 
     for (int k = 1; k <= c; k++) {

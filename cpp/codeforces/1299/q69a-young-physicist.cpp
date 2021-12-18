@@ -7,9 +7,9 @@ int main() {
     cin >> line;
 
     int x = 0, y = 0, z = 0;
+    int a, b, c;
 
     for (int i = 0; i < line; i++) {
-        int a, b, c;
         cin >> a >> b >> c;
 
         x += a;
