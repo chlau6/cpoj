@@ -13,31 +13,32 @@ import java.util.List;
 @Backtracking
 @Facebook
 public class Q17 {
-    String[] mapping = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-
+    /*
+    Time Complexity: O(4^n) Space Complexity: O(n * 4^n)
+     */
     public List<String> letterCombinations(String digits) {
-        if (digits.length() == 0) {
-            return new ArrayList<>();
-        }
+        if (digits.length() == 0) return new ArrayList<>();
 
-        List<String> ans = new ArrayList<>();
-        helper(digits, ans, new StringBuilder(), 0);
+        List<String> result = new ArrayList<>();
+        char[][] table = new char[][] {{' '}, {' '}, {'a', 'b', 'c'}, {'d', 'e', 'f'}, {'g', 'h', 'i'}, {'j', 'k', 'l'}, {'m', 'n', 'o'}, {'p', 'q', 'r', 's'}, {'t', 'u', 'v'}, {'w', 'x', 'y', 'z'}};
 
-        return ans;
+        recursion(result, table, digits, "", 0);
+
+        return result;
     }
 
-    private void helper(String digits, List<String> ans, StringBuilder builder, int index) {
-        if (index == digits.length()) {
-            ans.add(builder.toString());
+    public void recursion(List<String> result, char[][] table, String digits, String str, int curr) {
+        if (curr == digits.length()) {
+            result.add(str);
             return;
         }
 
-        int digit = digits.charAt(index) - '0';
-        String button = mapping[digit];
-        for (int j = 0; j < button.length(); j++) {
-            builder.append(button.charAt(j));
-            helper(digits, ans, builder, index + 1);
-            builder.deleteCharAt(builder.length() - 1);
+        for (Character c : table[digits.charAt(curr) - '0']) {
+            recursion(result, table, digits, str + c, curr + 1);
         }
     }
 }
+
+/*
+17. Letter Combinations of a Phone Number
+ */
