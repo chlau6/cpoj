@@ -17,5 +17,5 @@ int main() {
         if (a != b && a != c && a != d && b != c && b != d && c != d) break;
     }
 
-    cout << result;
+    cout << y;
 }

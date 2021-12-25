@@ -6,21 +6,17 @@ int main() {
     int n;
     cin >> n;
 
-    unordered_map<int, int> map;
-    for (int i = 1; i < n; i++) {
-        cin >> num;
-        map[num] = i;
+    string s;
+    int result = 0;
+    for (int i = 0; i < n; i++) {
+        cin >> s;
+
+        if (s[0] == '+' || s[2] == '+') {
+            result++;
+        } else {
+            result--;
+        }
     }
 
-    int q, num, result1 = 0, result2 = 0;
-    cin >> q;
-
-    for (int i = 0; i < q; i++) {
-        cin >> q;
-        int index = map[q];
-        result1 += index;
-        result2 += (n - index);
-    }
-
-    cout << result1 << " " << result2;
+    cout << result;
 }
