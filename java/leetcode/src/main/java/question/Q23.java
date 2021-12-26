@@ -17,18 +17,20 @@ import java.util.Queue;
 public class Q23 {
     /*
     Merge Sort
-    Time Complexity: O(n log n) Space Complexity: O(1)
+    Time Complexity: O(n log k) Space Complexity: O(n + log k)
      */
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) return null;
 
-        return partition(lists, 0, lists.length - 1);
+        int n = lists.length;
+
+        return partition(lists, 0, n - 1);
     }
 
-    private ListNode partition(ListNode[] lists, int left, int right) {
+    public ListNode partition(ListNode[] lists, int left, int right) {
         if (left >= right) return lists[left];
 
-        int mid = (left + right) / 2;
+        int mid = left + (right - left) / 2;
 
         ListNode leftNode = partition(lists, left, mid);
         ListNode rightNode = partition(lists, mid + 1, right);
@@ -36,42 +38,48 @@ public class Q23 {
         return merge(leftNode, rightNode);
     }
 
-    private ListNode merge(ListNode a, ListNode b) {
-        if (a == null) return null;
-        if (b == null) return null;
+    public ListNode merge(ListNode left, ListNode right) {
+        if (left == null) return right;
+        if (right == null) return left;
 
-        if (a.val <= b.val) {
-            a.next = merge(a.next, b);
-            return a;
+        if (left.val <= right.val) {
+            left.next = merge(left.next, right);
+            return left;
         } else {
-            b.next = merge(a, b.next);
-            return b;
+            right.next = merge(left, right.next);
+            return right;
         }
     }
 
     /*
     Heap
-    Time Complexity: O(n log n) Space Complexity: O(n)
+    Time Complexity: O(n log k) Space Complexity: O(k)
      */
     public ListNode mergeKLists2(ListNode[] lists) {
         Queue<ListNode> pq = new PriorityQueue<>(Comparator.comparing(a -> a.val));
 
         for (ListNode node : lists) {
-            while (node != null) {
+            if (node != null) {
                 pq.add(node);
-                node = node.next;
             }
         }
 
         ListNode dummy = new ListNode();
         ListNode head = dummy;
+
         while (!pq.isEmpty()) {
-            dummy.next = pq.poll();
-            dummy = dummy.next;
+            head.next = pq.poll();
+
+            head = head.next;
+
+            if (head.next != null) {
+                pq.add(head.next);
+            }
         }
 
-        dummy.next = null;
-        return head.next;
+        head.next = null;
+
+        return dummy.next;
     }
 }
 
