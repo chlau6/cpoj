@@ -2,12 +2,10 @@ package question;
 
 import annotation.LinkedLists;
 import annotation.Recursion;
-import company.Facebook;
 import datastructure.ListNode;
 
-@Recursion
 @LinkedLists
-@Facebook
+@Recursion
 public class Q21 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(1)
