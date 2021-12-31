@@ -1,46 +1,54 @@
 package question;
 
+import annotation.Array;
+import annotation.BinarySearch;
+
+@Array
+@BinarySearch
 public class Q34 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(1)
      */
     public int[] searchRange(int[] nums, int target) {
-        if (nums.length == 0 || nums[0] > target || nums[nums.length - 1] < target) {
-            return new int[]{-1, -1};
+        int[] result = new int[]{-1, -1};
+        int n = nums.length - 1;
+
+        if (nums.length == 0 || nums[0] > target || nums[n] < target) {
+            return result;
         }
 
         int left = 0;
-        int right = nums.length;
+        int right = n;
 
-        while (left < right) {
+        while (left <= right) {
             int mid = left + (right - left) / 2;
 
             if (nums[mid] < target) {
                 left = mid + 1;
             } else {
-                right = mid;
+                right = mid - 1;
             }
         }
 
-        if (nums[right] != target) {
-            return new int[]{-1, -1};
+        if (nums[left] != target) {
+            return result;
         }
 
-        int firstFound = right;
-        left = 0;
-        right = nums.length;
+        result[0] = left;
+        right = n;
 
-        while (left < right) {
+        while (left <= right) {
             int mid = left + (right - left) / 2;
 
             if (nums[mid] <= target) {
                 left = mid + 1;
             } else {
-                right = mid;
+                right = mid - 1;
             }
         }
 
-        return new int[]{firstFound, right - 1};
+        result[1] = right;
+        return result;
     }
 
     /*

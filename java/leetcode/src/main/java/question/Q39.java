@@ -11,9 +11,7 @@ import java.util.List;
 @Backtracking
 public class Q39 {
     /*
-    Time Complexity: O(n^k) Space Complexity: O(k)
-    n = candidates.length
-    k = target
+    Time Complexity: O(l * n^k) Space Complexity: O(k)
      */
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         Arrays.sort(candidates);

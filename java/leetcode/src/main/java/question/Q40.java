@@ -12,35 +12,33 @@ import java.util.List;
 public class Q40 {
     /*
     Time Complexity: O(2^n) Space Complexity: O(n)
-    n = candidates.length
-    k = target
      */
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+
         Arrays.sort(candidates);
 
-        List<List<Integer>> ans = new ArrayList<>();
+        recursion(result, new ArrayList<>(), candidates, 0, target);
 
-        helper(ans, new ArrayList<>(), 0, candidates, target);
-
-        return ans;
-
+        return result;
     }
 
-    private void helper(List<List<Integer>> ans, ArrayList<Integer> list, int index, int[] candidates, int target) {
-        if (target == 0) {
-            ans.add(new ArrayList<>(list));
+    public void recursion(List<List<Integer>> result, List<Integer> list, int[] candidates, int start, int target) {
+        if (target < 0) {
             return;
-        } else if (target < 0) {
+        } else if (target == 0) {
+            result.add(new ArrayList<>(list));
             return;
         }
 
-        for (int i = index; i < candidates.length; i++) {
-            if (i > index && candidates[i] == candidates[i - 1]) continue;
-
+        for (int i = start; i < candidates.length; i++) {
+            if (i > start && candidates[i] == candidates[i - 1]) continue;
             if (candidates[i] > target) break;
 
             list.add(candidates[i]);
-            helper(ans, list, i + 1, candidates, target - candidates[i]);
+
+            recursion(result, list, candidates, i + 1, target - candidates[i]);
+
             list.remove(list.size() - 1);
         }
     }

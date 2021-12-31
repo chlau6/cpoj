@@ -1,12 +1,10 @@
 package question;
 
-import annotation.StringMatching;
-import annotation.Strings;
-import annotation.TwoPointers;
+import annotation.BitManipulation;
+import annotation.Maths;
 
-@TwoPointers
-@Strings
-@StringMatching
+@Maths
+@BitManipulation
 public class Q29 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)
@@ -30,5 +28,5 @@ public class Q29 {
 }
 
 /*
-28. Implement strStr()
+29. Divide Two Integers
  */

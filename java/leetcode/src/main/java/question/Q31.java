@@ -12,35 +12,39 @@ public class Q31 {
     Time Complexity: O(n)   Space Complexity: O(1)
      */
     public void nextPermutation(int[] nums) {
-        int k;
-        for (k = nums.length - 2; k >= 0; k--) {
-            if (nums[k] < nums[k + 1]) {
+        int n = nums.length;
+        int i, j, start, end;
+
+        for (i = n - 2; i >= 0; i--) {
+            if (nums[i] < nums[i + 1]) {
                 break;
             }
         }
 
-        int m = nums.length - 1;
-        if (k < 0) {
-            reverseArray(nums, 0, m);
-        } else {
-            int i;
-            for (i = m; i > k; i--) {
-                if (nums[i] > nums[k]) break;
-            }
-
-            int temp = nums[i];
-            nums[i] = nums[k];
-            nums[k] = temp;
-
-            reverseArray(nums, k + 1, m);
+        if (i < 0) {
+            reverse(nums, 0, n - 1);
+            return;
         }
+
+        for (j = n - 1; j > i; j--) {
+            if (nums[j] > nums[i]) {
+                break;
+            }
+        }
+
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+
+        reverse(nums, i + 1, n - 1);
+
     }
 
-    public void reverseArray(int[] nums, int start, int end) {
-        while (start < end) {
-            int temp = nums[start];
-            nums[start++] = nums[end];
-            nums[end--] = temp;
+    public void reverse(int[] nums, int i, int j) {
+        while (i < j) {
+            int temp = nums[i];
+            nums[i++] = nums[j];
+            nums[j--] = temp;
         }
     }
 }
