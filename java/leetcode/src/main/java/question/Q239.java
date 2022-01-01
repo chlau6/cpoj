@@ -1,17 +1,8 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-@Array
-@Queues
-@SlidingWindow
-@Heap
-@MonotonicQueue
-@Facebook
 public class Q239 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

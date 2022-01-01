@@ -1,14 +1,7 @@
 package question;
 
-import annotation.*;
-
 import java.util.Arrays;
 
-@Array
-@HashTable
-@LinkedLists
-@Design
-@HashFunction
 public class Q706 {
     /*
     constructor:    Time Complexity: O(1)   Space Complexity: O(1)

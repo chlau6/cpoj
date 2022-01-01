@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.DynamicProgramming;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@DynamicProgramming
 public class Q119 {
     /*
     Time Complexity: O(n^2) Space Complexity: O(n)

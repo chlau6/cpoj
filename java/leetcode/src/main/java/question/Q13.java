@@ -1,14 +1,7 @@
 package question;
 
-import annotation.HashTable;
-import annotation.Maths;
-import annotation.Strings;
-
 import java.util.Map;
 
-@HashTable
-@Maths
-@Strings
 public class Q13 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

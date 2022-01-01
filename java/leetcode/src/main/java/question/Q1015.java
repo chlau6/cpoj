@@ -1,10 +1,5 @@
 package question;
 
-import annotation.HashTable;
-import annotation.Maths;
-
-@HashTable
-@Maths
 public class Q1015 {
     /*
     Time Complexity: O(k)   Space Complexity: O(1)

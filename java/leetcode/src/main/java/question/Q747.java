@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Sorting;
-
-@Array
-@Sorting
 public class Q747 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

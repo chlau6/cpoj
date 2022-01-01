@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Greedy;
-import annotation.Strings;
-
-@Strings
-@Greedy
 public class Q1736 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Strings;
-import annotation.TwoPointers;
-
-@TwoPointers
-@Strings
 public class Q696 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

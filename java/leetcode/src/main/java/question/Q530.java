@@ -1,9 +1,7 @@
 package question;
 
-import annotation.Strings;
 import datastructure.TreeNode;
 
-@Strings
 public class Q530 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

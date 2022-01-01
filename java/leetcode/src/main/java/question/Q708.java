@@ -1,8 +1,5 @@
 package question;
 
-import company.Facebook;
-
-@Facebook
 public class Q708 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,8 +1,5 @@
 package question;
 
-import annotation.Array;
-
-@Array
 public class Q1909 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

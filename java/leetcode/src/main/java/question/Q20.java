@@ -1,12 +1,7 @@
 package question;
 
-import annotation.Stacks;
-import annotation.Strings;
-
 import java.util.Stack;
 
-@Strings
-@Stacks
 public class Q20 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

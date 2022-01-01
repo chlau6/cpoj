@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BinarySearch;
-import annotation.DynamicProgramming;
-import annotation.HashTable;
-
-@Array
-@HashTable
-@BinarySearch
-@DynamicProgramming
 public class Q1027 {
     /*
     Time Complexity: O(n^2)   Space Complexity: O(n)

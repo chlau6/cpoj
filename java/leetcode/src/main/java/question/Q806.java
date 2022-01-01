@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Strings;
-
-@Array
-@Strings
 public class Q806 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

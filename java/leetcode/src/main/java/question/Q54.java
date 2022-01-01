@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Matrix;
-import annotation.Simulation;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@Matrix
-@Simulation
 public class Q54 {
     public static void main(String[] args) {
         System.out.println(new Q54().bordersSum(new int[][]{{9, 7, 4, 5},

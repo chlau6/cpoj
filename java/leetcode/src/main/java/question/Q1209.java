@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Stacks;
-import annotation.Strings;
-import company.Facebook;
-
-@Strings
-@Stacks
-@Facebook
 public class Q1209 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

@@ -1,10 +1,7 @@
 package question;
 
-import company.Facebook;
-
 import java.util.Arrays;
 
-@Facebook
 public class Q253 {
     /*
     Time Complexity: O(n log n)   Space Complexity: O(n)

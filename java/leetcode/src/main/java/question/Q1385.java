@@ -1,13 +1,7 @@
 package question;
 
-import annotation.*;
-
 import java.util.Arrays;
 
-@Array
-@TwoPointers
-@BinarySearch
-@Sorting
 public class Q1385 {
     /*
     Time Complexity: O((m + n) log n)  Space Complexity: O(n)

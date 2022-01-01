@@ -1,13 +1,7 @@
 package question;
 
-import annotation.*;
 import datastructure.TreeNode;
 
-@Array
-@DivideAndConquer
-@Tree
-@BinarySearchTree
-@BinaryTree
 public class Q108 {
     /*
     Time Complexity: O(n)   Space Complexity: O(log n)

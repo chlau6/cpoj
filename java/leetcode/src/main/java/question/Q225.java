@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Design;
-import annotation.Queues;
-import annotation.Stacks;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
-@Stacks
-@Design
-@Queues
 public class Q225 {
     /*
     push:   Time Complexity: O(n)   Space Complexity: O(1)

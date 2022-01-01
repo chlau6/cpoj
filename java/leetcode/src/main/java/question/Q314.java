@@ -1,15 +1,9 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.HashTable;
-import company.Facebook;
 import datastructure.TreeNode;
 
 import java.util.*;
 
-@HashTable
-@BreadthFirstSearch
-@Facebook
 public class Q314 {
     /*
     BFS

@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Greedy;
-import annotation.Maths;
-
-@Maths
-@Greedy
 public class Q1323 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(1)

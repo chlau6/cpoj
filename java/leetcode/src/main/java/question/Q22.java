@@ -1,13 +1,7 @@
 package question;
 
-import annotation.Backtracking;
-import annotation.DynamicProgramming;
-import annotation.Strings;
 import datastructure.ListNode;
 
-@Strings
-@DynamicProgramming
-@Backtracking
 public class Q22 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(1)

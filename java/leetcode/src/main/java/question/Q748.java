@@ -1,12 +1,7 @@
 package question;
 
-import annotation.HashTable;
-import annotation.Strings;
-
 import java.util.Arrays;
 
-@HashTable
-@Strings
 public class Q748 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(1)

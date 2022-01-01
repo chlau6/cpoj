@@ -1,16 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.CountingSort;
-import annotation.Greedy;
-import annotation.Sorting;
-
 import java.util.Arrays;
 
-@Array
-@Greedy
-@Sorting
-@CountingSort
 public class Q561 {
     /*
     Time Complexity: O(n log n)   Space Complexity: O(n)

@@ -1,8 +1,5 @@
 package question;
 
-import annotation.Graph;
-
-@Graph
 public class Q1791 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

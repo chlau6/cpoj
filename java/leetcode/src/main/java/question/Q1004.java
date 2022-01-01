@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BinarySearch;
-import annotation.PrefixSum;
-import annotation.SlidingWindow;
-
-@Array
-@BinarySearch
-@SlidingWindow
-@PrefixSum
 public class Q1004 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

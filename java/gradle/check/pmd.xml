@@ -44,7 +44,7 @@
     <rule ref="category/java/codestyle.xml/IdenticalCatchBranches"/>
     <rule ref="category/java/codestyle.xml/LinguisticNaming">
         <properties>
-            <property name="ignoredAnnotations" value="org.junit.jupiter.api.Solution"/>
+            <property name="ignoredAnnotations" value="org.junit.jupiter.api.Playground"/>
         </properties>
     </rule>
     <rule ref="category/java/codestyle.xml/UnnecessaryAnnotationValueElement"/>

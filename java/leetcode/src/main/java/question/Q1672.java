@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Matrix;
-
-@Array
-@Matrix
 public class Q1672 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(1)

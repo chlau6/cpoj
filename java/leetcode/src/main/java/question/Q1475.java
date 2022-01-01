@@ -1,14 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.MonotonicStack;
-import annotation.Stacks;
-
 import java.util.Stack;
 
-@Array
-@Stacks
-@MonotonicStack
 public class Q1475 {
     /*
     Time Complexity: O(n)  Space Complexity: O(n)

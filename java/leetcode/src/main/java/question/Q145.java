@@ -1,19 +1,11 @@
 
 package question;
 
-import annotation.BinaryTree;
-import annotation.DepthFirstSearch;
-import annotation.Stacks;
-import annotation.Tree;
 import datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Stacks
-@Tree
-@DepthFirstSearch
-@BinaryTree
 public class Q145 {
     /*
     Recursion

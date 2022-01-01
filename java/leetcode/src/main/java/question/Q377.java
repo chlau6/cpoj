@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.DynamicProgramming;
-
-@Array
-@DynamicProgramming
 public class Q377 {
     /*
     Time Complexity: O(nums.length * target)    Space Complexity: O(target)

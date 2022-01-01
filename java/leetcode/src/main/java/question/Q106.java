@@ -1,16 +1,10 @@
 package question;
 
-import annotation.*;
 import datastructure.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@HashTable
-@DivideAndConquer
-@Tree
-@BinaryTree
 public class Q106 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

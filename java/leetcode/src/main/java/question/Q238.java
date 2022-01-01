@@ -1,14 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.PrefixSum;
-import company.Facebook;
-
 import java.util.Arrays;
 
-@Array
-@PrefixSum
-@Facebook
 public class Q238 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(new Q238().productExceptSelf(new int[]{1, 2, 3, 4})));

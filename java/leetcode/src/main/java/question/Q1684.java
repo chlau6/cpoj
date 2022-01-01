@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BitManipulation;
-import annotation.HashTable;
-import annotation.Strings;
-
-@Array
-@HashTable
-@Strings
-@BitManipulation
 public class Q1684 {
     /*
     Time Complexity: O(mn + k)   Space Complexity: O(max(k, m))

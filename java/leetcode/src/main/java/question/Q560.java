@@ -1,17 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-import annotation.PrefixSum;
-import company.Facebook;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@HashTable
-@PrefixSum
-@Facebook
 public class Q560 {
     /*
     Prefix Sum

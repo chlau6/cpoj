@@ -1,13 +1,7 @@
 package question;
 
-import annotation.LinkedLists;
-import annotation.TwoPointers;
-import company.Facebook;
 import datastructure.ListNode;
 
-@LinkedLists
-@TwoPointers
-@Facebook
 public class Q19 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

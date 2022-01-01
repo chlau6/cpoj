@@ -1,12 +1,5 @@
 package question;
 
-import annotation.DepthFirstSearch;
-import annotation.DoublyLinkedList;
-import annotation.LinkedLists;
-
-@LinkedLists
-@DepthFirstSearch
-@DoublyLinkedList
 public class Q430 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

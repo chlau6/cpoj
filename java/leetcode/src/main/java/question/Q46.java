@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Backtracking;
-import company.Facebook;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@Backtracking
-@Facebook
 public class Q46 {
     /*
     Time Complexity: O(n!)   Space Complexity: O(n!)

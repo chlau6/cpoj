@@ -1,17 +1,10 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-import annotation.Sorting;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Array
-@HashTable
-@Sorting
 public class Q1636 {
     /*
     Time Complexity: O(n log n)   Space Complexity: O(n)

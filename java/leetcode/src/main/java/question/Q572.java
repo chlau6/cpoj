@@ -1,13 +1,7 @@
 package question;
 
-import annotation.*;
 import datastructure.TreeNode;
 
-@Tree
-@DepthFirstSearch
-@StringMatching
-@BinaryTree
-@HashFunction
 public class Q572 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(m)

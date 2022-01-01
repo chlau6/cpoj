@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-import annotation.Strings;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@HashTable
-@Strings
 public class Q500 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(mn)

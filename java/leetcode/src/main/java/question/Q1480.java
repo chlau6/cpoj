@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.PrefixSum;
-
-@Array
-@PrefixSum
 public class Q1480 {
     /*
     Time Complexity: O(n)  Space Complexity: O(1)

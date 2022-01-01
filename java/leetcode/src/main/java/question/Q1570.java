@@ -1,11 +1,8 @@
 package question;
 
-import company.Facebook;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Facebook
 public class Q1570 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

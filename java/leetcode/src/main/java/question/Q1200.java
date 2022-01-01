@@ -1,14 +1,9 @@
 package question;
 
-import annotation.Array;
-import annotation.Sorting;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Array
-@Sorting
 public class Q1200 {
     /*
     Time Complexity: O(n log n)   Space Complexity: O(n)

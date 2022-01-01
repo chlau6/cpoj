@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Counting;
-import annotation.HashTable;
-import annotation.SlidingWindow;
-import annotation.Strings;
-
-@HashTable
-@Strings
-@SlidingWindow
-@Counting
 public class Q1876 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

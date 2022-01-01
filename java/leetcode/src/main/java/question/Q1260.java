@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Matrix;
-import annotation.Simulation;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@Matrix
-@Simulation
 public class Q1260 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(mn)

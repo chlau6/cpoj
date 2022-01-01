@@ -1,15 +1,7 @@
 package question;
 
-import annotation.BinaryTree;
-import annotation.DepthFirstSearch;
-import annotation.Tree;
-import company.Facebook;
 import datastructure.TreeNode;
 
-@Tree
-@DepthFirstSearch
-@BinaryTree
-@Facebook
 public class Q236 {
     /*
     Time Complexity: O(n)   Space Complexity: O(h)

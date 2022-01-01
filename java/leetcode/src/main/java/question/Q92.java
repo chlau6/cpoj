@@ -1,9 +1,7 @@
 package question;
 
-import annotation.LinkedLists;
 import datastructure.ListNode;
 
-@LinkedLists
 public class Q92 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

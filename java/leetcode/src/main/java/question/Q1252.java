@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Matrix;
-import annotation.Simulation;
-
-@Array
-@Matrix
-@Simulation
 public class Q1252 {
     /*
     Time Complexity: O(mn + k)   Space Complexity: O(m + n)

@@ -1,18 +1,7 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Graph;
-import annotation.HashTable;
-import company.Facebook;
-
 import java.util.*;
 
-@HashTable
-@DepthFirstSearch
-@BreadthFirstSearch
-@Graph
-@Facebook
 public class Q133 {
     /*
     DFS

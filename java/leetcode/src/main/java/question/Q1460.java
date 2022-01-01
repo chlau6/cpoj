@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-import annotation.Sorting;
-
-@Array
-@HashTable
-@Sorting
 public class Q1460 {
     /*
     Time Complexity: O(n)  Space Complexity: O(1)

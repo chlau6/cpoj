@@ -1,16 +1,9 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.HashTable;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@HashTable
-@DepthFirstSearch
-@BreadthFirstSearch
 public class Q690 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

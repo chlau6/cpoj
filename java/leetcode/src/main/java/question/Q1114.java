@@ -4,7 +4,6 @@ import annotation.Concurrency;
 
 import java.util.concurrent.Semaphore;
 
-@Concurrency
 public class Q1114 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

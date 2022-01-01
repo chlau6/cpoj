@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Maths;
-import annotation.Simulation;
-
-@Maths
-@Simulation
 public class Q1103 {
     /*
     Time Complexity: O(sqrt(m))   Space Complexity: O(n)

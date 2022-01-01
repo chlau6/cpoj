@@ -1,8 +1,5 @@
 package question;
 
-import annotation.BitManipulation;
-
-@BitManipulation
 public class Q461 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(1)

@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BitManipulation;
-import company.Facebook;
-
-@Array
-@BitManipulation
-@Facebook
 public class Q393 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,8 +1,5 @@
 package question;
 
-import company.Facebook;
-
-@Facebook
 public class Q772 {
     public static void main(String[] args) {
         System.out.println(new Q772().calculate("2*(5+5*2)/3+(6/2+8)"));

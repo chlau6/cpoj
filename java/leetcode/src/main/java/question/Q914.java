@@ -1,15 +1,8 @@
 package question;
 
-import annotation.*;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@HashTable
-@Maths
-@Counting
-@NumberTheory
 public class Q914 {
     /*
     Time Complexity: O(n)  Space Complexity: O(n)

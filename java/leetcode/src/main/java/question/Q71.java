@@ -1,14 +1,7 @@
 package question;
 
-import annotation.Stacks;
-import annotation.Strings;
-import company.Facebook;
-
 import java.util.Stack;
 
-@Strings
-@Stacks
-@Facebook
 public class Q71 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

@@ -1,8 +1,5 @@
 package question;
 
-import annotation.Maths;
-
-@Maths
 public class Q733 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(mn)

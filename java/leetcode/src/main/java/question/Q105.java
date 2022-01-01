@@ -1,18 +1,10 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
 import datastructure.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@HashTable
-@DivideAndConquer
-@Tree
-@BinaryTree
-@Facebook
 public class Q105 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

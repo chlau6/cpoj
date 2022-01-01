@@ -1,17 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Counting;
-import annotation.HashTable;
-import annotation.Strings;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@HashTable
-@Strings
-@Counting
 public class Q2053 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

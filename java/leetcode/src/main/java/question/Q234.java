@@ -1,18 +1,10 @@
 package question;
 
-import annotation.LinkedLists;
-import annotation.Recursion;
-import annotation.Stacks;
-import annotation.TwoPointers;
 import datastructure.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@LinkedLists
-@TwoPointers
-@Stacks
-@Recursion
 public class Q234 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

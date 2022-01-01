@@ -1,16 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.Design;
-import annotation.Iterators;
-import company.Facebook;
-
 import java.util.Iterator;
 
-@Array
-@Design
-@Iterators
-@Facebook
 public class Q284 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

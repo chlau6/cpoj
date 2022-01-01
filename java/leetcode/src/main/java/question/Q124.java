@@ -1,17 +1,7 @@
 package question;
 
-import annotation.BinaryTree;
-import annotation.DepthFirstSearch;
-import annotation.DynamicProgramming;
-import annotation.Tree;
-import company.Facebook;
 import datastructure.TreeNode;
 
-@DynamicProgramming
-@Tree
-@DepthFirstSearch
-@BinaryTree
-@Facebook
 public class Q124 {
     /*
     DFS

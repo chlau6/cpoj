@@ -1,15 +1,7 @@
 package question;
 
-import annotation.LinkedLists;
-import annotation.Maths;
-import annotation.Recursion;
-import company.Facebook;
 import datastructure.ListNode;
 
-@LinkedLists
-@Maths
-@Recursion
-@Facebook
 public class Q2 {
     /*
     Time Complexity: O(max(m, n))   Space Complexity: O(max(m, n))

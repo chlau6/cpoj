@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Stacks;
-import annotation.Strings;
-
-@Array
-@Strings
-@Stacks
 public class Q1598 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,16 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Design;
-import annotation.LinkedLists;
-import annotation.Queues;
-import company.Facebook;
-
-@Array
-@LinkedLists
-@Design
-@Queues
-@Facebook
 public class Q641 {
     /*
     Time Complexity: O(1)   Space Complexity: O(n)

@@ -1,14 +1,7 @@
-
 package question;
 
-import annotation.BinarySearchTree;
-import annotation.BinaryTree;
-import annotation.Tree;
 import datastructure.TreeNode;
 
-@Tree
-@BinarySearchTree
-@BinaryTree
 public class Q700 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(log n)

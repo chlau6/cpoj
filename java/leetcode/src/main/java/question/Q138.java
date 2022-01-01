@@ -1,13 +1,8 @@
 package question;
 
-import annotation.HashTable;
-import annotation.LinkedLists;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@HashTable
-@LinkedLists
 public class Q138 {
     public Node copyRandomList(Node head) {
         Map<Node, Node> map = new HashMap<>();

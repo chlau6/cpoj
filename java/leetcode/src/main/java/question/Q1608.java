@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BinarySearch;
-import annotation.Sorting;
-
-@Array
-@BinarySearch
-@Sorting
 public class Q1608 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

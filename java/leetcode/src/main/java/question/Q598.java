@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Maths;
-
-@Array
-@Maths
 public class Q598 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

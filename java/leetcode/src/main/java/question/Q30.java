@@ -1,17 +1,10 @@
 package question;
 
-import annotation.HashTable;
-import annotation.SlidingWindow;
-import annotation.Strings;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@HashTable
-@Strings
-@SlidingWindow
 public class Q30 {
     /*
     Time Complexity: O(lmn)   Space Complexity: O(mn)

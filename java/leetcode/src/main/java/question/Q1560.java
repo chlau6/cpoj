@@ -1,14 +1,8 @@
-
 package question;
-
-import annotation.Array;
-import annotation.Simulation;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@Simulation
 public class Q1560 {
     /*
     Time Complexity: O(n)  Space Complexity: O(n)

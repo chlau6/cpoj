@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Greedy;
-import annotation.Maths;
-import company.Facebook;
-
-@Maths
-@Greedy
-@Facebook
 public class Q670 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Counting;
-import annotation.HashTable;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@HashTable
-@Counting
 public class Q1128 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

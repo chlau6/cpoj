@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Simulation;
-import annotation.Strings;
-
-@Array
-@Strings
-@Simulation
 public class Q2011 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,18 +1,9 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
-
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Random;
 
-@Array
-@DivideAndConquer
-@Sorting
-@Heap
-@QuickSelect
-@Facebook
 public class Q215 {
     /*
     QuickSelect

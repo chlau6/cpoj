@@ -1,8 +1,5 @@
 package question;
 
-import annotation.Shell;
-
-@Shell
 public class Q193 {
     /*
     egrep "^(\([0-9]{3}\) |[0-9]{3}\-)[0-9]{3}\-[0-9]{4}$" file.txt

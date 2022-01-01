@@ -1,18 +1,9 @@
 package question;
 
-import annotation.Recursion;
-import annotation.Stacks;
-import annotation.Strings;
-import company.Facebook;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-@Strings
-@Stacks
-@Recursion
-@Facebook
 public class Q394 {
     /*
     Queue Recursion

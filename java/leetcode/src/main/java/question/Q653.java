@@ -1,18 +1,10 @@
 package question;
 
-import annotation.*;
 import datastructure.TreeNode;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@HashTable
-@TwoPointers
-@Tree
-@DepthFirstSearch
-@BreadthFirstSearch
-@BinarySearchTree
-@BinaryTree
 public class Q653 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

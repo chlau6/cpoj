@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Design;
-import annotation.LinkedLists;
-
-@LinkedLists
-@Design
 public class Q707 {
     /*
     get: Time Complexity: O(n) Space Complexity: O(1)

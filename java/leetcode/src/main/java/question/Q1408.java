@@ -1,13 +1,8 @@
 package question;
 
-import annotation.StringMatching;
-import annotation.Strings;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Strings
-@StringMatching
 public class Q1408 {
     /*
     Time Complexity: O(m^2 n^2)  Space Complexity: O(mn)

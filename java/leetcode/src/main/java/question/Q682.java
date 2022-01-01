@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Simulation;
-import annotation.Stacks;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@Stacks
-@Simulation
 public class Q682 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

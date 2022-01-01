@@ -1,16 +1,7 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
-
 import java.util.*;
 
-@Array
-@TwoPointers
-@BinarySearch
-@Sorting
-@Heap
-@Facebook
 public class Q658 {
     /*
     Two Pointers

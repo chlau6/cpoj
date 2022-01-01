@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.SlidingWindow;
-
-@Array
-@SlidingWindow
 public class Q643 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

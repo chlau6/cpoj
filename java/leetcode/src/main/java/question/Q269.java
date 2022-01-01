@@ -1,10 +1,7 @@
 package question;
 
-import company.Facebook;
-
 import java.util.*;
 
-@Facebook
 public class Q269 {
     public static void main(String[] args) {
         System.out.println(new Q269().alienOrder(new String[]{"wrt", "wrf", "er", "ett", "rftt"}));

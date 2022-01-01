@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Sorting;
-import annotation.Strings;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@Strings
-@Sorting
 public class Q937 {
     /*
     ping:   Time Complexity: O(n log n)   Space Complexity: O(n)

@@ -1,17 +1,8 @@
 package question;
 
-import annotation.Backtracking;
-import annotation.Maths;
-import annotation.Strings;
-import company.Facebook;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Maths
-@Strings
-@Backtracking
-@Facebook
 public class Q282 {
     /*
     Time Complexity: O(4^n) Space Complexity: O(n)

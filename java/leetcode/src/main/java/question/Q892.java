@@ -1,15 +1,5 @@
-
 package question;
 
-import annotation.Array;
-import annotation.Geometry;
-import annotation.Maths;
-import annotation.Matrix;
-
-@Array
-@Maths
-@Geometry
-@Matrix
 public class Q892 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(1)

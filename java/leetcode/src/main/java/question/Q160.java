@@ -1,15 +1,7 @@
 package question;
 
-import annotation.HashTable;
-import annotation.LinkedLists;
-import annotation.TwoPointers;
-import company.Facebook;
 import datastructure.ListNode;
 
-@HashTable
-@LinkedLists
-@TwoPointers
-@Facebook
 public class Q160 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

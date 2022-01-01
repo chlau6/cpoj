@@ -1,12 +1,5 @@
 package question;
 
-import annotation.BinarySearch;
-import annotation.Interactive;
-import company.Facebook;
-
-@BinarySearch
-@Interactive
-@Facebook
 public class Q278 {
     /*
     Binary Search

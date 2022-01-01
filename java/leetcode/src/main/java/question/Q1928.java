@@ -1,14 +1,7 @@
 package question;
 
-import annotation.DynamicProgramming;
-import annotation.Graph;
-import company.Facebook;
-
 import java.util.Arrays;
 
-@DynamicProgramming
-@Graph
-@Facebook
 public class Q1928 {
     /*
     Time Complexity: O(maxTime * E) Space Complexity: O(maxTime * V)

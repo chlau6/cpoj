@@ -1,15 +1,7 @@
 package question;
 
-import annotation.BinarySearchTree;
-import annotation.BinaryTree;
-import annotation.DepthFirstSearch;
-import annotation.Tree;
 import datastructure.TreeNode;
 
-@Tree
-@DepthFirstSearch
-@BinarySearchTree
-@BinaryTree
 public class Q235 {
     /*
     Time Complexity: O(n)   Space Complexity: O(h)

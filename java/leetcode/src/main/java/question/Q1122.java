@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.CountingSort;
-import annotation.HashTable;
-import annotation.Sorting;
-
-@Array
-@HashTable
-@Sorting
-@CountingSort
 public class Q1122 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(1)

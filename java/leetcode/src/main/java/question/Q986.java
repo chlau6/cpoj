@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.TwoPointers;
-import company.Facebook;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@TwoPointers
-@Facebook
 public class Q986 {
     /*
     Time Complexity: O(min(m, n))   Space Complexity: O(max(m, n))

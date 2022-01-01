@@ -1,14 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.Strings;
-import annotation.TwoPointers;
-
 import java.util.Arrays;
 
-@Array
-@TwoPointers
-@Strings
 public class Q821 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

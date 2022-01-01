@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Sorting;
-import annotation.Strings;
-
 import java.util.Map;
 import java.util.TreeMap;
 
-@Strings
-@Sorting
 public class Q1859 {
     /*
     Time Complexity: O(n log n)   Space Complexity: O(n)

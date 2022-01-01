@@ -1,20 +1,10 @@
-
 package question;
-
-import annotation.Array;
-import annotation.BinarySearch;
-import annotation.HashTable;
-import annotation.Sorting;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Array
-@HashTable
-@BinarySearch
-@Sorting
 public class Q888 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

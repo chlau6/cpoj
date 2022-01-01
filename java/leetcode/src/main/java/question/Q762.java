@@ -1,10 +1,5 @@
 package question;
 
-import annotation.BitManipulation;
-import annotation.Maths;
-
-@Maths
-@BitManipulation
 public class Q762 {
     /*
     Time Complexity: O(n log n)   Space Complexity: O(1)

@@ -1,12 +1,5 @@
 package question;
 
-import annotation.BitManipulation;
-import annotation.Maths;
-import annotation.Recursion;
-
-@Maths
-@BitManipulation
-@Recursion
 public class Q342 {
     /*
     Time Complexity: O(log n)  Space Complexity: O(1)

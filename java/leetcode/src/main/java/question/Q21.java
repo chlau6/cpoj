@@ -1,11 +1,7 @@
 package question;
 
-import annotation.LinkedLists;
-import annotation.Recursion;
 import datastructure.ListNode;
 
-@LinkedLists
-@Recursion
 public class Q21 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(1)

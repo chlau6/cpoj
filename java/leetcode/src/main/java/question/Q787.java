@@ -1,17 +1,7 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
-
 import java.util.Arrays;
 
-@DynamicProgramming
-@DepthFirstSearch
-@BreadthFirstSearch
-@Graph
-@Heap
-@ShortestPath
-@Facebook
 public class Q787 {
     /*
     Bellman Ford

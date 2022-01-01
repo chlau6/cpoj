@@ -1,20 +1,10 @@
 package question;
 
-import annotation.Array;
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Matrix;
-import company.Facebook;
 import datastructure.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@DepthFirstSearch
-@BreadthFirstSearch
-@Matrix
-@Facebook
 public class Q437 {
     /*
     Prefix Sum

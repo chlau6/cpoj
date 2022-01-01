@@ -1,14 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.BinarySearch;
-import company.Facebook;
-
 import java.util.Stack;
 
-@Array
-@BinarySearch
-@Facebook
 public class Q155 {
     /*
     push:   Time Complexity: O(1)   Space Complexity: O(1)

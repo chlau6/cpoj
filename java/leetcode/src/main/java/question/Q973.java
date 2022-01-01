@@ -1,18 +1,7 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
-
 import java.util.*;
 
-@Array
-@Maths
-@DivideAndConquer
-@Geometry
-@Sorting
-@Heap
-@QuickSelect
-@Facebook
 public class Q973 {
     /*
     QuickSelect

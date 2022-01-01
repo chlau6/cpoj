@@ -1,12 +1,5 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Graph;
-
-@DepthFirstSearch
-@BreadthFirstSearch
-@Graph
 public class Q1971 {
     /*
     Disjoint Set Union

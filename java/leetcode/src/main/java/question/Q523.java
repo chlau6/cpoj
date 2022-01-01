@@ -1,19 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-import annotation.Maths;
-import annotation.PrefixSum;
-import company.Facebook;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@HashTable
-@Maths
-@PrefixSum
-@Facebook
 public class Q523 {
     /*
     Time Complexity: O(n)   Space Complexity: O(k)

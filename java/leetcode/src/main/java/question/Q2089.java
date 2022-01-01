@@ -1,14 +1,9 @@
 
 package question;
 
-import annotation.BinarySearch;
-import annotation.Sorting;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@BinarySearch
-@Sorting
 public class Q2089 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Matrix;
-
 import java.util.HashSet;
 import java.util.Set;
 
-@Array
-@Matrix
 public class Q771 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(m + n)

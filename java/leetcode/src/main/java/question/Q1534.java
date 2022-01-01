@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Enumeration;
-
-@Array
-@Enumeration
 public class Q1534 {
     /*
     Time Complexity: O(n^3)  Space Complexity: O(1)

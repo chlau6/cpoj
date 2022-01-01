@@ -1,10 +1,5 @@
 package question;
 
-import annotation.BinarySearch;
-import annotation.Interactive;
-
-@BinarySearch
-@Interactive
 public class Q374 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(1)

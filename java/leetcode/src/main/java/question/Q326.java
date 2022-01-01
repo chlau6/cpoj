@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Maths;
-import annotation.Recursion;
-
-@Maths
-@Recursion
 public class Q326 {
     /*
     Time Complexity: O(log n)  Space Complexity: O(1)

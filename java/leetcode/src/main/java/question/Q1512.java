@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Counting;
-import annotation.HashTable;
-import annotation.Maths;
-
-@Array
-@HashTable
-@Maths
-@Counting
 public class Q1512 {
     /*
     Time Complexity: O(n)  Space Complexity: O(1)

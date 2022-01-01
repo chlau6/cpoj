@@ -1,17 +1,7 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
-
 import java.util.*;
 
-@HashTable
-@Strings
-@DynamicProgramming
-@Backtracking
-@Trie
-@Memoization
-@Facebook
 public class Q140 {
     /*
     Time Complexity: O(2^n) Space Complexity: O(2^n)

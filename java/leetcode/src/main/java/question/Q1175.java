@@ -1,10 +1,7 @@
 package question;
 
-import annotation.Maths;
-
 import java.util.Arrays;
 
-@Maths
 public class Q1175 {
     /*
     Time Complexity: O(n log log n)   Space Complexity: O(n)

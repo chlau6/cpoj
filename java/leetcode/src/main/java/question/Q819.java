@@ -1,12 +1,7 @@
 package question;
 
-import annotation.HashTable;
-import annotation.Strings;
-
 import java.util.*;
 
-@HashTable
-@Strings
 public class Q819 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(m + n)

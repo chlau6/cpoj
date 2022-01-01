@@ -1,15 +1,8 @@
 package question;
 
-import annotation.DepthFirstSearch;
-import annotation.Stacks;
-import annotation.Tree;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Stacks
-@Tree
-@DepthFirstSearch
 public class Q589 {
     /*
     Time Complexity: O(n)   Space Complexity: O(h)

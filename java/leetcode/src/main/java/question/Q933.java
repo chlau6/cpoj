@@ -1,15 +1,8 @@
 package question;
 
-import annotation.DataStream;
-import annotation.Design;
-import annotation.Queues;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
-@Design
-@Queues
-@DataStream
 public class Q933 {
     /*
     ping:   Time Complexity: O(n)   Space Complexity: O(n)

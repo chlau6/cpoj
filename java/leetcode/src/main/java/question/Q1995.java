@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Enumeration;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@Enumeration
 public class Q1995 {
     /*
     Time Complexity: O(n^2)   Space Complexity: O(n^2)

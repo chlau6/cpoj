@@ -1,14 +1,7 @@
 package question;
 
-import annotation.HashTable;
-import annotation.SlidingWindow;
-import annotation.Strings;
-
 import java.util.Arrays;
 
-@HashTable
-@Strings
-@SlidingWindow
 public class Q3 {
     /*
     Time Complexity: O(n)   Space Complexity: O(128)

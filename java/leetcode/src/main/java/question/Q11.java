@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Greedy;
-import annotation.TwoPointers;
-
-@Array
-@TwoPointers
-@Greedy
 public class Q11 {
     /*
     Time Complexity: O(n)  Space Complexity: O(1)

@@ -1,19 +1,8 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Graph;
-import annotation.UnionFind;
-import company.Facebook;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
-@DepthFirstSearch
-@BreadthFirstSearch
-@UnionFind
-@Graph
-@Facebook
 public class Q785 {
     /*
     BFS

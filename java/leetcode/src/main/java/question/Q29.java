@@ -1,10 +1,5 @@
 package question;
 
-import annotation.BitManipulation;
-import annotation.Maths;
-
-@Maths
-@BitManipulation
 public class Q29 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

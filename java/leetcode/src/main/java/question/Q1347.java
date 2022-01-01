@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BinarySearch;
-import annotation.Matrix;
-
-@Array
-@BinarySearch
-@Matrix
 public class Q1347 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(1)

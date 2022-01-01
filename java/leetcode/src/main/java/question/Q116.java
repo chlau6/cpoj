@@ -1,19 +1,8 @@
 package question;
 
-import annotation.BinaryTree;
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Tree;
-import company.Facebook;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
-@Tree
-@DepthFirstSearch
-@BreadthFirstSearch
-@BinaryTree
-@Facebook
 public class Q116 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

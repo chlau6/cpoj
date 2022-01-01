@@ -1,8 +1,5 @@
 package question;
 
-import annotation.Strings;
-
-@Strings
 public class Q1309 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

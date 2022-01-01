@@ -1,16 +1,9 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Tree;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@Tree
-@DepthFirstSearch
-@BreadthFirstSearch
 public class Q559 {
     /*
     Time Complexity: O(n)   Space Complexity: O(w)

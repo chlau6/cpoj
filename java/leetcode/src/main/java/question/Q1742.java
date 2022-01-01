@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Counting;
-import annotation.HashTable;
-import annotation.Maths;
-
-@HashTable
-@Maths
-@Counting
 public class Q1742 {
     /*
     Time Complexity: O(n log m)   Space Complexity: O(1)

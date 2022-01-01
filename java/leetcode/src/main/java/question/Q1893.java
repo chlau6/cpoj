@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-import annotation.PrefixSum;
-
-@Array
-@HashTable
-@PrefixSum
 public class Q1893 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(1)

@@ -1,16 +1,7 @@
 package question;
 
-import annotation.Maths;
-import annotation.Recursion;
-import annotation.Stacks;
-import annotation.Strings;
-
 import java.util.Stack;
 
-@Maths
-@Strings
-@Stacks
-@Recursion
 public class Q224 {
     public int calculate(String s) {
         int length = s.length();

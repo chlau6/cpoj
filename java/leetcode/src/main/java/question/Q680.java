@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Greedy;
-import annotation.Strings;
-import annotation.TwoPointers;
-import company.Facebook;
-
-@TwoPointers
-@Strings
-@Greedy
-@Facebook
 public class Q680 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

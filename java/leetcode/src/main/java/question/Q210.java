@@ -1,18 +1,7 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Graph;
-import annotation.TopologicalSort;
-import company.Facebook;
-
 import java.util.*;
 
-@DepthFirstSearch
-@BreadthFirstSearch
-@Graph
-@TopologicalSort
-@Facebook
 public class Q210 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(new Q210().findOrder(20, new int[][]{{0, 10}, {3, 18}, {5, 5}, {6, 11}, {11, 14}, {13, 1}, {15, 1}, {17, 4}})));

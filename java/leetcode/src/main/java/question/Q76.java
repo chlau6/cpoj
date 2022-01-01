@@ -1,14 +1,5 @@
 package question;
 
-import annotation.HashTable;
-import annotation.SlidingWindow;
-import annotation.Strings;
-import company.Facebook;
-
-@HashTable
-@Strings
-@SlidingWindow
-@Facebook
 public class Q76 {
     public static void main(String[] args) {
         System.out.println(new Q76().minWindow("ADOBECODEBANC", "ABC"));

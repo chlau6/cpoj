@@ -1,20 +1,10 @@
 package question;
 
-import annotation.BinarySearchTree;
-import annotation.BinaryTree;
-import annotation.DepthFirstSearch;
-import annotation.Tree;
-import company.Facebook;
 import datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Tree
-@DepthFirstSearch
-@BinarySearchTree
-@BinaryTree
-@Facebook
 public class Q98 {
     /*
     Recursion

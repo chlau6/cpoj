@@ -1,12 +1,5 @@
 package question;
 
-import annotation.StringMatching;
-import annotation.Strings;
-import annotation.TwoPointers;
-
-@TwoPointers
-@Strings
-@StringMatching
 public class Q28 {
     /*
     Time Complexity: O(m * n)   Space Complexity: O(m + n)

@@ -1,12 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.Matrix;
-
 import java.util.Arrays;
 
-@Array
-@Matrix
 public class Q1886 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(1)

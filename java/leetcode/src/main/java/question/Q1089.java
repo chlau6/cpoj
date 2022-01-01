@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.TwoPointers;
-
-@Array
-@TwoPointers
 public class Q1089 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

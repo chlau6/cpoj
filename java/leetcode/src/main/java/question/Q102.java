@@ -1,9 +1,5 @@
 package question;
 
-import annotation.BinaryTree;
-import annotation.BreadthFirstSearch;
-import annotation.Tree;
-import company.Facebook;
 import datastructure.TreeNode;
 
 import java.util.ArrayList;
@@ -11,10 +7,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@Tree
-@BreadthFirstSearch
-@BinaryTree
-@Facebook
 public class Q102 {
     /*
     Time Complexity: O(n)   Space Complexity: O(w)

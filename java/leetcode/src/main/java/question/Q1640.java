@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Array
-@HashTable
 public class Q1640 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

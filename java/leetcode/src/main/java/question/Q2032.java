@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@HashTable
 public class Q2032 {
     /*
     Time Complexity: O(l + m + n)   Space Complexity: O(max(l, m, n))

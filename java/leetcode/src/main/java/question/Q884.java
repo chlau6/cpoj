@@ -1,15 +1,10 @@
 package question;
 
-import annotation.HashTable;
-import annotation.Strings;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@HashTable
-@Strings
 public class Q884 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

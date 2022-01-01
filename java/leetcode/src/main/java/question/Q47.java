@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Backtracking;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@Backtracking
 public class Q47 {
     /*
     Time Complexity: O(n!)   Space Complexity: O(n!)

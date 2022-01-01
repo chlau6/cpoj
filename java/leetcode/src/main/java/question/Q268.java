@@ -1,14 +1,5 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
-
-@Array
-@HashTable
-@Maths
-@BitManipulation
-@Sorting
-@Facebook
 public class Q268 {
     /*
     Bit Manipulation

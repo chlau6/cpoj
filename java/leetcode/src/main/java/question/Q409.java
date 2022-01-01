@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Greedy;
-import annotation.HashTable;
-import annotation.Strings;
-
-@HashTable
-@Strings
-@Greedy
 public class Q409 {
     /*
     Time Complexity: O(n)  Space Complexity: O(n)

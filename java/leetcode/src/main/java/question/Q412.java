@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Maths;
-import annotation.Simulation;
-import annotation.Strings;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Maths
-@Strings
-@Simulation
 public class Q412 {
     /*
     Time Complexity: O(n)  Space Complexity: O(n)

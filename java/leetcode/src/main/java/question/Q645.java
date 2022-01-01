@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.SlidingWindow;
-
-@Array
-@SlidingWindow
 public class Q645 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

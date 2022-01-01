@@ -1,16 +1,7 @@
 package question;
 
-import annotation.BitManipulation;
-import annotation.HashTable;
-import annotation.SlidingWindow;
-import annotation.Strings;
-
 import java.util.Arrays;
 
-@HashTable
-@Strings
-@BitManipulation
-@SlidingWindow
 public class Q1763 {
     /*
     Time Complexity: O(n^2)   Space Complexity: O(n)

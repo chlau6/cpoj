@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Geometry;
-import annotation.Maths;
-
-@Maths
-@Geometry
 public class Q836 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

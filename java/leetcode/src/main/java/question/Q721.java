@@ -1,14 +1,7 @@
 package question;
 
-import annotation.*;
-
 import java.util.*;
 
-@Array
-@Strings
-@DepthFirstSearch
-@BreadthFirstSearch
-@UnionFind
 public class Q721 {
     Map<String, String> parents = new HashMap<>();
     Map<String, String> emailOwner = new HashMap<>();

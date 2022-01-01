@@ -1,15 +1,8 @@
 package question;
 
-import annotation.*;
-
 import java.util.HashSet;
 import java.util.Set;
 
-@Array
-@HashTable
-@TwoPointers
-@BinarySearch
-@Sorting
 public class Q1346 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

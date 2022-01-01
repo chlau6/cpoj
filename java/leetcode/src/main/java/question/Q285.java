@@ -1,9 +1,7 @@
 package question;
 
-import company.Facebook;
 import datastructure.TreeNode;
 
-@Facebook
 public class Q285 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(1)

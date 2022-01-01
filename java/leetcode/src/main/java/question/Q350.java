@@ -1,15 +1,8 @@
 package question;
 
-import annotation.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@HashTable
-@TwoPointers
-@BinarySearch
-@Sorting
 public class Q350 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

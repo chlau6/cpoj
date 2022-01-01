@@ -1,11 +1,8 @@
 package question;
 
-import annotation.Array;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
 public class Q1018 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

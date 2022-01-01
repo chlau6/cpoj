@@ -1,11 +1,7 @@
 package question;
 
-import annotation.LinkedLists;
-import annotation.TwoPointers;
 import datastructure.ListNode;
 
-@LinkedLists
-@TwoPointers
 public class Q61 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Counting;
-
-@Array
-@Counting
 public class Q1854 {
     /*
     Line Sweep Algorithm

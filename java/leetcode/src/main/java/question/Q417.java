@@ -1,19 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Matrix;
-import company.Facebook;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@DepthFirstSearch
-@BreadthFirstSearch
-@Matrix
-@Facebook
 public class Q417 {
     /*
     Time Complexity: O(mn)    Space Complexity: O(mn)

@@ -1,17 +1,8 @@
-
 package question;
-
-import annotation.*;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-@Tree
-@Design
-@BinarySearchTree
-@Heap
-@BinaryTree
-@DataStream
 public class Q703 {
     /*
     constructor:    Time Complexity: O(n log n) Space Complexity: O(1)

@@ -1,17 +1,10 @@
 package question;
 
-import annotation.Array;
-import annotation.Sorting;
-import company.Facebook;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-@Array
-@Sorting
-@Facebook
 public class Q56 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

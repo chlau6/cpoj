@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Enumeration;
-import annotation.Maths;
-
-@Maths
-@Enumeration
 public class Q1925 {
     /*
     Time Complexity: O(n^2)   Space Complexity: O(1)

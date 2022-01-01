@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BinarySearch;
-import annotation.Simulation;
-import annotation.Stacks;
-
-@Array
-@BinarySearch
-@Stacks
-@Simulation
 public class Q852 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(1)

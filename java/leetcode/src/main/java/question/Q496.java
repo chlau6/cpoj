@@ -1,18 +1,9 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-import annotation.MonotonicStack;
-import annotation.Stacks;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-@Array
-@HashTable
-@Stacks
-@MonotonicStack
 public class Q496 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(n)

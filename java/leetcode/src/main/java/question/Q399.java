@@ -1,20 +1,10 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-@Array
-@DepthFirstSearch
-@BreadthFirstSearch
-@UnionFind
-@Graph
-@ShortestPath
-@Facebook
 public class Q399 {
     /*
     Time Complexity: O(E + queries.length * E)  Space Complexity: O(E)

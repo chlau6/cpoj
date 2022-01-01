@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BitManipulation;
-
-@Array
-@BitManipulation
 public class Q136 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

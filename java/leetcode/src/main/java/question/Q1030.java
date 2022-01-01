@@ -1,14 +1,7 @@
 package question;
 
-import annotation.*;
-
 import java.util.Arrays;
 
-@Array
-@Maths
-@Geometry
-@Sorting
-@Matrix
 public class Q1030 {
     /*
     Time Complexity: O(mn log mn)   Space Complexity: O(mn)

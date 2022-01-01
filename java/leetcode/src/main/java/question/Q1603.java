@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Counting;
-import annotation.Design;
-import annotation.Simulation;
-
-@Design
-@Simulation
-@Counting
 public class Q1603 {
     /*
     constructor:    Time Complexity: O(1)   Space Complexity: O(1)

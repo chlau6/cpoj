@@ -1,13 +1,7 @@
 package question;
 
-import annotation.HashTable;
-import annotation.LinkedLists;
-import annotation.TwoPointers;
 import datastructure.ListNode;
 
-@HashTable
-@LinkedLists
-@TwoPointers
 public class Q141 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

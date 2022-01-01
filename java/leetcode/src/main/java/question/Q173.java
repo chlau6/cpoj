@@ -1,18 +1,9 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
 import datastructure.TreeNode;
 
 import java.util.Stack;
 
-@Stacks
-@Tree
-@Design
-@BinarySearchTree
-@BinaryTree
-@Iterators
-@Facebook
 public class Q173 {
     /*
     Time Complexity: O(n)   Space Complexity: O(h)

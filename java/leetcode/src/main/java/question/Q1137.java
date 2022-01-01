@@ -1,12 +1,5 @@
 package question;
 
-import annotation.DynamicProgramming;
-import annotation.Maths;
-import annotation.Memoization;
-
-@Maths
-@DynamicProgramming
-@Memoization
 public class Q1137 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,10 +1,7 @@
-
 package question;
 
-import annotation.Array;
 import datastructure.TreeNode;
 
-@Array
 public class Q897 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

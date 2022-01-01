@@ -1,14 +1,9 @@
 package question;
 
-import annotation.Array;
-import annotation.Heap;
-
 import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-@Array
-@Heap
 public class Q1046 {
     /*
     Time Complexity: O(n log n)   Space Complexity: O(n)

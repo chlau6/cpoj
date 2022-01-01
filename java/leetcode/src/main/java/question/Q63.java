@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.DynamicProgramming;
-import annotation.Matrix;
-import company.Facebook;
-
-@Array
-@DynamicProgramming
-@Matrix
-@Facebook
 public class Q63 {
     /*
     Time Complexity: O(mn)  Space Complexity: O(mn)

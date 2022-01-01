@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Simulation;
-import annotation.Stacks;
-import annotation.Strings;
-import annotation.TwoPointers;
-
-@TwoPointers
-@Strings
-@Stacks
-@Simulation
 public class Q844 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

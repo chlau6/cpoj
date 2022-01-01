@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Matrix;
-import annotation.Simulation;
-import annotation.TwoPointers;
-
-@Array
-@TwoPointers
-@Matrix
-@Simulation
 public class Q832 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(1)

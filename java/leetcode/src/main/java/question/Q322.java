@@ -1,16 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.BreadthFirstSearch;
-import annotation.DynamicProgramming;
-import company.Facebook;
-
 import java.util.Arrays;
 
-@Array
-@DynamicProgramming
-@BreadthFirstSearch
-@Facebook
 public class Q322 {
     /*
     Time Complexity: O(n * amount)  Space Complexity: O(amount)

@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Backtracking;
-import annotation.BitManipulation;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Backtracking
-@BitManipulation
 public class Q401 {
     /*
     Time Complexity: O(11 * 60 * n)  Space Complexity: O(n)

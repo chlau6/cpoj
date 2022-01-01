@@ -1,11 +1,8 @@
 package question;
 
-import annotation.Array;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
-@Array
 public class Q487 {
     /*
     Infinite Stream

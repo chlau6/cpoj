@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Combinatorics;
-import annotation.DynamicProgramming;
-import annotation.Maths;
-import company.Facebook;
-
-@Maths
-@DynamicProgramming
-@Combinatorics
-@Facebook
 public class Q1359 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.TwoPointers;
-
-@Array
-@TwoPointers
 public class Q283 {
     public void moveZeroes(int[] nums) {
         for (int i = 0, j = 0; i < nums.length; i++) {

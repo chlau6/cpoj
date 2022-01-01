@@ -1,4 +1,4 @@
-class Solution {
+class Playground {
     public static void main(String[] args) {
         Integer a = 1;
 

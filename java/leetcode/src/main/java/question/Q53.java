@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.DivideAndConquer;
-import annotation.DynamicProgramming;
-
-@Array
-@DivideAndConquer
-@DynamicProgramming
 public class Q53 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import company.Facebook;
-
-@Array
-@Facebook
 public class Q674 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

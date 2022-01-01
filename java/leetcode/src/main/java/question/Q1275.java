@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-import annotation.Matrix;
-import annotation.Simulation;
-
-@Array
-@HashTable
-@Matrix
-@Simulation
 public class Q1275 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

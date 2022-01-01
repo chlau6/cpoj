@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Maths;
-import annotation.Strings;
-
-@Maths
-@Strings
 public class Q171 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

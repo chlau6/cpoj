@@ -1,10 +1,5 @@
 package question;
 
-import annotation.StringMatching;
-import annotation.Strings;
-
-@Strings
-@StringMatching
 public class Q1668 {
     /*
     Time Complexity: O(n^3)   Space Complexity: O(n)

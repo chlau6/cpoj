@@ -1,10 +1,5 @@
 package question;
 
-import annotation.BitManipulation;
-import annotation.DynamicProgramming;
-
-@DynamicProgramming
-@BitManipulation
 public class Q338 {
     /*
     Time Complexity: O(n)  Space Complexity: O(n)

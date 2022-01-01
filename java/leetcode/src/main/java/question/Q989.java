@@ -1,14 +1,9 @@
 package question;
 
-import annotation.Array;
-import annotation.Maths;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Array
-@Maths
 public class Q989 {
     /*
     DFS

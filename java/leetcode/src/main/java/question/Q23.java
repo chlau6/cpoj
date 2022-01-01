@@ -1,19 +1,11 @@
 package question;
 
-import annotation.DivideAndConquer;
-import annotation.Heap;
-import annotation.LinkedLists;
-import annotation.MergeSort;
 import datastructure.ListNode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-@LinkedLists
-@DivideAndConquer
-@Heap
-@MergeSort
 public class Q23 {
     /*
     Merge Sort

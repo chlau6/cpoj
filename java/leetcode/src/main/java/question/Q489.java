@@ -1,11 +1,8 @@
 package question;
 
-import company.Facebook;
-
 import java.util.HashSet;
 import java.util.Set;
 
-@Facebook
 public class Q489 {
     /*
     Time Complexity: O(mn)   Space Complexity: O(mn)

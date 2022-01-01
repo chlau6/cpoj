@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.TwoPointers;
-import company.Facebook;
-
-@Array
-@TwoPointers
-@Facebook
 public class Q31 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

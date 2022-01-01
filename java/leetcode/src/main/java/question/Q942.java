@@ -1,12 +1,5 @@
 package question;
 
-import annotation.*;
-
-@Array
-@Maths
-@TwoPointers
-@Strings
-@Greedy
 public class Q942 {
     /*
     Time Complexity: O(n)  Space Complexity: O(n)

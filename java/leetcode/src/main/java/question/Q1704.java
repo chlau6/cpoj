@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Counting;
-import annotation.Strings;
-
-@Strings
-@Counting
 public class Q1704 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

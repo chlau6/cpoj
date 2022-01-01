@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BinarySearch;
-import annotation.DivideAndConquer;
-
-@Array
-@BinarySearch
-@DivideAndConquer
 public class Q4 {
     /*
     Time Complexity: O(log(min(m, n)))  Space Complexity: O(1)

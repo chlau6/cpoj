@@ -1,14 +1,7 @@
 package question;
 
-import annotation.Array;
-import annotation.Sorting;
-import annotation.TwoPointers;
-
 import java.util.Arrays;
 
-@Array
-@TwoPointers
-@Sorting
 public class Q16 {
     /*
     Time Complexity: O(n^2)   Space Complexity: O(n)

@@ -1,18 +1,10 @@
 package question;
 
-import annotation.BinaryTree;
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Tree;
 import datastructure.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-@Tree
-@DepthFirstSearch
-@BreadthFirstSearch
-@BinaryTree
 public class    Q111 {
     /*
     Time Complexity: O(n)   Space Complexity: O(w)

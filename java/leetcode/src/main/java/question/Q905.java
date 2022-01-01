@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Sorting;
-import annotation.TwoPointers;
-
-@Array
-@TwoPointers
-@Sorting
 public class Q905 {
     /*
     Time Complexity: O(n)  Space Complexity: O(1)

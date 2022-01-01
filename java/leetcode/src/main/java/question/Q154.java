@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.BinarySearch;
-import company.Facebook;
-
-@Array
-@BinarySearch
-@Facebook
 public class Q154 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(1)

@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-
-@Array
-@HashTable
 public class Q961 {
     /*
     Time Complexity: O(n)  Space Complexity: O(1)

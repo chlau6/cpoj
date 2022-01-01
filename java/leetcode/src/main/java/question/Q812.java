@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Geometry;
-import annotation.Maths;
-
-@Array
-@Maths
-@Geometry
 public class Q812 {
     /*
     Time Complexity: O(n^3)   Space Complexity: O(1)

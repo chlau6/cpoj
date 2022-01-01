@@ -1,14 +1,7 @@
 package question;
 
-import annotation.Design;
-import annotation.Queues;
-import annotation.Stacks;
-
 import java.util.Stack;
 
-@Stacks
-@Design
-@Queues
 public class Q232 {
     /*
     push:   Time Complexity: O(1)   Space Complexity: O(1)

@@ -1,19 +1,9 @@
 package question;
 
-import annotation.BinaryTree;
-import annotation.DepthFirstSearch;
-import annotation.Stacks;
-import annotation.Strings;
-import company.Facebook;
 import datastructure.TreeNode;
 
 import java.util.Stack;
 
-@Stacks
-@DepthFirstSearch
-@Strings
-@BinaryTree
-@Facebook
 public class Q536 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

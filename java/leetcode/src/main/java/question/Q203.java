@@ -1,13 +1,7 @@
 package question;
 
-import annotation.LinkedLists;
-import annotation.Recursion;
-import company.Facebook;
 import datastructure.ListNode;
 
-@LinkedLists
-@Recursion
-@Facebook
 public class Q203 {
     /*
     Recursive

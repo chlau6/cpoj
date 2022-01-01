@@ -1,15 +1,8 @@
 package question;
 
-import annotation.*;
-
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-@Array
-@BinarySearch
-@Sorting
-@Heap
-@Matrix
 public class Q1337 {
     /*
     Time Complexity: O(m log mn)   Space Complexity: O(k)

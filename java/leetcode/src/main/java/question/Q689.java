@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.DynamicProgramming;
-import company.Facebook;
-
-@Array
-@DynamicProgramming
-@Facebook
 public class Q689 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

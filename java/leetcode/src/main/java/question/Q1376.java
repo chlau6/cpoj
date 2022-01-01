@@ -1,19 +1,10 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Tree;
-import company.Facebook;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@Tree
-@DepthFirstSearch
-@BreadthFirstSearch
-@Facebook
 public class Q1376 {
     public static void main(String[] args) {
         System.out.println(new Q1376().numOfMinutes(7, 6, new int[]{1, 2, 3, 4, 5, 6, -1}, new int[]{0, 6, 5, 4, 3, 2, 1}));

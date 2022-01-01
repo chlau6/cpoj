@@ -1,15 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Heap;
-import annotation.Sorting;
-
 import java.util.Map;
 import java.util.TreeMap;
 
-@Array
-@Sorting
-@Heap
 public class Q506 {
     /*
     Time Complexity: O(n log n)   Space Complexity: O(n)

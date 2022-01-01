@@ -1,9 +1,5 @@
 package question;
 
-import annotation.*;
-
-@TwoPointers
-@Strings
 public class Q1332 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,12 +1,5 @@
 package question;
 
-import annotation.DynamicProgramming;
-import annotation.Recursion;
-import annotation.Strings;
-
-@Strings
-@DynamicProgramming
-@Recursion
 public class Q10 {
     /*
     Time Complexity: O(mn)  Space Complexity: O(mn)

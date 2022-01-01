@@ -1,16 +1,10 @@
 package question;
 
-import annotation.BinaryTree;
-import annotation.DepthFirstSearch;
-import annotation.Tree;
 import datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Tree
-@DepthFirstSearch
-@BinaryTree
 public class Q872 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(2^h1 + 2^h2)

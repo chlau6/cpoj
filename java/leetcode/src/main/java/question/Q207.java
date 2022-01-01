@@ -1,21 +1,10 @@
 package question;
 
-import annotation.BreadthFirstSearch;
-import annotation.DepthFirstSearch;
-import annotation.Graph;
-import annotation.TopologicalSort;
-import company.Facebook;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@DepthFirstSearch
-@BreadthFirstSearch
-@Graph
-@TopologicalSort
-@Facebook
 public class Q207 {
     /*
      Kahn's Algorithm

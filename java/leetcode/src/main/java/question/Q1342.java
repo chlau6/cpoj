@@ -1,9 +1,5 @@
 package question;
 
-import annotation.*;
-
-@Maths
-@BitManipulation
 public class Q1342 {
     /*
     Time Complexity: O(log n)   Space Complexity: O(1)

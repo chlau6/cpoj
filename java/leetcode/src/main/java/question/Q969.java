@@ -1,19 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.Greedy;
-import annotation.Sorting;
-import annotation.TwoPointers;
-import company.Facebook;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@TwoPointers
-@Greedy
-@Sorting
-@Facebook
 public class Q969 {
     public static void main(String[] args) {
         System.out.println(new Q969().pancakeSort(new int[]{4, 3, 2, 1}));

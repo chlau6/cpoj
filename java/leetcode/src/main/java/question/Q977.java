@@ -1,14 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Sorting;
-import annotation.TwoPointers;
-import company.Facebook;
-
-@Array
-@TwoPointers
-@Sorting
-@Facebook
 public class Q977 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

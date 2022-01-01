@@ -1,17 +1,9 @@
 package question;
 
-import annotation.*;
-import company.Facebook;
 import datastructure.TreeNode;
 
 import java.util.*;
 
-@HashTable
-@Tree
-@DepthFirstSearch
-@BreadthFirstSearch
-@BinaryTree
-@Facebook
 public class Q987 {
     /*
     DFS

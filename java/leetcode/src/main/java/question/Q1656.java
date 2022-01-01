@@ -1,17 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.DataStream;
-import annotation.Design;
-import annotation.HashTable;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Array
-@HashTable
-@Design
-@DataStream
 public class Q1656 {
     /*
     constructor:    Time Complexity: O(1)   Space Complexity: O(1)

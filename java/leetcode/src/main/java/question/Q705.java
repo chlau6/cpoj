@@ -1,12 +1,5 @@
 package question;
 
-import annotation.*;
-
-@Array
-@HashTable
-@LinkedLists
-@Design
-@HashFunction
 public class Q705 {
     /*
     add:        Time Complexity: O(1)   Space Complexity: O(1)

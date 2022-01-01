@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Backtracking;
-import annotation.Matrix;
-
-@Array
-@Backtracking
-@Matrix
 public class Q37 {
     /*
     Time Complexity: O(9^n)   Space Complexity: O(n)

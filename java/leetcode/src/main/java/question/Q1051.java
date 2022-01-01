@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.CountingSort;
-import annotation.Sorting;
-
-@Array
-@Sorting
-@CountingSort
 public class Q1051 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

@@ -1,10 +1,5 @@
 package question;
 
-import annotation.Stacks;
-import annotation.Strings;
-
-@Strings
-@Stacks
 public class Q1614 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

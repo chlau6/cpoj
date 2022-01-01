@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Design;
-import annotation.PrefixSum;
-
-@Array
-@Design
-@PrefixSum
 public class Q303 {
     /*
     constructor:    Time Complexity: O(n)   Space Complexity: O(n)

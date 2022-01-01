@@ -1,12 +1,5 @@
 package question;
 
-import annotation.*;
-
-@Array
-@Maths
-@Backtracking
-@BitManipulation
-@Combinatorics
 public class Q1863 {
     /*
     Time Complexity: O(n)   Space Complexity: O(1)

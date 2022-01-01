@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.Strings;
-import annotation.TwoPointers;
-
-@Array
-@TwoPointers
-@Strings
 public class Q824 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

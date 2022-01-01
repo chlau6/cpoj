@@ -1,8 +1,5 @@
 package question;
 
-import annotation.Maths;
-
-@Maths
 public class Q507 {
     /*
     Time Complexity: O(sqrt(n))   Space Complexity: O(1)

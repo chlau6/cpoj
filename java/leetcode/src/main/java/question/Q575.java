@@ -1,13 +1,8 @@
 package question;
 
-import annotation.Array;
-import annotation.HashTable;
-
 import java.util.HashSet;
 import java.util.Set;
 
-@Array
-@HashTable
 public class Q575 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

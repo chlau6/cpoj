@@ -1,10 +1,5 @@
 package question;
 
-import annotation.BitManipulation;
-import annotation.DivideAndConquer;
-
-@DivideAndConquer
-@BitManipulation
 public class Q190 {
     /*
     Time Complexity: O(1)   Space Complexity: O(1)

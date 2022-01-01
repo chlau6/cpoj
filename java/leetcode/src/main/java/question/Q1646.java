@@ -1,12 +1,5 @@
 package question;
 
-import annotation.Array;
-import annotation.DynamicProgramming;
-import annotation.Simulation;
-
-@Array
-@DynamicProgramming
-@Simulation
 public class Q1646 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

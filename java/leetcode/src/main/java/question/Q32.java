@@ -1,14 +1,7 @@
 package question;
 
-import annotation.DynamicProgramming;
-import annotation.Stacks;
-import annotation.Strings;
-
 import java.util.Stack;
 
-@Strings
-@DynamicProgramming
-@Stacks
 public class Q32 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)

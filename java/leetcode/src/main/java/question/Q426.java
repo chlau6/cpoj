@@ -1,15 +1,7 @@
 package question;
 
-import annotation.BinarySearchTree;
-import annotation.BinaryTree;
-import annotation.DivideAndConquer;
-import annotation.LinkedLists;
 import datastructure.TreeNode;
 
-@BinarySearchTree
-@LinkedLists
-@BinaryTree
-@DivideAndConquer
 public class Q426 {
     TreeNode prev = null;
     TreeNode head = null;

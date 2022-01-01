@@ -1,15 +1,7 @@
 package question;
 
-import annotation.BinaryTree;
-import annotation.DepthFirstSearch;
-import annotation.Strings;
-import annotation.Tree;
 import datastructure.TreeNode;
 
-@Strings
-@Tree
-@DepthFirstSearch
-@BinaryTree
 public class Q606 {
     /*
     Time Complexity: O(n^2)   Space Complexity: O(n^2)

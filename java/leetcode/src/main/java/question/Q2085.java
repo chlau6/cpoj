@@ -1,14 +1,9 @@
 
 package question;
 
-import annotation.HashTable;
-import annotation.Strings;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@HashTable
-@Strings
 public class Q2085 {
     /*
     Time Complexity: O(m + n)   Space Complexity: O(n)
