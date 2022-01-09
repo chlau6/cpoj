@@ -5,26 +5,32 @@ import java.util.List;
 
 public class Q46 {
     /*
-    Time Complexity: O(n!)   Space Complexity: O(n!)
+    Time Complexity: O(n * n!)   Space Complexity: O(n * n!)
      */
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> ans = new ArrayList<>();
-        boolean[] visited = new boolean[nums.length];
+        List<List<Integer>> result = new ArrayList<>();
 
-        helper(ans, new ArrayList<>(), nums, visited);
-        return ans;
+        recursion(result, new ArrayList<>(), nums, new boolean[nums.length]);
+
+        return result;
     }
 
-    private void helper(List<List<Integer>> ans, ArrayList<Integer> list, int[] nums, boolean[] isUsed) {
+    public void recursion(List<List<Integer>> result, List<Integer> list, int[] nums, boolean[] isUsed) {
         if (list.size() == nums.length) {
-            ans.add(new ArrayList<>(list));
+            result.add(new ArrayList<>(list));
+            return;
         }
 
         for (int i = 0; i < nums.length; i++) {
-            if (isUsed[i]) continue;
+            if (isUsed[i]) {
+                continue;
+            }
+
             list.add(nums[i]);
             isUsed[i] = true;
-            helper(ans, list, nums, isUsed);
+
+            recursion(result, list, nums, isUsed);
+
             list.remove(list.size() - 1);
             isUsed[i] = false;
         }

@@ -7,53 +7,29 @@ import java.util.List;
 
 public class Q56 {
     /*
-    Time Complexity: O(n)   Space Complexity: O(n)
+    Time Complexity: O(n log n)   Space Complexity: O(n)
      */
     public int[][] merge(int[][] intervals) {
-        Arrays.sort(intervals, Comparator.comparingInt(i -> i[0]));
+        Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
 
-        List<int[]> list = new ArrayList<>();
+        List<int[]> result = new ArrayList<>();
 
-        list.add(intervals[0]);
+        int start = intervals[0][0];
+        int end = intervals[0][1];
 
-        int[] lastInterval = intervals[0];
         for (int[] interval : intervals) {
-            if (interval[0] <= lastInterval[1]) {
-                lastInterval[1] = Math.max(interval[1], lastInterval[1]);
+            if (interval[0] <= end) {
+                end = Math.max(end, interval[1]);
             } else {
-                lastInterval = interval;
-                list.add(interval);
+                result.add(new int[]{start, end});
+                start = interval[0];
+                end = interval[1];
             }
         }
 
-        return list.toArray(new int[][]{});
-    }
+        result.add(new int[]{start, end});
 
-    /*
-    Sorting
-    Time Complexity: O(n log n) Space Complexity: O(n)
-     */
-    public int[][] merge2(int[][] intervals) {
-        int[] start = new int[intervals.length];
-        int[] end = new int[intervals.length];
-
-        for (int i = 0; i < intervals.length; i++) {
-            start[i] = intervals[i][0];
-            end[i] = intervals[i][1];
-        }
-
-        Arrays.sort(start);
-        Arrays.sort(end);
-
-        List<int[]> list = new ArrayList<>();
-        for (int i = 0, j = 0; i < intervals.length; i++) {
-            if (i == intervals.length - 1 || start[i + 1] > end[i]) {
-                list.add(new int[]{start[j], end[i]});
-            }
-            j = i + 1;
-        }
-
-        return list.toArray(new int[][]{});
+        return result.toArray(new int[result.size()][]);
     }
 }
 

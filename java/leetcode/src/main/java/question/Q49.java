@@ -1,12 +1,11 @@
+package question;
+
 import java.util.*;
 
-class Playground {
-    public static void main(String[] args) {
-        Integer a = 1;
-
-        System.out.println(null == null);
-    }
-
+public class Q49 {
+    /*
+    Time Complexity: O(n * m log m)   Space Complexity: O(mn)
+     */
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 
@@ -22,3 +21,7 @@ class Playground {
         return new ArrayList<>(map.values());
     }
 }
+
+/*
+49. Group Anagrams
+ */

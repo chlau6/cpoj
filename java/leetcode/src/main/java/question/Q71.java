@@ -7,25 +7,24 @@ public class Q71 {
     Time Complexity: O(n)   Space Complexity: O(n)
      */
     public String simplifyPath(String path) {
-        Stack<String> directories = new Stack<>();
+        Stack<String> stack = new Stack<>();
 
-        String[] splits = path.split("/");
-        for (String split : splits) {
-            if ("..".equals(split)) {
-                if (!directories.empty()) {
-                    directories.pop();
+        for (String s : path.split("/")) {
+            if (s.equals("..")) {
+                if (!stack.isEmpty()) {
+                    stack.pop();
                 }
-            } else if (!".".equals(split) && !"".equals(split)) {
-                directories.push(split);
+            } else if (!s.isEmpty() && !s.equals(".")) {
+                stack.push(s);
             }
         }
 
-        var builder = new StringBuilder();
-        for (String dir : directories) {
-            builder.append("/").append(dir);
+        StringBuilder result = new StringBuilder();
+        for (String s : stack) {
+            result.append('/').append(s);
         }
 
-        return directories.empty() ? "/" : builder.toString();
+        return result.length() == 0 ? "/" : result.toString();
     }
 }
 

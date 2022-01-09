@@ -7,27 +7,29 @@ public class Q61 {
     Time Complexity: O(n)   Space Complexity: O(1)
      */
     public ListNode rotateRight(ListNode head, int k) {
-        if (head == null || head.next == null || k == 0) return head;
+        if (head == null) return null;
 
-        int len = 1;
-        ListNode temp = head;
+        int count = 1;
 
-        while (temp.next != null) {
-            len++;
-            temp = temp.next;
+        ListNode pointer = head;
+
+        while (pointer.next != null) {
+            pointer = pointer.next;
+            count++;
         }
 
-        temp.next = head;
-        int rotate = len - (k % len);
+        pointer.next = head;
 
-        for (int i = 0; i < rotate; i++) {
-            temp = temp.next;
+        int loop = count - (k % count);
+
+        for (int i = 0; i < loop; i++) {
+            pointer = pointer.next;
         }
 
-        ListNode ans = temp.next;
-        temp.next = null;
+        head = pointer.next;
+        pointer.next = null;
 
-        return ans;
+        return head;
     }
 }
 

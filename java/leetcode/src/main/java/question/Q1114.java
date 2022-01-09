@@ -1,7 +1,5 @@
 package question;
 
-import annotation.Concurrency;
-
 import java.util.concurrent.Semaphore;
 
 public class Q1114 {
