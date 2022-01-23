@@ -1,26 +1,56 @@
 package question;
 
+import java.util.Stack;
+
 public class Q42 {
     /*
-    Time Complexity: O(n)   Space Complexity: O(n)
+    Two Pointer
+    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public int trap(int[] height) {
         int i = 0;
         int j = height.length - 1;
-        int leftMax = 0;
-        int rightMax = 0;
         int result = 0;
 
         while (i <= j) {
-            leftMax = Math.max(leftMax, height[i]);
-            rightMax = Math.max(rightMax, height[j]);
+            int minHeight = Math.min(height[i], height[j]);
 
-            if (leftMax < rightMax) {
-                result += (leftMax - height[i]);
+            if (minHeight == height[i]) {
                 i++;
+                while (i < j && height[i] < minHeight) {
+                    result += minHeight - height[i++];
+                }
             } else {
-                result += (rightMax - height[j]);
                 j--;
+                while (i < j && height[j] < minHeight) {
+                    result += minHeight - height[j--];
+                }
+            }
+        }
+
+        return result;
+    }
+
+    /*
+    Monotonic Stack
+    Time Complexity: O(n)   Space Complexity: O(n)
+     */
+    public int trap2(int[] height) {
+        int i = 0;
+        int j = height.length - 1;
+        int result = 0;
+
+        Stack<Integer> stack = new Stack<>();
+
+        while (i <= j) {
+            if (stack.isEmpty() || height[stack.peek()] > height[i]) {
+                stack.push(i++);
+            } else {
+                int prev = stack.pop();
+
+                if (stack.isEmpty()) continue;
+
+                result += (Math.min(height[i], height[stack.peek()]) - height[prev]) * (i - stack.peek() - 1);
             }
         }
 

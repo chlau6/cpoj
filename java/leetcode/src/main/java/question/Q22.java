@@ -1,32 +1,36 @@
 package question;
 
-import datastructure.ListNode;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Q22 {
     /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
+    Time Complexity: O(n * catalan(n))   Space Complexity: O(n * catalan(n))
      */
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode dummy = new ListNode();
-        ListNode temp = dummy;
+    public List<String> generateParenthesis(int n) {
+        List<String> result = new ArrayList<>();
 
-        while (l1 != null && l2 != null) {
-            if (l1.val <= l2.val) {
-                temp.next = l1;
-                l1 = l1.next;
-            } else {
-                temp.next = l2;
-                l2 = l2.next;
-            }
-            temp = temp.next;
+        recursion(result, "", n, 0, 0);
+
+        return result;
+    }
+
+    public void recursion(List<String> result, String curr, int n, int left, int right) {
+        if (curr.length() == 2 * n) {
+            result.add(curr);
+            return;
         }
 
-        temp.next = l1 != null ? l1 : l2;
+        if (left < n) {
+            recursion(result, curr + "(", n, left + 1, right);
+        }
 
-        return dummy.next;
+        if (right < left) {
+            recursion(result, curr + ")", n, left, right + 1);
+        }
     }
 }
 
 /*
-21. Merge Two Sorted Lists
+22. Generate Parentheses
  */

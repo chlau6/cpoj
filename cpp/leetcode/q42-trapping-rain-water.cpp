@@ -4,21 +4,27 @@ using namespace std;
 
 class Solution {
 public:
-    int firstMissingPositive(vector<int>& nums) {
-        int n = nums.size();
+    int trap(vector<int>& height) {
+        int i = 0;
+        int j = height.size() - 1;
+        int result = 0;
 
-        for (int i = 0; i < n; i++) {
-            while (nums[i] > 0 && nums[i] <= n && nums[i] != nums[nums[i] - 1]) {
-                swap(nums[i], nums[nums[i] - 1]);
+        while (i <= j) {
+            int minHeight = min(height[i], height[j]);
+
+            if (minHeight == height[i]) {
+                i++;
+                while (i < j && height[i] < minHeight) {
+                    result += minHeight - height[i++];
+                }
+            } else {
+                j--;
+                while (i < j && height[j] < minHeight) {
+                    result += minHeight - height[j--];
+                }
             }
         }
 
-        for (int i = 0; i < n; i++) {
-            if (nums[i] != i + 1) {
-                return i + 1;
-            }
-        }
-
-        return n + 1;
+        return result;
     }
 };

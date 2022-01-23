@@ -2,20 +2,18 @@ package question;
 
 import datastructure.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
-public class Q102 {
+public class Q103 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)
      */
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         if (root == null) return new ArrayList<>();
 
         List<List<Integer>> result = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
+        boolean isReverse = false;
 
         queue.add(root);
 
@@ -38,7 +36,10 @@ public class Q102 {
                 }
             }
 
+            if (isReverse) Collections.reverse(level);
+
             result.add(level);
+            isReverse = !isReverse;
         }
 
         return result;
@@ -46,5 +47,5 @@ public class Q102 {
 }
 
 /*
-102. Binary Tree Level Order Traversal
+103. Binary Tree Zigzag Level Order Traversal
  */

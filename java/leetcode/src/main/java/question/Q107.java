@@ -2,16 +2,13 @@ package question;
 
 import datastructure.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
-public class Q102 {
+public class Q107 {
     /*
     Time Complexity: O(n)   Space Complexity: O(n)
      */
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         if (root == null) return new ArrayList<>();
 
         List<List<Integer>> result = new ArrayList<>();
@@ -21,7 +18,6 @@ public class Q102 {
 
         while (!queue.isEmpty()) {
             List<Integer> level = new ArrayList<>();
-
             int n = queue.size();
 
             for (int i = 0; i < n; i++) {
@@ -41,10 +37,12 @@ public class Q102 {
             result.add(level);
         }
 
+        Collections.reverse(result);
+
         return result;
     }
 }
 
 /*
-102. Binary Tree Level Order Traversal
+107. Binary Tree Level Order Traversal II
  */
