@@ -1,9 +1,6 @@
 package question;
 
 public class Q26 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int removeDuplicates(int[] nums) {
         int i = 0;
         for (int num : nums) {

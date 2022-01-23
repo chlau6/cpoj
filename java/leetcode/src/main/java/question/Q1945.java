@@ -1,9 +1,6 @@
 package question;
 
 public class Q1945 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int getLucky(String s, int k) {
         int result = 0;
         int temp = 0;

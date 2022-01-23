@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1356 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int[] sortByBits(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = countBit(arr[i]) * 10001 + arr[i];

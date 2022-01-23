@@ -1,9 +1,6 @@
 package question;
 
 public class Q1252 {
-    /*
-    Time Complexity: O(mn + k)   Space Complexity: O(m + n)
-     */
     public int oddCells(int m, int n, int[][] indices) {
         boolean[] rows = new boolean[m];
         boolean[] cols = new boolean[n];

@@ -7,7 +7,6 @@ import java.util.*;
 public class Q314 {
     /*
     BFS
-    Time Complexity: O(n log n) Space Complexity: O(n)
     */
     public List<List<Integer>> verticalOrder(TreeNode root) {
         if (root == null) return new ArrayList<>();

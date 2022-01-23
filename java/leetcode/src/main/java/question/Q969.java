@@ -8,9 +8,6 @@ public class Q969 {
         System.out.println(new Q969().pancakeSort(new int[]{4, 3, 2, 1}));
     }
 
-    /*
-    Time Complexity: O(n^2)  Space Complexity: O(n)
-     */
     public List<Integer> pancakeSort(int[] arr) {
         List<Integer> ans = new ArrayList<>();
 

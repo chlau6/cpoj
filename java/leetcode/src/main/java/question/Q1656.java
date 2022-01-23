@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1656 {
-    /*
-    constructor:    Time Complexity: O(1)   Space Complexity: O(1)
-    insert:         Time Complexity: O(n)   Space Complexity: O(n)
-     */
     class OrderedStream {
         int pointer = 0;
         String[] array;

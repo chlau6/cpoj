@@ -1,9 +1,6 @@
 package question;
 
 public class Q1837 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int sumBase(int n, int k) {
         int result = 0;
 

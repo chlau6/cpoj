@@ -1,9 +1,6 @@
 package question;
 
 public class Q430 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public Node flatten(Node head) {
         Node curr = head;
 

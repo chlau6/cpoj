@@ -3,9 +3,6 @@ package question;
 import java.util.Iterator;
 
 public class Q284 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(1)
-     */
     class PeekingIterator implements Iterator<Integer> {
         public Integer peek = null;
         public Iterator<Integer> it;

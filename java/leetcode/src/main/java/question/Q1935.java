@@ -1,9 +1,6 @@
 package question;
 
 public class Q1935 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
-     */
     public int canBeTypedWords(String text, String brokenLetters) {
         boolean[] broken = new boolean[26];
         int n1 = brokenLetters.length();

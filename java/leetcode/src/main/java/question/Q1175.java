@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1175 {
-    /*
-    Time Complexity: O(n log log n)   Space Complexity: O(n)
-     */
     public int numPrimeArrangements(int n) {
         boolean[] primes = new boolean[n + 1];
         Arrays.fill(primes, 2, n + 1, true);

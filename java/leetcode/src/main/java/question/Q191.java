@@ -1,9 +1,6 @@
 package question;
 
 public class Q191 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(1)
-     */
     // you need to treat n as an unsigned value
     public int hammingWeight(int n) {
         int count = 0;

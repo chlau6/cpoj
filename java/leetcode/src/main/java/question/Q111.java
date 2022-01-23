@@ -5,10 +5,7 @@ import datastructure.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class    Q111 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(w)
-     */
+public class Q111 {
     public int minDepth(TreeNode root) {
         if (root == null) return 0;
 
@@ -38,9 +35,6 @@ public class    Q111 {
         return depth;
     }
 
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int minDepth2(TreeNode root) {
         if (root == null) return 0;
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q80 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int removeDuplicates(int[] nums) {
         int i = 0;
 

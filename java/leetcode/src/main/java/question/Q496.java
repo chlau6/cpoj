@@ -5,9 +5,6 @@ import java.util.Map;
 import java.util.Stack;
 
 public class Q496 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(n)
-     */
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         Stack<Integer> stack = new Stack<>();;
         Map<Integer, Integer> map = new HashMap<>();

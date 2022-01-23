@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q160 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode a = headA;
         ListNode b = headB;

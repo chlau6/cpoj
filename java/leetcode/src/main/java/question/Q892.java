@@ -1,9 +1,6 @@
 package question;
 
 public class Q892 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public int surfaceArea(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;

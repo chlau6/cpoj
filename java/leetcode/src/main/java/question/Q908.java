@@ -1,9 +1,6 @@
 package question;
 
 public class Q908 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int smallestRangeI(int[] nums, int k) {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;

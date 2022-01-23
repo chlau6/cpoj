@@ -1,9 +1,6 @@
 package question;
 
 public class Q168 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public String convertToTitle(int columnNumber) {
         StringBuilder builder = new StringBuilder();
 

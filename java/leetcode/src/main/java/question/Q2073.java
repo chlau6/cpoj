@@ -2,9 +2,6 @@
 package question;
 
 public class Q2073 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int timeRequiredToBuy(int[] tickets, int k) {
         int result = 0;
         int n = tickets.length;

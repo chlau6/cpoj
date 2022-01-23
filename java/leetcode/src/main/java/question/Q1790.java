@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1790 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean areAlmostEqual(String s1, String s2) {
         List<Integer> index = new ArrayList<>();
         int n = s1.length();

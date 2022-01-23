@@ -1,9 +1,6 @@
 package question;
 
 public class Q1299 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int[] replaceElements(int[] arr) {
         int rightMax = -1;
 

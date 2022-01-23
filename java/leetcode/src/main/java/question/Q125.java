@@ -1,9 +1,6 @@
 package question;
 
 public class Q125 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean isPalindrome(String s) {
         int i = 0;
         int j = s.length() - 1;

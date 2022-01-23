@@ -3,9 +3,6 @@ package question;
 import java.util.Map;
 
 public class Q1507 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public String reformatDate(String date) {
         Map<String, String> month = Map.ofEntries(
                 Map.entry("Jan", "01"),

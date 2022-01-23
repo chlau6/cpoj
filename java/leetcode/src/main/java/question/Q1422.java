@@ -1,9 +1,6 @@
 package question;
 
 public class Q1422 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int maxScore(String s) {
         int zero = 0;
         int one = 0;

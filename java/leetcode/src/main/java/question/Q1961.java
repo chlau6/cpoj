@@ -1,9 +1,6 @@
 package question;
 
 public class Q1961 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean isPrefixString(String s, String[] words) {
         int n = s.length();
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q91 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int numDecodings(String s) {
         if (s.charAt(0) == '0') return 0;
 

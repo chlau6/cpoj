@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q1290 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int getDecimalValue(ListNode head) {
         int num = 0;
 

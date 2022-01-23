@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q404 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(h)
-     */
     public int sumOfLeftLeaves(TreeNode root) {
         if (root == null) return 0;
 

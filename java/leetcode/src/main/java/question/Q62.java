@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q62 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(n)
-     */
     public int uniquePaths(int m, int n) {
         int[] dp = new int[n];
         Arrays.fill(dp, 1);

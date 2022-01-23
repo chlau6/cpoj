@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q39 {
-    /*
-    Time Complexity: O(l * n^k) Space Complexity: O(k)
-     */
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         Arrays.sort(candidates);
 

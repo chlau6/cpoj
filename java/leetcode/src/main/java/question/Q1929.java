@@ -1,9 +1,6 @@
 package question;
 
 public class Q1929 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] getConcatenation(int[] nums) {
         int n = nums.length;
         int[] result = new int[2 * n];

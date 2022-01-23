@@ -1,9 +1,6 @@
 package question;
 
 public class Q34 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int[] searchRange(int[] nums, int target) {
         int[] result = new int[]{-1, -1};
         int n = nums.length - 1;
@@ -48,7 +45,6 @@ public class Q34 {
 
     /*
     Variation: Given a sorted array and target number, find how many times the target number appears in the array.
-    Time Complexity: O(log n)   Space Complexity: O(1)
      */
 
     public int searchRepeatedTarget(int[] nums, int target) {

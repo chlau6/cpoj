@@ -5,7 +5,6 @@ import java.util.Stack;
 public class Q42 {
     /*
     Two Pointer
-    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public int trap(int[] height) {
         int i = 0;
@@ -33,7 +32,6 @@ public class Q42 {
 
     /*
     Monotonic Stack
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public int trap2(int[] height) {
         int i = 0;

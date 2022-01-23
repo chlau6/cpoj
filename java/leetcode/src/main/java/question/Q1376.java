@@ -12,7 +12,6 @@ public class Q1376 {
 
     /*
     DFS
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
         List<List<Integer>> subordinates = new ArrayList<>();
@@ -44,7 +43,6 @@ public class Q1376 {
 
     /*
     BFS
-    Time Complexity: O(n)   Space Complexity: O(w)
      */
     public int numOfMinutes2(int n, int headID, int[] manager, int[] informTime) {
         List<List<Integer>> subordinates = new ArrayList<>();

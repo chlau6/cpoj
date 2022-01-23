@@ -1,9 +1,6 @@
 package question;
 
 public class Q1588 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int sumOddLengthSubarrays(int[] arr) {
         int sum = 0;
         int length = arr.length;

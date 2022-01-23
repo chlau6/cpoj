@@ -1,9 +1,6 @@
 package question;
 
 public class Q747 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int dominantIndex(int[] nums) {
         int max = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;

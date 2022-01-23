@@ -5,8 +5,6 @@ import java.util.*;
 public class Q973 {
     /*
     QuickSelect
-    Time Complexity: O(n)   Space Complexity: O(1)
-    Worst O(n^2)
      */
     public int[][] kClosest(int[][] points, int k) {
         int left = 0;
@@ -53,7 +51,6 @@ public class Q973 {
 
     /*
     Heap
-    Time Complexity: O(n log k) Space Complexity: O(k)
      */
     public int[][] kClosest2(int[][] points, int k) {
         Queue<int[]> queue = new PriorityQueue<>(Collections.reverseOrder(Comparator.comparingInt(a -> a[0] * a[0] + a[1] * a[1])));
@@ -76,7 +73,6 @@ public class Q973 {
 
     /*
     Array
-    Time Complexity: O(n log n) Space Complexity: O(n)
      */
     public int[][] kClosest3(int[][] points, int k) {
         Arrays.sort(points, Comparator.comparing(a -> a[0] * a[0] + a[1] * a[1]));

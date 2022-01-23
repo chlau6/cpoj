@@ -1,9 +1,6 @@
 package question;
 
 public class Q2022 {
-    /*
-    Time Complexity: O(k)   Space Complexity: O(mn)
-     */
     public int[][] construct2DArray(int[] original, int m, int n) {
         int size = original.length;
 

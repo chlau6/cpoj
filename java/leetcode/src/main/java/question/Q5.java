@@ -1,9 +1,6 @@
 package question;
 
 public class Q5 {
-    /*
-    Time Complexity: O(n^2)  Space Complexity: O(n^2)
-     */
     public String longestPalindrome(String s) {
         int n = s.length();
         boolean[][] dp = new boolean[n][n];

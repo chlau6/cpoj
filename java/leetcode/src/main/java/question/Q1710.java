@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1710 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int maximumUnits(int[][] boxTypes, int truckSize) {
         int result = 0;
         Arrays.sort(boxTypes, (a, b) -> b[1] - a[1]);

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1822 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int arraySign(int[] nums) {
         int count = 0;
 

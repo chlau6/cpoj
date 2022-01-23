@@ -1,9 +1,6 @@
 package question;
 
 public class Q1784 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean checkOnesSegment(String s) {
         return !s.contains("01");
     }

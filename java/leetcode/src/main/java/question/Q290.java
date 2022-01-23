@@ -6,9 +6,6 @@ import java.util.Map;
 import java.util.Set;
 
 public class Q290 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean wordPattern(String pattern, String s) {
         Map<Character, String> map = new HashMap<>();
         Set<String> set = new HashSet<>();

@@ -7,7 +7,6 @@ import java.util.List;
 public class Q989 {
     /*
     DFS
-    Time Complexity: O(n) Space Complexity: O(n)
      */
     public List<Integer> addToArrayForm(int[] num, int k) {
         List<Integer> result = new ArrayList<>();

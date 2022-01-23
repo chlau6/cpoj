@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q18 {
-    /*
-    Time Complexity: O(n^3) Space Complexity: O(n^2)
-     */
     public List<List<Integer>> fourSum(int[] nums, int target) {
         int n = nums.length;
         Arrays.sort(nums);

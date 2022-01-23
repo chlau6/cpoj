@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q349 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> s1 = new HashSet<>();
         Set<Integer> s2 = new HashSet<>();

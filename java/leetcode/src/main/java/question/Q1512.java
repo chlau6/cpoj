@@ -1,9 +1,6 @@
 package question;
 
 public class Q1512 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int numIdenticalPairs(int[] nums) {
         int[] counts = new int[101];
         int result = 0;

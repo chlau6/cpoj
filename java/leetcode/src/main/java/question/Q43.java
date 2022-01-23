@@ -1,9 +1,6 @@
 package question;
 
 public class Q43 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(m + n)
-     */
     public String multiply(String num1, String num2) {
         int m = num1.length();
         int n = num2.length();

@@ -3,9 +3,6 @@ package question;
 import java.util.*;
 
 public class Q819 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(m + n)
-     */
     public String mostCommonWord(String paragraph, String[] banned) {
         String[] words = paragraph.replaceAll("\\W+", " ").toLowerCase().split("\\s+");
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q158 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public class Solution extends Reader4 {
         private int pointer = 0;
         private int len = 0;

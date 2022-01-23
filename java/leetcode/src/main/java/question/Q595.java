@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q595 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int findLHS(int[] nums) {
         Arrays.sort(nums);
 

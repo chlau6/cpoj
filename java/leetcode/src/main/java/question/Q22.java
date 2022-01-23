@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q22 {
-    /*
-    Time Complexity: O(n * catalan(n))   Space Complexity: O(n * catalan(n))
-     */
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
 

@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q51 {
-    /*
-    Time Complexity: O(n!)   Space Complexity: O(n^2)
-     */
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
         char[][] board = new char[n][n];

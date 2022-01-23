@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q16 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n)
-     */
     public int threeSumClosest(int[] nums, int target) {
         int n = nums.length;
 

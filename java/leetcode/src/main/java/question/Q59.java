@@ -1,9 +1,6 @@
 package question;
 
 public class Q59 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n^2)
-     */
     public int[][] generateMatrix(int n) {
         int[][] result = new int[n][n];
 

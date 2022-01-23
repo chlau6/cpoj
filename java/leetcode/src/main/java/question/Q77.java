@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q77 {
-    /*
-    Time Complexity: O(k * C(n, k))   Space Complexity: O(k * C(n, k))
-     */
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList<>();
 

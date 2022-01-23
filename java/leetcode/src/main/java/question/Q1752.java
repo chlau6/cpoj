@@ -1,9 +1,6 @@
 package question;
 
 public class Q1752 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean check(int[] nums) {
         int count = 0;
         int n = nums.length;

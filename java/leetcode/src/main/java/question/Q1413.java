@@ -1,9 +1,6 @@
 package question;
 
 public class Q1413 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int minStartValue(int[] nums) {
         int min = 0;
         int sum = 0;

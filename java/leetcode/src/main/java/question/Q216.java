@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q216 {
-    /*
-    Time Complexity: O(9^k) Space Complexity: O(k)
-     */
     public List<List<Integer>> combinationSum3(int k, int n) {
         List<List<Integer>> ans = new ArrayList<>();
 

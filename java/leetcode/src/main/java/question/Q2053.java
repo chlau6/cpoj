@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q2053 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String kthDistinct(String[] arr, int k) {
         Map<String, Integer> map = new HashMap<>();
 

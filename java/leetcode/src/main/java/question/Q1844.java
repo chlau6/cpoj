@@ -1,9 +1,6 @@
 package question;
 
 public class Q1844 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String replaceDigits(String s) {
         char[] str = s.toCharArray();
         int n = str.length;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1491 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public double average(int[] salary) {
         int maxSalary = Integer.MIN_VALUE;
         int minSalary = Integer.MAX_VALUE;

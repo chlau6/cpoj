@@ -1,9 +1,6 @@
 package question;
 
 public class Q53 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maxSubArray(int[] nums) {
         int localMax = 0;
         int globalMax = Integer.MIN_VALUE;

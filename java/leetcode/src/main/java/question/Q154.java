@@ -1,10 +1,6 @@
 package question;
 
 public class Q154 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-    Worst O(n)
-     */
     public int findMin(int[] nums) {
         int left = 0;
         int right = nums.length - 1;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q14 {
-    /*
-    Time Complexity: O(m * n)   Space Complexity: O(m)
-     */
     public String longestCommonPrefix(String[] strs) {
         var builder = new StringBuilder();
 

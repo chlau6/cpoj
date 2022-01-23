@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q1570 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     class SparseVector {
         public Map<Integer, Integer> map = new HashMap<>();
 

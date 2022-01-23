@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q1403 {
-    /*
-    Time Complexity: O(n log n)  Space Complexity: O(n)
-     */
     public List<Integer> minSubsequence(int[] nums) {
         List<Integer> result = new ArrayList<>();
         int sum = 0;

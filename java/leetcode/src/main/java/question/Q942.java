@@ -1,9 +1,6 @@
 package question;
 
 public class Q942 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public int[] diStringMatch(String s) {
         int length = s.length();
         int minValue = 0;

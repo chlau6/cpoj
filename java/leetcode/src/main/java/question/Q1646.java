@@ -1,9 +1,6 @@
 package question;
 
 public class Q1646 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int getMaximumGenerated(int n) {
         if (n <= 1) return n;
 

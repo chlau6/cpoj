@@ -1,9 +1,6 @@
 package question;
 
 public class Q1437 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public boolean kLengthApart(int[] nums, int k) {
         int pos = -1;
 

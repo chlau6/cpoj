@@ -3,9 +3,6 @@ package question;
 import java.util.Stack;
 
 public class Q1249 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String minRemoveToMakeValid(String s) {
         Stack<Integer> stack = new Stack<>();
         StringBuilder builder = new StringBuilder(s);

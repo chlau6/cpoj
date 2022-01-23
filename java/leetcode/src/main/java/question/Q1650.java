@@ -1,9 +1,6 @@
 package question;
 
 public class Q1650 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public TreeNode lowestCommonAncestor(TreeNode p, TreeNode q) {
         TreeNode dummyP = p;
         TreeNode dummyQ = q;

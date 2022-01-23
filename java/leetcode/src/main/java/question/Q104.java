@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q104 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int maxDepth(TreeNode root) {
         if (root == null) return 0;
 

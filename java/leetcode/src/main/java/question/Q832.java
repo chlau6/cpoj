@@ -1,9 +1,6 @@
 package question;
 
 public class Q832 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public int[][] flipAndInvertImage(int[][] image) {
         int n = image[0].length;
 

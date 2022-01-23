@@ -1,9 +1,6 @@
 package question;
 
 public class Q1624 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maxLengthBetweenEqualCharacters(String s) {
         int[] pos = new int[26];
         int n = s.length();

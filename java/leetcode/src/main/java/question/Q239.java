@@ -4,9 +4,6 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Q239 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] maxSlidingWindow(int[] nums, int k) {
         int len = nums.length;
         int[] ans = new int[len - k + 1];

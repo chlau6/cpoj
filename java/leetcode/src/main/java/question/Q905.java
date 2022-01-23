@@ -1,9 +1,6 @@
 package question;
 
 public class Q905 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int[] sortArrayByParity(int[] nums) {
         int j = 0;
 

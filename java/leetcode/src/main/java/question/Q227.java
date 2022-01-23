@@ -1,9 +1,6 @@
 package question;
 
 public class Q227 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int calculate(String s) {
         int tempSum = 0;
         int sum = 0;

@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q401 {
-    /*
-    Time Complexity: O(11 * 60 * n)  Space Complexity: O(n)
-     */
     public List<String> readBinaryWatch(int turnedOn) {
         List<String> result = new ArrayList<>();
 

@@ -4,10 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Q1263 {
-    /*
-    Time Complexity: O((mn)^2)    Space Complexity: O(mn)
-     */
-
     char[][] g;
     int m, n;
     int[][] direction = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};

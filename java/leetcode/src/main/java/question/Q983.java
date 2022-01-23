@@ -1,9 +1,6 @@
 package question;
 
 public class Q983 {
-    /*
-    Time Complexity: O(lastDay)   Space Complexity: O(lastDay)
-     */
     public int mincostTickets(int[] days, int[] costs) {
         int lastDay = days[days.length - 1];
 

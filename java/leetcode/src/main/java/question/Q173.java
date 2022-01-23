@@ -5,9 +5,6 @@ import datastructure.TreeNode;
 import java.util.Stack;
 
 public class Q173 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(h)
-     */
     class BSTIterator {
         Stack<TreeNode> stack = new Stack<>();
 

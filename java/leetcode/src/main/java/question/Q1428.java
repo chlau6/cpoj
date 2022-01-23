@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1428 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
-     */
     public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
         List<Integer> dimension = binaryMatrix.dimension();
 

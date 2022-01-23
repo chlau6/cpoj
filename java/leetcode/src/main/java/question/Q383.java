@@ -1,9 +1,6 @@
 package question;
 
 public class Q383 {
-    /*
-    Time Complexity: O(n)    Space Complexity: O(n)
-     */
     public boolean canConstruct(String ransomNote, String magazine) {
         int[] counts = new int[26];
 

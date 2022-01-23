@@ -1,11 +1,6 @@
 package question;
 
 public class Q705 {
-    /*
-    add:        Time Complexity: O(1)   Space Complexity: O(1)
-    remove:     Time Complexity: O(1)   Space Complexity: O(1)
-    contains:   Time Complexity: O(1)   Space Complexity: O(1)
-     */
     class MyHashSet {
         boolean[] hashSet = new boolean[1000001];
 

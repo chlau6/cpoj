@@ -1,9 +1,6 @@
 package question;
 
 public class Q1209 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String removeDuplicates(String s, int k) {
         int len = s.length();
         char[] chars = s.toCharArray();

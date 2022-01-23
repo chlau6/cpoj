@@ -1,9 +1,6 @@
 package question;
 
 public class Q1941 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean areOccurrencesEqual(String s) {
         int[] counts = new int[26];
         int n = s.length();

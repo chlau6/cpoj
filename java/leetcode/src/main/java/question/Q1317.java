@@ -1,9 +1,6 @@
 package question;
 
 public class Q1317 {
-    /*
-    Time Complexity: O(n log m)   Space Complexity: O(1)
-     */
     public int[] getNoZeroIntegers(int n) {
         for (int i = 1; i <= n / 2; i++) {
             if (isNoZero(i) && isNoZero(n - i)) {

@@ -1,9 +1,6 @@
 package question;
 
 public class Q405 {
-    /*
-    Time Complexity: O(1)  Space Complexity: O(log n)
-     */
     public String toHex(int num) {
         var builder = new StringBuilder();
 

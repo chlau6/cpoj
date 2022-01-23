@@ -3,10 +3,6 @@ package question;
 import java.util.*;
 
 public class Q140 {
-    /*
-    Time Complexity: O(2^n) Space Complexity: O(2^n)
-    s = "aaaaaa"   wordDict = ["a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa"]
-     */
     public List<String> wordBreak(String s, List<String> wordDict) {
         Map<String, List<String>> map = new HashMap<>();
         Set<String> set = new HashSet<>(wordDict);

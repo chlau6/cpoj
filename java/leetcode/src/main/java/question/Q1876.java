@@ -1,9 +1,6 @@
 package question;
 
 public class Q1876 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int countGoodSubstrings(String s) {
         char[] str = s.toCharArray();
         int n = str.length;

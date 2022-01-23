@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1560 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public List<Integer> mostVisited(int n, int[] rounds) {
         List<Integer> result = new ArrayList<>();
         int length = rounds.length;

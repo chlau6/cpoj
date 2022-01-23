@@ -7,9 +7,6 @@ public class Q238 {
         System.out.println(Arrays.toString(new Q238().productExceptSelf(new int[]{1, 2, 3, 4})));
     }
 
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] productExceptSelf(int[] nums) {
         int[] ans = new int[nums.length];
 

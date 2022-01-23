@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q17 {
-    /*
-    Time Complexity: O(4^n) Space Complexity: O(n * 4^n)
-     */
     public List<String> letterCombinations(String digits) {
         if (digits.length() == 0) return new ArrayList<>();
 

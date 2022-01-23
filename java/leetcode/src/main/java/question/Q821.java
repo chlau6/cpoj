@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q821 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] shortestToChar(String s, char c) {
         int length = s.length();
         int[] result = new int[s.length()];

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1309 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String freqAlphabets(String s) {
         var builder = new StringBuilder();
 

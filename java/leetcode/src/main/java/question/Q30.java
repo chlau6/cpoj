@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Q30 {
-    /*
-    Time Complexity: O(lmn)   Space Complexity: O(mn)
-     */
     public List<Integer> findSubstring(String s, String[] words) {
         int l = s.length();
         int m = words.length;

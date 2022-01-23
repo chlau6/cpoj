@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1313 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] decompressRLElist(int[] nums) {
         List<Integer> list = new ArrayList<>();
 

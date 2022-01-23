@@ -1,9 +1,6 @@
 package question;
 
 public class Q1576 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String modifyString(String s) {
         char[] chars = s.toCharArray();
         int length = chars.length;

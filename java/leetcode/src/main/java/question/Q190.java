@@ -1,9 +1,6 @@
 package question;
 
 public class Q190 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(1)
-     */
     // you need treat n as an unsigned value
     public int reverseBits(int n) {
         int reverse = 0;

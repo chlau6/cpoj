@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q253 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int minMeetingRooms(int[][] intervals) {
         int len = intervals.length;
         int[] start = new int[len];

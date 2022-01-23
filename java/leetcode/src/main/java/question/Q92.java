@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q92 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public ListNode reverseBetween(ListNode head, int left, int right) {
         ListNode dummy = new ListNode();
         dummy.next = head;

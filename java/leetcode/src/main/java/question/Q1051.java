@@ -1,9 +1,6 @@
 package question;
 
 public class Q1051 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int heightChecker(int[] heights) {
         int[] counts = new int[101];
 

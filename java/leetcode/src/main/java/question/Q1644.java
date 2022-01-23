@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q1644 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     int count = 0;
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

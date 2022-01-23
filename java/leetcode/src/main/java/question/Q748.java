@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q748 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public String shortestCompletingWord(String licensePlate, String[] words) {
         int[] counts = new int[26];
         int totalChar = 0;

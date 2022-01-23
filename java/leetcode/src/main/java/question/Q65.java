@@ -1,9 +1,6 @@
 package question;
 
 public class Q65 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public boolean isNumber(String s) {
         int n = s.length();
 

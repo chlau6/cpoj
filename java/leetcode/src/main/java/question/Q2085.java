@@ -5,9 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q2085 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(n)
-     */
     public int countWords(String[] words1, String[] words2) {
         Map<String, Integer> map = new HashMap<>();
         int result = 0;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1047 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String removeDuplicates(String s) {
         int j = 0;
         int length = s.length();

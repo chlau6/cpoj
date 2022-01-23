@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q872 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(2^h1 + 2^h2)
-     */
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();

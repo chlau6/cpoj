@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q95 {
-    /*
-    Time Complexity: O(n * catalan(n))   Space Complexity: O(n * catalan(n))
-     */
     public List<TreeNode> generateTrees(int n) {
         return recursion(1, n);
     }

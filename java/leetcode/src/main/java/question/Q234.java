@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q234 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) return true;
 
@@ -41,9 +38,6 @@ public class Q234 {
         return true;
     }
 
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean isPalindrome2(ListNode head) {
         List<Integer> list = new ArrayList<>();
 

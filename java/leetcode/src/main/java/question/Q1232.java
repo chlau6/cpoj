@@ -2,9 +2,6 @@
 package question;
 
 public class Q1232 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean checkStraightLine(int[][] coordinates) {
         int x0 = coordinates[0][0];
         int x1 = coordinates[1][0];

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1266 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int minTimeToVisitAllPoints(int[][] points) {
         int result = 0;
 

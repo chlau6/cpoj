@@ -1,9 +1,6 @@
 package question;
 
 public class Q1920 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] buildArray(int[] nums) {
         int n = nums.length;
 

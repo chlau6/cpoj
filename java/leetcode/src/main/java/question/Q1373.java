@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q1373 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(h)
-     */
     private int maxSum = 0;
 
     public int maxSumBST(TreeNode root) {

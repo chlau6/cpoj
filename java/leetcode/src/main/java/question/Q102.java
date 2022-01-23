@@ -8,9 +8,6 @@ import java.util.List;
 import java.util.Queue;
 
 public class Q102 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public List<List<Integer>> levelOrder(TreeNode root) {
         if (root == null) return new ArrayList<>();
 

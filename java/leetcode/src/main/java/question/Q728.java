@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q728 {
-    /*
-    Time Complexity: O(n log m)   Space Complexity: O(n)
-     */
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> result = new ArrayList<>();
 

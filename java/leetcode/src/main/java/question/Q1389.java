@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1389 {
-    /*
-    Time Complexity: O(n^2)  Space Complexity: O(n)
-     */
     public int[] createTargetArray(int[] nums, int[] index) {
         int length = nums.length;
         List<Integer> list = new ArrayList<>();

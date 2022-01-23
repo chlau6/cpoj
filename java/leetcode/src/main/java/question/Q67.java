@@ -1,9 +1,6 @@
 package question;
 
 public class Q67 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String addBinary(String a, String b) {
         var builder = new StringBuilder();
 

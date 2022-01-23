@@ -1,9 +1,6 @@
 package question;
 
 public class Q824 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String toGoatLatin(String sentence) {
         String[] words = sentence.split(" ");
 

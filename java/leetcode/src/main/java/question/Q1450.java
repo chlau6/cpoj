@@ -1,9 +1,6 @@
 package question;
 
 public class Q1450 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
         int result = 0;
 

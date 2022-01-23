@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1763 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n)
-     */
     public String longestNiceSubstring(String s) {
         String result = "";
         char[] str = s.toCharArray();

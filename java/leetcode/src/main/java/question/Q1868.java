@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q1868 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public List<List<Integer>> findRLEArray(int[][] encoded1, int[][] encoded2) {
         List<List<Integer>> ans = new ArrayList<>();
 

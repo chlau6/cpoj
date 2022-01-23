@@ -1,9 +1,6 @@
 package question;
 
 public class Q97 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public boolean isInterleave(String s1, String s2, String s3) {
         int m = s1.length();
         int n = s2.length();

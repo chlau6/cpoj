@@ -1,9 +1,6 @@
 package question;
 
 public class Q1556 {
-    /*
-    Time Complexity: O(log n)  Space Complexity: O(log n)
-     */
     public String thousandSeparator(int n) {
         if (n == 0) return "0";
 

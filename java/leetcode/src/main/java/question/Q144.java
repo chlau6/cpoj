@@ -10,7 +10,6 @@ import java.util.Stack;
 public class Q144 {
     /*
     Recursion
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
@@ -30,7 +29,6 @@ public class Q144 {
 
     /*
     Iteration
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public List<Integer> preorderTraversal2(TreeNode root) {
         List<Integer> list = new ArrayList<>();

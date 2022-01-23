@@ -1,9 +1,6 @@
 package question;
 
 public class Q38 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(m)
-     */
     public String countAndSay(int n) {
         String result = "1";
 

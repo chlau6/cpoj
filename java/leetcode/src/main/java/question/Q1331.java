@@ -5,9 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q1331 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int[] arrayRankTransform(int[] arr) {
         int[] a = Arrays.copyOf(arr, arr.length);
 

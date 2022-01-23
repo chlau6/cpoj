@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q285 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         TreeNode successor = null;
 

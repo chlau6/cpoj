@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q2032 {
-    /*
-    Time Complexity: O(l + m + n)   Space Complexity: O(max(l, m, n))
-     */
     public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
         int[][] counts = new int[3][101];
 

@@ -2,9 +2,6 @@
 package question;
 
 public class Q2068 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
-     */
     public boolean checkAlmostEquivalent(String word1, String word2) {
         int[] c1 = new int[26];
         int[] c2 = new int[26];

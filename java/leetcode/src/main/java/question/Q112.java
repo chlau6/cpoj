@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q112 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if (root == null) return false;
 

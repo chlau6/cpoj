@@ -1,9 +1,6 @@
 package question;
 
 public class Q96 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n)
-     */
     public int numTrees(int n) {
         int[] dp = new int[n + 1];
 

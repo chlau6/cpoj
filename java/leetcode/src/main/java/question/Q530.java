@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q530 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     TreeNode prev = null;
     Integer result = Integer.MAX_VALUE;
 

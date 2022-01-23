@@ -1,9 +1,6 @@
 package question;
 
 public class Q917 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public String reverseOnlyLetters(String s) {
         char[] chars = s.toCharArray();
 

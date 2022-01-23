@@ -1,9 +1,6 @@
 package question;
 
 public class Q44 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public boolean isMatch(String s, String p) {
         int m = s.length();
         int n = p.length();

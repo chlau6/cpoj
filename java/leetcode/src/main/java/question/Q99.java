@@ -7,7 +7,6 @@ import java.util.Stack;
 public class Q99 {
     /*
     Stack
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public void recoverTree(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();

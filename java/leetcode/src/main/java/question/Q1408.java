@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1408 {
-    /*
-    Time Complexity: O(m^2 n^2)  Space Complexity: O(mn)
-     */
     public List<String> stringMatching(String[] words) {
         String combined = String.join(" ", words);
 

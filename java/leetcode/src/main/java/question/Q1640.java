@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q1640 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean canFormArray(int[] arr, int[][] pieces) {
         Map<Integer, int[]> map = new HashMap<>();
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q79 {
-    /*
-    Time Complexity: O(mn * 4^k)   Space Complexity: O(k)
-     */
     public boolean exist(char[][] board, String word) {
         char[] s = word.toCharArray();
         int m = board.length;

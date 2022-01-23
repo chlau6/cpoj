@@ -1,9 +1,6 @@
 package question;
 
 public class Q641 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(n)
-     */
     class MyCircularDeque {
         int[] deque;
         int head;

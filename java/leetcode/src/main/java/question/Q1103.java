@@ -1,9 +1,6 @@
 package question;
 
 public class Q1103 {
-    /*
-    Time Complexity: O(sqrt(m))   Space Complexity: O(n)
-     */
     public int[] distributeCandies(int candies, int numPeople) {
         int[] result = new int[numPeople];
 

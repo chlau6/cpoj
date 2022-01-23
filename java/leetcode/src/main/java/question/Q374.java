@@ -1,9 +1,6 @@
 package question;
 
 public class Q374 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public class Solution extends GuessGame {
         public boolean isPerfectSquare(int num) {
             long left = 0;

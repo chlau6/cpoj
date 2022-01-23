@@ -1,9 +1,6 @@
 package question;
 
 public class Q744 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public char nextGreatestLetter(char[] letters, char target) {
         int length = letters.length;
 

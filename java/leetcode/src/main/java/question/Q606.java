@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q606 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n^2)
-     */
     public String tree2str(TreeNode root) {
         if (root == null) return "";
 

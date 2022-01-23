@@ -1,9 +1,6 @@
 package question;
 
 public class Q242 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) return false;
 

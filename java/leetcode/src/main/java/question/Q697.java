@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q697 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int findShortestSubArray(int[] nums) {
         int result = 0;
         int degree = 0;

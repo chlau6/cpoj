@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q897 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public TreeNode increasingBST(TreeNode root) {
         return inorder(root, null);
     }

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1913 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maxProductDifference(int[] nums) {
         int min1 = Integer.MAX_VALUE;
         int min2 = Integer.MAX_VALUE;

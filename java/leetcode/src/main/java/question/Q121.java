@@ -1,9 +1,6 @@
 package question;
 
 public class Q121 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maxProfit(int[] prices) {
         int minCost = Integer.MAX_VALUE;
         int maxProfit = 0;

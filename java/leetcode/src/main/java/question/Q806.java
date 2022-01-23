@@ -1,9 +1,6 @@
 package question;
 
 public class Q806 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] numberOfLines(int[] widths, String s) {
         int lines = 1;
         int width = 0;

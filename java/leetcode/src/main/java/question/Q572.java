@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q572 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(m)
-     */
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
         if (root == null) return false;
         if (isSame(root, subRoot)) return true;

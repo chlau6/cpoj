@@ -1,9 +1,6 @@
 package question;
 
 public class Q1991 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int findMiddleIndex(int[] nums) {
         int sum = 0;
         int leftSum = 0;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q389 {
-    /*
-    Time Complexity: O(n)    Space Complexity: O(1)
-     */
     public char findTheDifference(String s, String t) {
         int xor = 0;
 

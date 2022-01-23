@@ -10,7 +10,6 @@ import java.util.Queue;
 public class Q199 {
     /*
     DFS
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
@@ -33,7 +32,6 @@ public class Q199 {
 
     /*
     BFS
-    Time Complexity: O(n)   Space Complexity: O(w)
      */
     public List<Integer> rightSideView2(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();

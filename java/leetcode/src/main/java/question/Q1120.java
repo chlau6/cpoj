@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q1120 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(h)
-     */
     double maxAverage = 0.0;
 
     public double maximumAverageSubtree(TreeNode root) {

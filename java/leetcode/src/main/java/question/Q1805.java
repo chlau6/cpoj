@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q1805 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int numDifferentIntegers(String word) {
         Set<String> set = new HashSet<>();
         int i = 0;

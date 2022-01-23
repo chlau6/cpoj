@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q682 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int calPoints(String[] ops) {
         List<Integer> list = new ArrayList<>();
 

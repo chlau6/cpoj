@@ -1,9 +1,6 @@
 package question;
 
 public class Q1572 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int diagonalSum(int[][] mat) {
         int n = mat.length;
         int sum = 0;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1089 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public void duplicateZeros(int[] arr) {
         int zero = 0;
 

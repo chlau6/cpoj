@@ -1,9 +1,6 @@
 package question;
 
 public class Q1027 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n)
-     */
     public int longestArithSeqLength(int[] nums) {
         int[][] dp = new int[nums.length][1001];
         int max = 0;

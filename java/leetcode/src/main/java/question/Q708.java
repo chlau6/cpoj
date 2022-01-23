@@ -1,9 +1,6 @@
 package question;
 
 public class Q708 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public Node insert(Node head, int insertVal) {
         if (head == null) {
             head = new Node(insertVal, null);

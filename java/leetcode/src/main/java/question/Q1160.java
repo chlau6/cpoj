@@ -1,9 +1,6 @@
 package question;
 
 public class Q1160 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public int countCharacters(String[] words, String chars) {
         int[] counts = new int[26];
         int result = 0;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q2027 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int minimumMoves(String s) {
         int i = 0;
         int n = s.length();

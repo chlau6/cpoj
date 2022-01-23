@@ -1,9 +1,6 @@
 package question;
 
 public class Q338 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public int[] countBits(int n) {
         int[] dp = new int[n + 1];
 

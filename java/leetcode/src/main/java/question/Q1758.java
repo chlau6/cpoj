@@ -1,9 +1,6 @@
 package question;
 
 public class Q1758 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int minOperations(String s) {
         int n = s.length();
         int result = 0;

@@ -4,9 +4,6 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Q506 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public String[] findRelativeRanks(int[] score) {
         Map<Integer, Integer> map = new TreeMap<>();
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q50 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public double myPow(double x, int n) {
         double result = 1;
 

@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1030 {
-    /*
-    Time Complexity: O(mn log mn)   Space Complexity: O(mn)
-     */
     public int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
         int[][] result = new int[rows * cols][2];
 

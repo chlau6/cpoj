@@ -9,7 +9,6 @@ import java.util.Stack;
 public class Q98 {
     /*
     Stack
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public boolean isValidBST(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
@@ -36,7 +35,6 @@ public class Q98 {
 
     /*
     Recursion
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public boolean isValidBST2(TreeNode root) {
         if (root == null) return true;
@@ -52,7 +50,6 @@ public class Q98 {
 
     /*
     Recursion + List
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public boolean isValidBST3(TreeNode root) {
         List<Integer> list = new ArrayList<>();

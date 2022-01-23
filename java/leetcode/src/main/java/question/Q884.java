@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Q884 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String[] uncommonFromSentences(String s1, String s2) {
         Map<String, Integer> counts = new HashMap<>();
 

@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Q1636 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int[] frequencySort(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         List<Integer> list = new ArrayList<>();

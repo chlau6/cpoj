@@ -4,9 +4,6 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Q1859 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public String sortSentence(String s) {
         Map<Integer, String> map = new TreeMap<>();
         int n = s.length();

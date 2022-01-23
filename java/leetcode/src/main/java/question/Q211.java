@@ -1,10 +1,6 @@
 package question;
 
 public class Q211 {
-    /*
-    Time Complexity: addWord: O(length)     search: O(n) / O(26^length)
-    Space Complexity: O(word * length)
-     */
     class WordDictionary {
         TrieNode root;
 

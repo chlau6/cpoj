@@ -1,9 +1,6 @@
 package question;
 
 public class Q1009 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int bitwiseComplement(int n) {
         int ones = 1;
 

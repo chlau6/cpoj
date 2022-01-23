@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q937 {
-    /*
-    ping:   Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public String[] reorderLogFiles(String[] logs) {
         List<String> digitLogs = new ArrayList<>();
         List<String[]> letterLogs = new ArrayList<>();

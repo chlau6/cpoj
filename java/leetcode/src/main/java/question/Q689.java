@@ -1,9 +1,6 @@
 package question;
 
 public class Q689 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
         int[] ans = new int[3];
         int[] prefixSum = new int[nums.length + 1];

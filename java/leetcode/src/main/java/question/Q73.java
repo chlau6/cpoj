@@ -1,9 +1,6 @@
 package question;
 
 public class Q73 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public void setZeroes(int[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;

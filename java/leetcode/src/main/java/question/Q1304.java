@@ -1,9 +1,6 @@
 package question;
 
 public class Q1304 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] sumZero(int n) {
         int[] result = new int[n];
 

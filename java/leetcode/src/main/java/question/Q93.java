@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q93 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public List<String> restoreIpAddresses(String s) {
         int n = s.length();
         List<String> result = new ArrayList<>();

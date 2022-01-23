@@ -1,9 +1,6 @@
 package question;
 
 public class Q1903 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String largestOddNumber(String num) {
         int n = num.length();
 

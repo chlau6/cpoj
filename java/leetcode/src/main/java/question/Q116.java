@@ -4,9 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Q116 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public Node connect(Node root) {
         if (root == null) return null;
         Node prev = root;
@@ -28,7 +25,6 @@ public class Q116 {
 
     /*
     Queue
-    Time Complexity: O(n)   Space Complexity: O(w)
      */
     public Node connect2(Node root) {
         if (root == null) return null;

@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q563 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(h)
-     */
     Integer sum = 0;
 
     public int findTilt(TreeNode root) {

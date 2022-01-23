@@ -5,7 +5,6 @@ import datastructure.ListNode;
 public class Q203 {
     /*
     Recursive
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public ListNode removeElements(ListNode head, int val) {
         if (head == null) return null;
@@ -15,7 +14,6 @@ public class Q203 {
 
     /*
     Iterative
-    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public ListNode removeElements2(ListNode head, int val) {
         if (head == null) return null;

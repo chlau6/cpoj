@@ -1,9 +1,6 @@
 package question;
 
 public class Q670 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int maximumSwap(int num) {
         char[] digits = String.valueOf(num).toCharArray();
 

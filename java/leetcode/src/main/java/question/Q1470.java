@@ -1,9 +1,6 @@
 package question;
 
 public class Q1470 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int[] shuffle(int[] nums, int n) {
         for (int i = 0; i < n; i++) {
             nums[i] += nums[i + n] * 1001;

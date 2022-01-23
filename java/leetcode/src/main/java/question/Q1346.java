@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q1346 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean checkIfExist(int[] arr) {
         Set<Integer> set = new HashSet<>();
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q8 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int myAtoi(String s) {
         int sign = 1;
         int n = s.length();

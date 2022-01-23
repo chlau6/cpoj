@@ -1,9 +1,6 @@
 package question;
 
-public class Q680 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
+public class Q680 {\
     public boolean validPalindrome(String s) {
         int i = 0;
         int j = s.length() - 1;

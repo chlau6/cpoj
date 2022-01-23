@@ -1,9 +1,6 @@
 package question;
 
 public class Q1716 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(1)
-     */
     public int totalMoney(int n) {
         int week = n / 7;
         int day = n % 7;

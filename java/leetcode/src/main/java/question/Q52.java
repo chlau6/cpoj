@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q52 {
-    /*
-    Time Complexity: O(n!)   Space Complexity: O(n)
-     */
     int result = 0;
 
     public int totalNQueens(int n) {

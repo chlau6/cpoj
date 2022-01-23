@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q1022 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(h)
-     */
     public int sumRootToLeaf(TreeNode root) {
         return helper(root, 0);
     }

@@ -8,7 +8,6 @@ import java.util.Queue;
 public class Q993 {
     /*
     DFS
-    Time Complexity: O(n) Space Complexity: O(w)
      */
     public boolean isCousins(TreeNode root, int x, int y) {
         Queue<TreeNode> q = new LinkedList<>();

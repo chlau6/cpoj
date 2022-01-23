@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q40 {
-    /*
-    Time Complexity: O(2^n) Space Complexity: O(n)
-     */
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q12 {
-    /*
-    Time Complexity: O(1)  Space Complexity: O(1)
-     */
     public String intToRoman(int num) {
         String[] digits = new String[]{"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
         String[] tens = new String[]{"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};

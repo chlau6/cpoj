@@ -1,9 +1,6 @@
 package question;
 
 public class Q1974 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int minTimeToType(String word) {
         int n = word.length();
         int result = n;

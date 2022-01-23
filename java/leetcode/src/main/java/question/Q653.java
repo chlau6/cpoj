@@ -6,9 +6,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q653 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean findTarget(TreeNode root, int k) {
         Set<Integer> set = new HashSet<>();
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q41 {
-    /*
-    Time Complexity: O(n) Space Complexity: O(1)
-     */
     public int firstMissingPositive(int[] nums) {
         int n = nums.length;
 

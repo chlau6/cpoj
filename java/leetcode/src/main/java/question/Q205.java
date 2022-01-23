@@ -1,9 +1,6 @@
 package question;
 
 public class Q205 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean isIsomorphic(String s, String t) {
         int[] chars1 = new int[256];
         int[] chars2 = new int[256];

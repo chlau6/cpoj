@@ -8,9 +8,6 @@ import java.util.List;
 import java.util.Queue;
 
 public class Q637 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public List<Double> averageOfLevels(TreeNode root) {
         if (root == null) return new ArrayList<>();
 

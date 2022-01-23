@@ -1,9 +1,6 @@
 package question;
 
 public class Q1796 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int secondHighest(String s) {
         int largest = -1;
         int secondLargest = -1;

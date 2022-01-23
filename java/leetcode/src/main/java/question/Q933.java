@@ -4,9 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Q933 {
-    /*
-    ping:   Time Complexity: O(n)   Space Complexity: O(n)
-     */
     class RecentCounter {
         Queue<Integer> q = new LinkedList<>();
 

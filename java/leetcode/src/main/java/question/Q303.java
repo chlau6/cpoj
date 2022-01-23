@@ -1,10 +1,6 @@
 package question;
 
 public class Q303 {
-    /*
-    constructor:    Time Complexity: O(n)   Space Complexity: O(n)
-    sumRange:       Time Complexity: O(1)   Space Complexity: O(1)
-     */
     class NumArray {
         int[] prefixSum;
 

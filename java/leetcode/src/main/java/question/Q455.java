@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q455 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);

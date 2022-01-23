@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q46 {
-    /*
-    Time Complexity: O(n * n!)   Space Complexity: O(n * n!)
-     */
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 

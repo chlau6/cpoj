@@ -5,7 +5,6 @@ import datastructure.TreeNode;
 public class    Q110 {
     /*
     Bottom Up
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public boolean isBalanced(TreeNode root) {
         return helper(root) != -1;

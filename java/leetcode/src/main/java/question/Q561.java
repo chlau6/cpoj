@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q561 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int arrayPairSum(int[] nums) {
         Arrays.sort(nums);
 

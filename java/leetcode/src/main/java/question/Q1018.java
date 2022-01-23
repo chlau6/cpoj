@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1018 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public List<Boolean> prefixesDivBy5(int[] nums) {
         int sum = 0;
         List<Boolean> result = new ArrayList<>();

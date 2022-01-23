@@ -1,9 +1,6 @@
 package question;
 
 public class Q459 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n)
-     */
     public boolean repeatedSubstringPattern(String s) {
         int length = s.length();
 

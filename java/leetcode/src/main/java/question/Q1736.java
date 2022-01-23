@@ -1,9 +1,6 @@
 package question;
 
 public class Q1736 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(1)
-     */
     public String maximumTime(String time) {
         char[] t = time.toCharArray();
 

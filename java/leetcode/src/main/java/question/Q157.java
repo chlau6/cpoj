@@ -1,9 +1,6 @@
 package question;
 
 public class Q157 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public class Solution extends Reader4 {
         public int read(char[] buf, int n) {
             // Write your code here

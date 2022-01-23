@@ -7,7 +7,6 @@ import java.util.Stack;
 public class Q394 {
     /*
     Queue Recursion
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public String decodeString(String s) {
         Queue<Character> queue = new LinkedList<>();
@@ -43,7 +42,6 @@ public class Q394 {
 
     /*
     Stack Iterative
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public String decodeString2(String s) {
         int currNum = 0;

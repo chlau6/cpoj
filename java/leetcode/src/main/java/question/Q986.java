@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q986 {
-    /*
-    Time Complexity: O(min(m, n))   Space Complexity: O(max(m, n))
-     */
     public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
         List<int[]> list = new ArrayList<>();
 

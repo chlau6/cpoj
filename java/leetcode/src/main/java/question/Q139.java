@@ -5,10 +5,6 @@ import java.util.List;
 import java.util.Set;
 
 public class Q139 {
-    /*
-    Time Complexity: O(n^2) Space Complexity: O(n)
-     */
-
     public boolean wordBreak(String s, List<String> wordDict) {
         int len = s.length();
         boolean[] dp = new boolean[len + 1];

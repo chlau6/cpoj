@@ -1,9 +1,6 @@
 package question;
 
 public class Q1122 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
-     */
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
         int[] counts = new int[1001];
 

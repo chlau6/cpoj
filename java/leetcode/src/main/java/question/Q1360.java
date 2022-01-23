@@ -1,9 +1,6 @@
 package question;
 
 public class Q1360 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int daysBetweenDates(String date1, String date2) {
         return Math.abs(daysSince1971(date1) - daysSince1971(date2));
     }

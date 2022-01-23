@@ -3,9 +3,6 @@ package question;
 import java.util.Stack;
 
 public class Q71 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String simplifyPath(String path) {
         Stack<String> stack = new Stack<>();
 

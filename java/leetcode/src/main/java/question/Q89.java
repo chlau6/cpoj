@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q89 {
-    /*
-    Time Complexity: O(2^n)   Space Complexity: O(2^n)
-     */
     public List<Integer> grayCode(int n) {
         List<Integer> result = new ArrayList<>();
         result.add(0);

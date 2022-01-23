@@ -5,7 +5,6 @@ import java.util.*;
 public class Q133 {
     /*
     DFS
-    Time Complexity: O(V + E)   Space Complexity: (V + E)
      */
     public Node cloneGraph(Node node) {
         Map<Node, Node> map = new HashMap<>();
@@ -29,7 +28,6 @@ public class Q133 {
 
     /*
     BFS
-    Time Complexity: O(V + E)   Space Complexity: O(V + E)
      */
     public Node cloneGraph2(Node node) {
         if (node == null) return null;

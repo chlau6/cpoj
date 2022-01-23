@@ -5,9 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class Q1762 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] findBuildings(int[] heights) {
         List<Integer> list = new ArrayList<>();
         int max = 0;

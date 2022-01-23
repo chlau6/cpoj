@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q68 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> result = new ArrayList<>();
 

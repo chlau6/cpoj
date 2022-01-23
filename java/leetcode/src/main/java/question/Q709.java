@@ -1,9 +1,6 @@
 package question;
 
 public class Q709 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String toLowerCase(String s) {
         char[] chars = s.toCharArray();
 

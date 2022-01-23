@@ -1,9 +1,6 @@
 package question;
 
 public class Q844 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean backspaceCompare(String s, String t) {
         int count1 = 0;
         int count2 = 0;

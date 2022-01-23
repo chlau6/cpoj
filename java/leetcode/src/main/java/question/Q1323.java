@@ -1,9 +1,6 @@
 package question;
 
 public class Q1323 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int maximum69Number (int num) {
         int maxPos = 0;
         int pos = 1;

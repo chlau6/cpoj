@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q976 {
-    /*
-    Time Complexity: O(n log n)  Space Complexity: O(n)
-     */
     public int largestPerimeter(int[] nums) {
         int n = nums.length;
 

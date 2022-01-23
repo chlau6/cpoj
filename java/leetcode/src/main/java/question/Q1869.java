@@ -1,9 +1,6 @@
 package question;
 
 public class Q1869 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean checkZeroOnes(String s) {
         int maxOnes = 0;
         int maxZeros = 0;

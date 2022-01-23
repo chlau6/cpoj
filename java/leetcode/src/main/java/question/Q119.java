@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q119 {
-    /*
-    Time Complexity: O(n^2) Space Complexity: O(n)
-     */
     public List<Integer> getRow(int rowIndex) {
         List<Integer> ans = new ArrayList<>();
 

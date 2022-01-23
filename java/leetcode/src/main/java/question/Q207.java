@@ -8,7 +8,6 @@ import java.util.Queue;
 public class Q207 {
     /*
      Kahn's Algorithm
-     Time Complexity: O(V + E)  Space Complexity: O(V + E)
      */
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         List<List<Integer>> graph = new ArrayList<>();

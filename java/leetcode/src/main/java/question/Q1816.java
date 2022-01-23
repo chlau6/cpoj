@@ -1,9 +1,6 @@
 package question;
 
 public class Q1816 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public String truncateSentence(String s, int k) {
         int n = s.length();
 

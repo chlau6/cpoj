@@ -1,9 +1,6 @@
 package question;
 
 public class Q541 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String reverseStr(String s, int k) {
         int length = s.length();
         char[] chars = s.toCharArray();

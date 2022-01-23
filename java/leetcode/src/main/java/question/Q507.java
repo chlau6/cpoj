@@ -1,9 +1,6 @@
 package question;
 
 public class Q507 {
-    /*
-    Time Complexity: O(sqrt(n))   Space Complexity: O(1)
-     */
     public boolean checkPerfectNumber(int num) {
         if (num == 1) return false;
 

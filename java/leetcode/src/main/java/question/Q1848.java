@@ -1,9 +1,6 @@
 package question;
 
 public class Q1848 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int getMinDistance(int[] nums, int target, int start) {
         int n = nums.length;
         int result = Integer.MAX_VALUE;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q674 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int findLengthOfLCIS(int[] nums) {
         int globalMax = 1;
         int localMax = 1;

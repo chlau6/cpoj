@@ -3,9 +3,6 @@ package question;
 import java.util.Stack;
 
 public class Q32 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int longestValidParentheses(String s) {
         int n = s.length();
 

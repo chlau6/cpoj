@@ -1,9 +1,6 @@
 package question;
 
 public class Q28 {
-    /*
-    Time Complexity: O(m * n)   Space Complexity: O(m + n)
-     */
     public int strStr(String haystack, String needle) {
         if (needle.isEmpty()) return 0;
 

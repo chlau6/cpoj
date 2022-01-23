@@ -7,7 +7,6 @@ import java.util.*;
 public class Q987 {
     /*
     DFS
-    Time Complexity: O(n log n) Space Complexity: O(n)
      */
     public List<List<Integer>> verticalTraversal(TreeNode root) {
         Map<Integer, Map<Integer, List<Integer>>> map = new TreeMap<>();

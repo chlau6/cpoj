@@ -1,9 +1,6 @@
 package question;
 
 public class Q717 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean isOneBitCharacter(int[] bits) {
         int i = 0;
 

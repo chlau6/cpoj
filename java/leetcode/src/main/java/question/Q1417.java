@@ -1,9 +1,6 @@
 package question;
 
 public class Q1417 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public String reformat(String s) {
         var result = new StringBuilder();
 

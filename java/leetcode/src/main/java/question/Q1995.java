@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q1995 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n^2)
-     */
     public int countQuadruplets(int[] nums) {
         int n = nums.length;
         int result = 0;

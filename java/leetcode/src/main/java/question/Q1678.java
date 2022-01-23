@@ -1,9 +1,6 @@
 package question;
 
 public class Q1678 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String interpret(String command) {
         int n = command.length();
         int i = 0;

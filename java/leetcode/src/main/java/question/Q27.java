@@ -1,9 +1,6 @@
 package question;
 
 public class Q27 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int removeElement(int[] nums, int val) {
         int j = 0;
 

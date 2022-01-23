@@ -1,9 +1,6 @@
 package question;
 
 public class Q1351 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
-     */
     public int countNegatives(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;

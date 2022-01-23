@@ -1,9 +1,6 @@
 package question;
 
 public class Q860 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean lemonadeChange(int[] bills) {
         int five = 0;
         int ten = 0;

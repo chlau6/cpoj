@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Q690 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int getImportance(List<Employee> employees, int id) {
         Map<Integer, Employee> map = new HashMap<>();
 

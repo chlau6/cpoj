@@ -1,9 +1,6 @@
 package question;
 
 public class Q852 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int peakIndexInMountainArray(int[] arr) {
         int left = 0;
         int right = arr.length - 2;

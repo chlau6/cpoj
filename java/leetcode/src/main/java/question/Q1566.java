@@ -1,9 +1,6 @@
 package question;
 
 public class Q1566 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public boolean containsPattern(int[] arr, int m, int k) {
         int count = 0;
         int length = arr.length;

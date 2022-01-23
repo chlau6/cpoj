@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q3 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(128)
-     */
     public int lengthOfLongestSubstring(String s) {
         int[] pos = new int[128];
         Arrays.fill(pos, -1);

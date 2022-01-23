@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q1128 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int numEquivDominoPairs(int[][] dominoes) {
         Map<Integer, Integer> map = new HashMap<>();
 

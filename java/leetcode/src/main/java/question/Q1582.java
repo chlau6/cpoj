@@ -1,9 +1,6 @@
 package question;
 
 public class Q1582 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(m + n)
-     */
     public int numSpecial(int[][] mat) {
         int m = mat.length;
         int n = mat[0].length;

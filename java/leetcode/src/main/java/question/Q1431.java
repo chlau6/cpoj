@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1431 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         List<Boolean> result = new ArrayList<>();
         int max = 0;

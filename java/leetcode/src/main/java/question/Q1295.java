@@ -1,9 +1,6 @@
 package question;
 
 public class Q1295 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int findNumbers(int[] nums) {
         int result = 0;
 

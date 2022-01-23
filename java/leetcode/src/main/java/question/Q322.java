@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q322 {
-    /*
-    Time Complexity: O(n * amount)  Space Complexity: O(amount)
-     */
     public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
         Arrays.fill(dp, amount + 1);

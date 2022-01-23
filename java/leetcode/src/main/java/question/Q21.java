@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q21 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
-     */
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode();
         ListNode temp = dummy;

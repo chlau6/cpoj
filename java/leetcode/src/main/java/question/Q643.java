@@ -1,9 +1,6 @@
 package question;
 
 public class Q643 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public double findMaxAverage(int[] nums, int k) {
         int max = Integer.MIN_VALUE;
         int sum = 0;

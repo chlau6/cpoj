@@ -1,9 +1,6 @@
 package question;
 
 public class Q45 {
-    /*
-    Time Complexity: O(n^2 )   Space Complexity: O(1)
-     */
     public int jump(int[] nums) {
         int n = nums.length - 1;
         int result = 0;

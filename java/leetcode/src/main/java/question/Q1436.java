@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.Set;
 
 public class Q1436 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public String destCity(List<List<String>> paths) {
         Set<String> set = new HashSet<>();
 

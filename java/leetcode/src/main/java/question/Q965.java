@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q965 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public boolean isUnivalTree(TreeNode root) {
         if (root == null) return true;
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q657 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean judgeCircle(String moves) {
         int x = 0;
         int y = 0;

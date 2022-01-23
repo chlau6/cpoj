@@ -1,9 +1,6 @@
 package question;
 
 public class Q1446 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int maxPower(String s) {
         int result = 1;
         int localMax = 1;

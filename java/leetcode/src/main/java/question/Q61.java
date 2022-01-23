@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q61 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null) return null;
 

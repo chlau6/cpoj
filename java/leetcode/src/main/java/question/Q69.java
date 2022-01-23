@@ -1,9 +1,6 @@
 package question;
 
 public class Q69 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int mySqrt(int x) {
         if (x <= 1) return x;
 

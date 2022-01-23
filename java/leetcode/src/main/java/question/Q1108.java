@@ -1,9 +1,6 @@
 package question;
 
 public class Q1108 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String defangIPaddr(String address) {
         var builder = new StringBuilder();
 

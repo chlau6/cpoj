@@ -1,9 +1,6 @@
 package question;
 
 public class Q74 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length;
         int n = matrix[0].length;

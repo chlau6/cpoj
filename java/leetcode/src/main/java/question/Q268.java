@@ -3,7 +3,6 @@ package question;
 public class Q268 {
     /*
     Bit Manipulation
-    Time Complexity: O(n)   Space Complexity: O(1);
      */
     public int missingNumber(int[] nums) {
         int xor = 0;
@@ -18,7 +17,6 @@ public class Q268 {
 
     /*
     Math
-    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public int missingNumber2(int[] nums) {
         int sum = nums.length;

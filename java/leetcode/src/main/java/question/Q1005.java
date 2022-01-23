@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1005 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int largestSumAfterKNegations(int[] nums, int k) {
         Arrays.sort(nums);
 

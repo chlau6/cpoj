@@ -1,9 +1,6 @@
 package question;
 
 public class Q88 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
-     */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int index = m + n - 1;
 

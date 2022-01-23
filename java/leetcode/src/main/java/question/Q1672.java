@@ -1,9 +1,6 @@
 package question;
 
 public class Q1672 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public int maximumWealth(int[][] accounts) {
         int result = 0;
 

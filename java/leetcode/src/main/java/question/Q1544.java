@@ -1,9 +1,6 @@
 package question;
 
 public class Q1544 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public String makeGood(String s) {
         char[] chars = s.toCharArray();
         int pos = 0;

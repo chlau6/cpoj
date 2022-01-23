@@ -1,9 +1,6 @@
 package question;
 
 public class Q188 {
-    /*
-    Time Complexity: O(kn)   Space Complexity: O(k)
-     */
     public int maxProfit(int k, int[] prices) {
         if (k >= prices.length) {
             return quickFind(prices);

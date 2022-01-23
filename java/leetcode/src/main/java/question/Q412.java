@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q412 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public List<String> fizzBuzz(int n) {
         List<String> result = new ArrayList<>();
 

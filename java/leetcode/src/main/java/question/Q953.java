@@ -1,9 +1,6 @@
 package question;
 
 public class Q953 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(26)
-     */
     public boolean isAlienSorted(String[] words, String order) {
         int[] orders = new int[26];
 

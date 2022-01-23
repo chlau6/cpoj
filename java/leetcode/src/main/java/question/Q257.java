@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q257 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(h)
-     */
     public List<String> binaryTreePaths(TreeNode root) {
         if (root == null) return new ArrayList<>();
 

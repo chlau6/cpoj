@@ -8,7 +8,6 @@ import java.util.Map;
 public class Q437 {
     /*
     Prefix Sum
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public int pathSum(TreeNode root, int targetSum) {
         if (root == null) return 0;
@@ -40,7 +39,6 @@ public class Q437 {
 
     /*
     DFS
-    Time Complexity: O(n^2)    Space Complexity: O(n)
      */
     public int pathSum2(TreeNode root, int targetSum) {
         if (root == null) return 0;

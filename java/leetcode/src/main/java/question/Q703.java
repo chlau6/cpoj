@@ -4,10 +4,6 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Q703 {
-    /*
-    constructor:    Time Complexity: O(n log n) Space Complexity: O(1)
-    add:            Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     class KthLargest {
         Queue<Integer> pq = new PriorityQueue<>();
         int k;

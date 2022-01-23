@@ -6,9 +6,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Q56 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
 

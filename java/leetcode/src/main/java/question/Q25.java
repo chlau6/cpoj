@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q25 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode tail = head;
 

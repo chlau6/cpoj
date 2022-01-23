@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q328 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public ListNode oddEvenList(ListNode head) {
         if (head == null || head.next == null) return head;
 

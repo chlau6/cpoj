@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q448 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public List<Integer> findDisappearedNumbers(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             int index = Math.abs(nums[i]) - 1;
@@ -23,9 +20,6 @@ public class Q448 {
         return ans;
     }
 
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public List<Integer> findDisappearedNumbers2(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             while (nums[i] != nums[nums[i] - 1]) {

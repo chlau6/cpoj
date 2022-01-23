@@ -1,9 +1,6 @@
 package question;
 
 public class Q87 {
-    /*
-    Time Complexity: O(n^4)   Space Complexity: O(n^3)
-     */
     public boolean isScramble(String s1, String s2) {
         int n = s1.length();
 

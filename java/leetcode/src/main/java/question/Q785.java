@@ -6,7 +6,6 @@ import java.util.Queue;
 public class Q785 {
     /*
     BFS
-    Time Complexity: (V + E)    Space Complexity: O(V)
      */
     public boolean isBipartite(int[][] graph) {
         int[] colors = new int[graph.length];
@@ -36,7 +35,6 @@ public class Q785 {
 
     /*
     DFS
-    Time Complexity: (V * E)    Space Complexity: O(V)
      */
     public boolean isBipartite2(int[][] graph) {
         int[] colors = new int[graph.length];

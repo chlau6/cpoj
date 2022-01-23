@@ -1,9 +1,6 @@
 package question;
 
 public class Q925 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public boolean isLongPressedName(String name, String typed) {
         int i = 0;
         int nLength = name.length();

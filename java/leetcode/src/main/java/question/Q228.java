@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q228 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public List<String> summaryRanges(int[] nums) {
         List<String> ans = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {

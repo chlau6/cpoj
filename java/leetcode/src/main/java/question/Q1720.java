@@ -1,9 +1,6 @@
 package question;
 
 public class Q1720 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] decode(int[] encoded, int first) {
         int n = encoded.length;
         int[] result = new int[n + 1];

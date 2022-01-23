@@ -1,9 +1,6 @@
 package question;
 
 public class Q55 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public boolean canJump(int[] nums) {
         int n = nums.length;
         int index = 0;

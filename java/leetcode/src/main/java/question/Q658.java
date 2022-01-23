@@ -5,7 +5,6 @@ import java.util.*;
 public class Q658 {
     /*
     Two Pointers
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
         int low = 0;
@@ -30,7 +29,6 @@ public class Q658 {
 
     /*
     Queue
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public List<Integer> findClosestElements2(int[] arr, int k, int x) {
         Queue<Integer> queue = new LinkedList<>();
@@ -49,7 +47,6 @@ public class Q658 {
 
     /*
     Heap
-    Time Complexity: O(n log n) Space Complexity: O(n)
      */
     public List<Integer> findClosestElements3(int[] arr, int k, int x) {
         Queue<Integer> priorityQueue = new PriorityQueue<>();

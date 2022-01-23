@@ -1,13 +1,6 @@
 package question;
 
 public class Q707 {
-    /*
-    get: Time Complexity: O(n) Space Complexity: O(1)
-    addAtHead: Time Complexity: O(1) Space Complexity: O(1)
-    addAtTail: Time Complexity: O(1) Space Complexity: O(1)
-    addAtIndex: Time Complexity: O(n) Space Complexity: O(1)
-    deleteAtIndex: Time Complexity: O(n) Space Complexity: O(1)
-     */
     class MyLinkedList {
         ListNode head;
         ListNode tail;

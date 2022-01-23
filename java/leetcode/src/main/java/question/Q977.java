@@ -1,9 +1,6 @@
 package question;
 
 public class Q977 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] sortedSquares(int[] nums) {
         int[] result = new int[nums.length];
         int i = 0;

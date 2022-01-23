@@ -1,9 +1,6 @@
 package question;
 
 public class Q1455 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(1)
-     */
     public int isPrefixOfWord(String sentence, String searchWord) {
         sentence = " " + sentence;
         searchWord = " " + searchWord;

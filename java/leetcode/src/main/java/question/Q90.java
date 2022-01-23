@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q90 {
-    /*
-    Time Complexity: O(2^n)   Space Complexity: O(2^n)
-     */
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         int n = nums.length;
 

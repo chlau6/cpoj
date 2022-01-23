@@ -1,10 +1,6 @@
 package question;
 
 public class Q415 {
-    /*
-    Time Complexity: O(max(m, n))   Space Complexity: O(max(m, n))
-     */
-
     public String addStrings(String num1, String num2) {
         StringBuilder builder = new StringBuilder();
         int carry = 0;

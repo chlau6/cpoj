@@ -2,9 +2,6 @@
 package question;
 
 public class Q2078 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maxDistance(int[] colors) {
         int result = 0;
         int n = colors.length;

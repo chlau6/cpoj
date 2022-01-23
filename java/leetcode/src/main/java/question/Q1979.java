@@ -1,9 +1,6 @@
 package question;
 
 public class Q1979 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int findGCD(int[] nums) {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;

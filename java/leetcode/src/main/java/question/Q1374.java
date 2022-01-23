@@ -1,9 +1,6 @@
 package question;
 
 public class Q1374 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String generateTheString(int n) {
         var builder = new StringBuilder();
 

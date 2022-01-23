@@ -1,9 +1,6 @@
 package question;
 
 public class Q1184 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int distanceBetweenBusStops(int[] distance, int start, int destination) {
         if (start > destination) {
             int temp = start;

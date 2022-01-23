@@ -1,9 +1,6 @@
 package question;
 
 public class Q1893 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
-     */
     public boolean isCovered(int[][] ranges, int left, int right) {
         int[] line = new int[52];
 

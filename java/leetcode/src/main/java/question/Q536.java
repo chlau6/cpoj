@@ -5,9 +5,6 @@ import datastructure.TreeNode;
 import java.util.Stack;
 
 public class Q536 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public TreeNode str2tree(String s) {
         Stack<TreeNode> stack = new Stack<>();
 

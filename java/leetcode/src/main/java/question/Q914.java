@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q914 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public boolean hasGroupsSizeX(int[] deck) {
         Map<Integer, Integer> map = new HashMap<>();
         int result = 0;

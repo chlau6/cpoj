@@ -1,9 +1,6 @@
 package question;
 
 public class Q1925 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(1)
-     */
     public int countTriples(int n) {
         int result = 0;
 

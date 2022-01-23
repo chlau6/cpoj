@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.Queue;
 
 public class Q559 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(w)
-     */
     public int maxDepth(Node root) {
         if (root == null) return 0;
 

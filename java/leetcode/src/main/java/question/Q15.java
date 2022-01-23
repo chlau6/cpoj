@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q15 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n^2)
-     */
     public List<List<Integer>> threeSum(int[] nums) {
         int n = nums.length;
 

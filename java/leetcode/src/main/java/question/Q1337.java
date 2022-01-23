@@ -4,9 +4,6 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Q1337 {
-    /*
-    Time Complexity: O(m log mn)   Space Complexity: O(k)
-     */
     public int[] kWeakestRows(int[][] mat, int k) {
         Queue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] != b[0] ? b[0] - a[0] : b[1] - a[1]);
 

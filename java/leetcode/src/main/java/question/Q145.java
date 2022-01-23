@@ -9,7 +9,6 @@ import java.util.List;
 public class Q145 {
     /*
     Recursion
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();

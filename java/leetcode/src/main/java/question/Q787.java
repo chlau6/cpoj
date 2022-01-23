@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Q787 {
     /*
     Bellman Ford
-    Time Complexity: O(V * E)  Space Complexity: O(n)
      */
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         int[] dp = new int[n];
@@ -34,7 +33,6 @@ public class Q787 {
 
     /*
     Bellman Ford
-    Time Complexity: O(V * E)  Space Complexity: O(n^2)
      */
     public int findCheapestPrice2(int n, int[][] flights, int src, int dst, int k) {
         int[][] dp = new int[k + 2][n];

@@ -1,9 +1,6 @@
 package question;
 
 public class Q605 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         for (int i = 0; i < flowerbed.length && n > 0; i++) {
             if (flowerbed[i] == 1) continue;

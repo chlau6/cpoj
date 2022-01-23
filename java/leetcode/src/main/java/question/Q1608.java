@@ -1,9 +1,6 @@
 package question;
 
 public class Q1608 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int specialArray(int[] nums) {
         int n = nums.length;
         int[] counts = new int[n + 1];

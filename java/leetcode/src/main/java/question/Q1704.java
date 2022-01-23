@@ -1,9 +1,6 @@
 package question;
 
 public class Q1704 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean halvesAreAlike(String s) {
         int vowel = 0;
         int n = s.length();

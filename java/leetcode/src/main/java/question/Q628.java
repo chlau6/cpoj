@@ -1,9 +1,6 @@
 package question;
 
 public class Q628 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maximumProduct(int[] nums) {
         int max1 = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE, max3 = Integer.MIN_VALUE;
         int min1 = Integer.MAX_VALUE, min2 = Integer.MAX_VALUE;

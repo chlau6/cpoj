@@ -1,9 +1,6 @@
 package question;
 
 public class Q348 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(n)
-     */
     class TicTacToe {
         private int[] rows;
         private int[] cols;

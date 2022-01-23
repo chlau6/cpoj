@@ -1,9 +1,6 @@
 package question;
 
 public class Q387 {
-    /*
-    Time Complexity: O(n)    Space Complexity: O(n)
-     */
     public int firstUniqChar(String s) {
         int[] counts = new int[26];
         char[] chars = s.toCharArray();

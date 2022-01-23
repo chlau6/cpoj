@@ -1,9 +1,6 @@
 package question;
 
 public class Q883 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public int projectionArea(int[][] grid) {
         int n = grid.length;
         int area = 0;

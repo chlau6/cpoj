@@ -1,9 +1,6 @@
 package question;
 
 public class Q1897 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public boolean makeEqual(String[] words) {
         int[] counts = new int[26];
         int k = words.length;

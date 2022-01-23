@@ -1,9 +1,6 @@
 package question;
 
 public class Q461 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int hammingDistance(int x, int y) {
         int distance = 0;
         int xor = x ^ y;

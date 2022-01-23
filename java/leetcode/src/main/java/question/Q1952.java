@@ -1,9 +1,6 @@
 package question;
 
 public class Q1952 {
-    /*
-    Time Complexity: O(sqrt(n))   Space Complexity: O(1)
-     */
     public boolean isThree(int n) {
         int root = (int) Math.sqrt(n);
         int d = 2;

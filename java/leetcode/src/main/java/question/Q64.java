@@ -1,9 +1,6 @@
 package question;
 
 public class Q64 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(mn)
-     */
     public int minPathSum(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q598 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maxCount(int m, int n, int[][] ops) {
         for (int[] o : ops) {
             m = Math.min(m, o[0]);

@@ -3,9 +3,6 @@ package question;
 import java.util.*;
 
 public class Q49 {
-    /*
-    Time Complexity: O(n * m log m)   Space Complexity: O(mn)
-     */
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 

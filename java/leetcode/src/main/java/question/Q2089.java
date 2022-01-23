@@ -5,9 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q2089 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public List<Integer> targetIndices(int[] nums, int target) {
         List<Integer> list = new ArrayList<>();
 

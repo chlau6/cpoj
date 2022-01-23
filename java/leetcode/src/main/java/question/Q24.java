@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q24 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) return head;
 

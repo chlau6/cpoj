@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1886 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public boolean findRotation(int[][] mat, int[][] target) {
         boolean[] r = new boolean[4];
         Arrays.fill(r, true);

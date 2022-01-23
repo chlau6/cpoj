@@ -1,9 +1,6 @@
 package question;
 
 public class Q941 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public boolean validMountainArray(int[] arr) {
         int i = 0;
         int j = arr.length - 1;

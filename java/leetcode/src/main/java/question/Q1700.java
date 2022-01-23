@@ -1,9 +1,6 @@
 package question;
 
 public class Q1700 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int countStudents(int[] students, int[] sandwiches) {
         int[] counts = new int[2];
 

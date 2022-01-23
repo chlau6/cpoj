@@ -5,7 +5,6 @@ import java.util.Stack;
 public class Q85 {
     /*
     Monotonic Stack
-    Time Complexity: O(mn)   Space Complexity: O(n)
      */
     public int maximalRectangle(char[][] matrix) {
         int m = matrix.length;

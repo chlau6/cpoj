@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q876 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public ListNode middleNode(ListNode head) {
         ListNode slow = head;
 

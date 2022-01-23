@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q1200 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
         int diff = Integer.MAX_VALUE;
 

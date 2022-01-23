@@ -1,9 +1,6 @@
 package question;
 
 public class Q476 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int findComplement(int num) {
         int result = 0;
         int shift = 0;

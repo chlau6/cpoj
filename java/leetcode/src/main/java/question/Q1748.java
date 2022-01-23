@@ -1,9 +1,6 @@
 package question;
 
 public class Q1748 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int sumOfUnique(int[] nums) {
         int[] count = new int[101];
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1742 {
-    /*
-    Time Complexity: O(n log m)   Space Complexity: O(1)
-     */
     public int countBalls(int lowLimit, int highLimit) {
         int[] counts = new int[46];
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q551 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean checkRecord(String s) {
         int absent = 0;
         int late = 0;

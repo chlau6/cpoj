@@ -1,9 +1,6 @@
 package question;
 
 public class Q10 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(mn)
-     */
     public boolean isMatch(String s, String p) {
         char[] ss = s.toCharArray();
         char[] pp = p.toCharArray();

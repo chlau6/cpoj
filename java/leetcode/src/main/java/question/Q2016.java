@@ -1,9 +1,6 @@
 package question;
 
 public class Q2016 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maximumDifference(int[] nums) {
         int result = 0;
         int min = Integer.MAX_VALUE;

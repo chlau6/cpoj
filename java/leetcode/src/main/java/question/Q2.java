@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q2 {
-    /*
-    Time Complexity: O(max(m, n))   Space Complexity: O(max(m, n))
-     */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode();
         ListNode temp = dummy;

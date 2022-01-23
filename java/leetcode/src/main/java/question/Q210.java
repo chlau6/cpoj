@@ -9,7 +9,6 @@ public class Q210 {
 
     /*
      Kahn's Algorithm (Topological Sort)
-     Time Complexity: O(V + E)  Space Complexity: O(V + E)
      */
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         List<List<Integer>> graph = new ArrayList<>();

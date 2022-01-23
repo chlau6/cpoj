@@ -1,9 +1,6 @@
 package question;
 
 public class Q1592 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String reorderSpaces(String text) {
         int count = 0;
         int length = text.length();

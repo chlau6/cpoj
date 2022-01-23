@@ -5,9 +5,6 @@ import java.util.HashSet;
 import java.util.Map;
 
 public class Q1207 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean uniqueOccurrences(int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
 

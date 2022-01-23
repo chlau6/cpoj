@@ -1,9 +1,6 @@
 package question;
 
 public class Q136 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int singleNumber(int[] nums) {
         int single = 0;
 

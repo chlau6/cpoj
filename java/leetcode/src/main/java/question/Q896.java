@@ -1,9 +1,6 @@
 package question;
 
 public class Q896 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean isMonotonic(int[] nums) {
         boolean increasing = false;
         boolean decreasing = false;

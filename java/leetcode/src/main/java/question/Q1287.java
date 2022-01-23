@@ -1,9 +1,6 @@
 package question;
 
 public class Q1287 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int findSpecialInteger(int[] arr) {
         int target = arr.length / 4;
 

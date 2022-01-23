@@ -1,9 +1,6 @@
 package question;
 
 public class Q123 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int maxProfit(int[] prices) {
         if (prices.length == 0) return 0;
 

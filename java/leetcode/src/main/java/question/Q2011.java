@@ -1,9 +1,6 @@
 package question;
 
 public class Q2011 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int finalValueAfterOperations(String[] operations) {
         int result = 0;
 

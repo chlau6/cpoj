@@ -1,9 +1,6 @@
 package question;
 
 public class Q661 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public int[][] imageSmoother(int[][] img) {
         int[][] dirs = new int[][] {{-1, 1}, {0, 1}, {1, 1}, {-1, 0}, {0, 0}, {1, 0}, {-1, -1}, {0, -1}, {1, -1}};
         int[][] result = new int[img.length][img[0].length];

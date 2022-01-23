@@ -9,7 +9,6 @@ import java.util.Queue;
 public class Q23 {
     /*
     Merge Sort
-    Time Complexity: O(n log k) Space Complexity: O(n + log k)
      */
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) return null;
@@ -45,7 +44,6 @@ public class Q23 {
 
     /*
     Heap
-    Time Complexity: O(n log k) Space Complexity: O(k)
      */
     public ListNode mergeKLists2(ListNode[] lists) {
         Queue<ListNode> pq = new PriorityQueue<>(Comparator.comparing(a -> a.val));

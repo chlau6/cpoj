@@ -5,7 +5,6 @@ import datastructure.TreeNode;
 public class Q124 {
     /*
     DFS
-    Time Complexity: O(n)   Space Complexity: O(h)
      */
 
     public int max = Integer.MIN_VALUE;

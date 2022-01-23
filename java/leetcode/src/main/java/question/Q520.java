@@ -1,9 +1,6 @@
 package question;
 
 public class Q520 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean detectCapitalUse(String word) {
         int upperCaseCount = 0;
         int length = word.length();

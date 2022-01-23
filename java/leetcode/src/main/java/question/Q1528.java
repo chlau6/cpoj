@@ -1,9 +1,6 @@
 package question;
 
 public class Q1528 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public String restoreString(String s, int[] indices) {
         char[] result = new char[indices.length];
         int length = s.length();

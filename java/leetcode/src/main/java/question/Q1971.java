@@ -3,7 +3,6 @@ package question;
 public class Q1971 {
     /*
     Disjoint Set Union
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public boolean validPath(int n, int[][] edges, int start, int end) {
         var dsu = new DisjointSetUnion(n);

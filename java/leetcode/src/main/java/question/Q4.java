@@ -2,7 +2,7 @@ package question;
 
 public class Q4 {
     /*
-    Time Complexity: O(log(min(m, n)))  Space Complexity: O(1)
+    Divide & Conquer
      */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n1 = nums1.length;
@@ -35,7 +35,7 @@ public class Q4 {
     }
 
     /*
-    Time Complexity: O(m + n)   Space Complexity: O(1)
+    Iterative
      */
     public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
         int i = 0;

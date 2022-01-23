@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1078 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(n)
-     */
     public String[] findOcurrences(String text, String first, String second) {
         List<String> list = new ArrayList<>();
 

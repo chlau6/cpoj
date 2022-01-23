@@ -1,9 +1,6 @@
 package question;
 
 public class Q1154 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int dayOfYear(String date) {
         int[] days = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 

@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q47 {
-    /*
-    Time Complexity: O(n * n!)   Space Complexity: O(n * n!)
-     */
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 

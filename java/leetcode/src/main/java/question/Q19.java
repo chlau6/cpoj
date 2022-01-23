@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q19 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode();
         dummy.next = head;

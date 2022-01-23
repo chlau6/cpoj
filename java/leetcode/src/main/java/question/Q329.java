@@ -1,9 +1,6 @@
 package question;
 
 public class Q329 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(mn)
-     */
     int[][] directions = new int[][]{{0, -1}, {-1, 0}, {0, 1}, {1, 0}};
 
     public int longestIncreasingPath(int[][] matrix) {

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1662 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         int a1 = 0;
         int a2 = 0;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q231 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean isPowerOfTwo(int n) {
         if (n <= 0) return false;
 

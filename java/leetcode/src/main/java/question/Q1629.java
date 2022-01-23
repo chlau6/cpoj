@@ -1,9 +1,6 @@
 package question;
 
 public class Q1629 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public char slowestKey(int[] releaseTimes, String keysPressed) {
         int n = releaseTimes.length;
         int longest = releaseTimes[0];

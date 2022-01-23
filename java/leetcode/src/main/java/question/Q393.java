@@ -1,9 +1,6 @@
 package question;
 
 public class Q393 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean validUtf8(int[] data) {
         int count = 0;
 

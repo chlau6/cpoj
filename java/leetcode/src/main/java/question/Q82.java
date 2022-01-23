@@ -5,7 +5,6 @@ import datastructure.ListNode;
 public class Q82 {
     /*
     Iterative, Two Pointer
-    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null) return head;
@@ -34,7 +33,6 @@ public class Q82 {
 
     /*
     Recursive
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public ListNode deleteDuplicates2(ListNode head) {
         if (head == null) return head;

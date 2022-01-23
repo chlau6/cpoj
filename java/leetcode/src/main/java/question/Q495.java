@@ -1,9 +1,6 @@
 package question;
 
 public class Q495 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int findPoisonedDuration(int[] timeSeries, int duration) {
         int count = 0;
 

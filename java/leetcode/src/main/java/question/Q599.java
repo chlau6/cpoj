@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Q599 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(n)
-     */
     public String[] findRestaurant(String[] list1, String[] list2) {
         Map<String, Integer> map = new HashMap<>();
         List<String> list = new ArrayList<>();

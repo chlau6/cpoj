@@ -1,9 +1,6 @@
 package question;
 
 public class Q1365 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] counts = new int[101];
 

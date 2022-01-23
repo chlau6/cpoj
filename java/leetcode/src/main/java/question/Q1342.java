@@ -1,9 +1,6 @@
 package question;
 
 public class Q1342 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int numberOfSteps(int num) {
         if (num == 0) return 0;
 

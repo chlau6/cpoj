@@ -1,9 +1,6 @@
 package question;
 
 public class Q11 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int maxArea(int[] height) {
         int i = 0;
         int j = height.length - 1;

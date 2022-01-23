@@ -1,9 +1,6 @@
 package question;
 
 public class Q1684 {
-    /*
-    Time Complexity: O(mn + k)   Space Complexity: O(max(k, m))
-     */
     public int countConsistentStrings(String allowed, String[] words) {
         boolean[] allow = new boolean[26];
         int result = words.length;

@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q57 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> result = new ArrayList<>();
 

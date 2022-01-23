@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Q399 {
-    /*
-    Time Complexity: O(E + queries.length * E)  Space Complexity: O(E)
-     */
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
         Map<String, Map<String, Double>> graph = new HashMap<>();
 

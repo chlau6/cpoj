@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q282 {
-    /*
-    Time Complexity: O(4^n) Space Complexity: O(n)
-     */
     public List<String> addOperators(String num, int target) {
         if (num.length() == 0) return new ArrayList<>();
 

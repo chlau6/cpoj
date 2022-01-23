@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1441 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public List<String> buildArray(int[] target, int n) {
         List<String> result = new ArrayList<>();
 

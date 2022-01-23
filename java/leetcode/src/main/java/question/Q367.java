@@ -1,9 +1,6 @@
 package question;
 
 public class Q367 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public boolean isPerfectSquare(int num) {
         long left = 0;
         long right = num;

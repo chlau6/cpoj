@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q671 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(h)
-     */
     public int findSecondMinimumValue(TreeNode root) {
         if (root.left == null) return -1;
         int left = (root.left.val == root.val) ? findSecondMinimumValue(root.left) : root.left.val;

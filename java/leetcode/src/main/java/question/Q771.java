@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q771 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(m + n)
-     */
     public int numJewelsInStones(String jewels, String stones) {
         Set<Character> set = new HashSet<>();
         int count = 0;

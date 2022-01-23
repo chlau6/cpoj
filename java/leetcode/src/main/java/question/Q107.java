@@ -5,9 +5,6 @@ import datastructure.TreeNode;
 import java.util.*;
 
 public class Q107 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         if (root == null) return new ArrayList<>();
 

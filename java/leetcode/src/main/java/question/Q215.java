@@ -7,8 +7,6 @@ import java.util.Random;
 public class Q215 {
     /*
     QuickSelect
-    Time Complexity: O(n)   Space Complexity: O(1)
-    Worst O(n)
      */
     public int findKthLargest(int[] nums, int k) {
         shuffle(nums);
@@ -61,7 +59,6 @@ public class Q215 {
 
     /*
     Heap
-    Time Complexity: O(n log k) Space Complexity: O(k)
      */
     public int findKthLargest2(int[] nums, int k) {
         Queue<Integer> queue = new PriorityQueue<>();

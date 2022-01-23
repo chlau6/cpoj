@@ -1,9 +1,6 @@
 package question;
 
 public class Q1370 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String sortString(String s) {
         int[] counts = new int[26];
         int length = s.length();

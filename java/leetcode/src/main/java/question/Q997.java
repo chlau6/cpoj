@@ -1,9 +1,6 @@
 package question;
 
 public class Q997 {
-    /*
-    Time Complexity: O(n + |E|) Space Complexity: O(n)
-     */
     public int findJudge(int n, int[][] trust) {
         int[] degree = new int[n + 1];
 

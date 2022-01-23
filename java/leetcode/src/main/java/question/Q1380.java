@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1380 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(1)
-     */
     public List<Integer> luckyNumbers (int[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;

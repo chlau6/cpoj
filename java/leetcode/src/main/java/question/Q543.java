@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q543 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     int longest = 0;
 
     public int diameterOfBinaryTree(TreeNode root) {

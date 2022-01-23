@@ -3,7 +3,6 @@ package question;
 public class Q278 {
     /*
     Binary Search
-    Time Complexity: O(log n)   Space Complexity: O(1)
      */
     public class Solution extends VersionControl {
         public int firstBadVersion(int n) {

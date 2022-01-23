@@ -1,9 +1,6 @@
 package question;
 
 public class Q1880 {
-    /*
-    Time Complexity: O(l + m + n)   Space Complexity: O(1)
-     */
     public boolean isSumEqual(String firstWord, String secondWord, String targetWord) {
         int firstSum = 0;
         int secondSum = 0;

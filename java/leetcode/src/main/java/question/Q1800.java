@@ -1,9 +1,6 @@
 package question;
 
 public class Q1800 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maxAscendingSum(int[] nums) {
         int localMax = nums[0];
         int globalMax = localMax;

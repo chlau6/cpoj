@@ -7,9 +7,6 @@ import java.util.List;
 import java.util.Set;
 
 public class Q1676 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public TreeNode lowestCommonAncestor(TreeNode root, List<TreeNode> nodes) {
         Set<TreeNode> set = new HashSet<>(nodes);
         return helper(root, set);

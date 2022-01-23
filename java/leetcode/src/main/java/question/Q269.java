@@ -9,7 +9,6 @@ public class Q269 {
 
     /*
     Kahn's Algorithm (Topological Sort)
-    Time Complexity: O(V + E)   Space Complexity: O(V)
      */
     public String alienOrder(String[] words) {
         Map<Character, Set<Character>> map = new HashMap<>();

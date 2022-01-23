@@ -1,9 +1,6 @@
 package question;
 
 public class Q2042 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean areNumbersAscending(String s) {
         int n = s.length();
 

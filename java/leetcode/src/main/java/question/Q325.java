@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q325 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public int maxSubArrayLen(int[] nums, int k) {
         int sum = 0;
         int ans = 0;

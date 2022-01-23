@@ -1,9 +1,6 @@
 package question;
 
 public class Q1534 {
-    /*
-    Time Complexity: O(n^3)  Space Complexity: O(1)
-     */
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         int result = 0;
         int length = arr.length;

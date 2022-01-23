@@ -1,9 +1,6 @@
 package question;
 
 public class Q70 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int climbStairs(int n) {
         int first = 1;
         int second = 1;

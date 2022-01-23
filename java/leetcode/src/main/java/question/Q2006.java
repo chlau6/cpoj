@@ -1,9 +1,6 @@
 package question;
 
 public class Q2006 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int countKDifference(int[] nums, int k) {
         int[] counts = new int[101];
         int result = 0;

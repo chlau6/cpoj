@@ -1,9 +1,6 @@
 package question;
 
 public class Q1863 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int subsetXORSum(int[] nums) {
         int n = nums.length;
         int result = 0;

@@ -3,9 +3,6 @@ package question;
 import java.util.*;
 
 public class Q301 {
-    /*
-    Time Complexity: O(2^n) Space Complexity: O(2^n)
-     */
     public List<String> removeInvalidParentheses(String s) {
         List<String> res = new ArrayList<>();
 

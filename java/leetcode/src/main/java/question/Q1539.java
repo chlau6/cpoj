@@ -1,9 +1,6 @@
 package question;
 
 public class Q1539 {
-    /*
-    Time Complexity: O(log n)  Space Complexity: O(1)
-     */
     public int findKthPositive(int[] arr, int k) {
         int left = 0;
         int right = arr.length - 1;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q414 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int thirdMax(int[] nums) {
         long firstMax = Long.MIN_VALUE;
         long secondMax = Long.MIN_VALUE;

@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q86 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public ListNode partition(ListNode head, int x) {
         ListNode first = new ListNode();
         ListNode second = new ListNode();

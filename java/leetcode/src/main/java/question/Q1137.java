@@ -1,9 +1,6 @@
 package question;
 
 public class Q1137 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int tribonacci(int n) {
         if (n < 2) return n;
 

@@ -3,7 +3,6 @@ package question;
 public class Q1854 {
     /*
     Line Sweep Algorithm
-    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public int maximumPopulation(int[][] logs) {
         int[] count = new int[2051];

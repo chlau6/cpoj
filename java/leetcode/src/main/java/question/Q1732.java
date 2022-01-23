@@ -1,9 +1,6 @@
 package question;
 
 public class Q1732 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int largestAltitude(int[] gain) {
         int altitude = 0;
         int result = 0;

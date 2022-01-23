@@ -1,9 +1,6 @@
 package question;
 
 public class Q263 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public boolean isUgly(int n) {
         if (n <= 0) return false;
 

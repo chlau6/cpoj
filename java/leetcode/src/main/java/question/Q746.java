@@ -1,9 +1,6 @@
 package question;
 
 public class Q746 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int minCostClimbingStairs(int[] cost) {
         int length = cost.length + 1;
         int[] dp = new int[length];

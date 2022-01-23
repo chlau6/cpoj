@@ -1,9 +1,6 @@
 package question;
 
 public class Q72 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public int minDistance(String word1, String word2) {
         int m = word1.length();
         int n = word2.length();

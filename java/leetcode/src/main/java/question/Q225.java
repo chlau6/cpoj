@@ -4,12 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Q225 {
-    /*
-    push:   Time Complexity: O(n)   Space Complexity: O(1)
-    pop:    Time Complexity: O(1)   Space Complexity: O(1)
-    top:    Time Complexity: O(1)   Space Complexity: O(1)
-    empty:  Time Complexity: O(1)   Space Complexity: O(1)
-     */
     class MyStack {
         Queue<Integer> queue = new LinkedList<>();
 

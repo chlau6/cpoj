@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q501 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     int count = 1;
     int max = 0;
     TreeNode prev = null;

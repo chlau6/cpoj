@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q118 {
-    /*
-    Time Complexity: O(n^2) Space Complexity: O(n^2)
-     */
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> pascals = new ArrayList<>();
 

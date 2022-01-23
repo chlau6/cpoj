@@ -1,9 +1,6 @@
 package question;
 
 public class Q1464 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int maxProduct(int[] nums) {
         int largest = 0;
         int secondLargest = 0;

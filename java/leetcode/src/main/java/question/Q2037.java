@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q2037 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int minMovesToSeat(int[] seats, int[] students) {
         int n = seats.length;
         int result = 0;

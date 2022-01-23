@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Set;
 
 public class Q859 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean buddyStrings(String s, String goal) {
         int length = s.length();
 

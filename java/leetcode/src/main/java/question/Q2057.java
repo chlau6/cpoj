@@ -1,9 +1,6 @@
 package question;
 
 public class Q2057 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int smallestEqual(int[] nums) {
         int n = nums.length;
 

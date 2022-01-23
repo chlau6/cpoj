@@ -4,10 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q489 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
-
     private int[][] directions = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
     public void cleanRoom(Robot robot) {

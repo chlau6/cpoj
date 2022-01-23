@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q1496 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public boolean isPathCrossing(String path) {
         Set<Integer> set = new HashSet<>();
         set.add(0);

@@ -1,9 +1,6 @@
 package question;
 
 public class Q944 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(1)
-     */
     public int minDeletionSize(String[] strs) {
         int length = strs[0].length();
         int result = 0;

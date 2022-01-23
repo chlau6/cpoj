@@ -1,9 +1,6 @@
 package question;
 
 public class Q81 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public boolean search(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;

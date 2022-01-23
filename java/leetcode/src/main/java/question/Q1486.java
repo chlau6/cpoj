@@ -1,9 +1,6 @@
 package question;
 
 public class Q1486 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int xorOperation(int n, int start) {
         int result = 0;
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1827 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int minOperations(int[] nums) {
         int result = 0;
         int n = nums.length;

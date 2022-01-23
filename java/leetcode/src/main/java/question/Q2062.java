@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q2062 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int countVowelSubstrings(String word) {
         int[] counts = new int[26];
         Arrays.fill(counts, -1);

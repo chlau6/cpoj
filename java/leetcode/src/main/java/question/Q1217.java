@@ -1,9 +1,6 @@
 package question;
 
 public class Q1217 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int minCostToMoveChips(int[] position) {
         int odd = 0;
         int even = 0;

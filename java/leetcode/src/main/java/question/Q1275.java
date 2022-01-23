@@ -1,9 +1,6 @@
 package question;
 
 public class Q1275 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public String tictactoe(int[][] moves) {
         int[] a = new int[8];
         int[] b = new int[8];

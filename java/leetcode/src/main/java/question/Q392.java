@@ -1,9 +1,6 @@
 package question;
 
 public class Q392 {
-    /*
-    Time Complexity: O(max(m, n))    Space Complexity: O(1)
-     */
     public boolean isSubsequence(String s, String t) {
         int i = 0;
         int sLength = s.length();

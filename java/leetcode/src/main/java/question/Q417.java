@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q417 {
-    /*
-    Time Complexity: O(mn)    Space Complexity: O(mn)
-     */
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
         List<List<Integer>> ans = new ArrayList<>();
 

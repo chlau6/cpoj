@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1928 {
-    /*
-    Time Complexity: O(maxTime * E) Space Complexity: O(maxTime * V)
-     */
     public int minCost(int maxTime, int[][] edges, int[] passingFees) {
         int cities = passingFees.length;
         int maxFee = 1000000;

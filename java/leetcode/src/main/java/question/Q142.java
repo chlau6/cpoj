@@ -3,9 +3,6 @@ package question;
 import datastructure.ListNode;
 
 public class Q142 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;

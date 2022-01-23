@@ -5,9 +5,6 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Q295 {
-    /*
-    Time Complexity: O(n log n) Space Complexity: O(n)
-     */
     class MedianFinder {
         Queue<Integer> lowerHalf;
         Queue<Integer> upperHalf;
@@ -21,9 +18,6 @@ public class Q295 {
             upperHalf = new PriorityQueue<>();
         }
 
-        /*
-        Time Complexity: O(log n)   Space Complexity: O(n)
-         */
         public void addNum(int num) {
             if (even) {
                 upperHalf.add(num);
@@ -36,9 +30,6 @@ public class Q295 {
             even = !even;
         }
 
-        /*
-        Time Complexity: O(1)   Space Complexity: O(1)
-         */
         public double findMedian() {
             return even ? (lowerHalf.peek() + upperHalf.peek()) / 2.0 : lowerHalf.peek();
         }

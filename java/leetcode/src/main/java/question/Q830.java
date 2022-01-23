@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q830 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public List<List<Integer>> largeGroupPositions(String s) {
         List<List<Integer>> result = new ArrayList<>();
 

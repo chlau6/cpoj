@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1984 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public int minimumDifference(int[] nums, int k) {
         int n = nums.length;
         int result = Integer.MAX_VALUE;

@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q1 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> posMap = new HashMap<>();
 

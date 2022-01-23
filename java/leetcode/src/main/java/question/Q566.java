@@ -1,9 +1,6 @@
 package question;
 
 public class Q566 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public int[][] matrixReshape(int[][] mat, int r, int c) {
         int m = mat.length;
         int n = mat[0].length;

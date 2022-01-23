@@ -1,9 +1,6 @@
 package question;
 
 public class Q999 {
-    /*
-    Time Complexity: O(1) Space Complexity: O(1)
-     */
     public int numRookCaptures(char[][] board) {
         int x = 0;
         int y = 0;

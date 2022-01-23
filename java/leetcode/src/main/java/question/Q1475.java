@@ -3,9 +3,6 @@ package question;
 import java.util.Stack;
 
 public class Q1475 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public int[] finalPrices(int[] prices) {
         Stack<Integer> stack = new Stack<>();
 

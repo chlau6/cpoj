@@ -1,9 +1,6 @@
 package question;
 
 public class Q696 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int countBinarySubstrings(String s) {
         int result = 0;
         int prev = 0;

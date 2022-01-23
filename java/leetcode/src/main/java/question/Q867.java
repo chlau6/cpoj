@@ -1,9 +1,6 @@
 package question;
 
 public class Q867 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public int[][] transpose(int[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;

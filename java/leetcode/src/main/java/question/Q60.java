@@ -1,9 +1,6 @@
 package question;
 
 public class Q60 {
-    /*
-    Time Complexity: O(n^2)   Space Complexity: O(n)
-     */
     public String getPermutation(int n, int k) {
         StringBuilder nums = new StringBuilder("123456789");
         StringBuilder result = new StringBuilder();

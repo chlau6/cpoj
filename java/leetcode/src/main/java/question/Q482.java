@@ -1,9 +1,6 @@
 package question;
 
 public class Q482 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String licenseKeyFormatting(String s, int k) {
         var builder = new StringBuilder();
         int count = 0;

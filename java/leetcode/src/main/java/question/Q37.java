@@ -1,9 +1,6 @@
 package question;
 
 public class Q37 {
-    /*
-    Time Complexity: O(9^n)   Space Complexity: O(n)
-     */
     public void solveSudoku(char[][] board) {
         recursion(board);
     }

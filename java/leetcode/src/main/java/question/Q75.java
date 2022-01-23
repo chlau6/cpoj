@@ -1,9 +1,6 @@
 package question;
 
 public class Q75 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public void sortColors(int[] nums) {
         int i = 0;
         int j = 0;

@@ -1,9 +1,6 @@
 package question;
 
 public class Q31 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public void nextPermutation(int[] nums) {
         int n = nums.length;
         int i, j, start, end;

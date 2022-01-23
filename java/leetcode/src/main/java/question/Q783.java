@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q783 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     TreeNode prev = null;
     int minDiff = Integer.MAX_VALUE;
 

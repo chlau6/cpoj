@@ -3,12 +3,6 @@ package question;
 import java.util.Stack;
 
 public class Q232 {
-    /*
-    push:   Time Complexity: O(1)   Space Complexity: O(1)
-    pop:    Time Complexity: O(n)   Space Complexity: O(1)
-    peek:   Time Complexity: O(n)   Space Complexity: O(1)
-    empty:  Time Complexity: O(1)   Space Complexity: O(1)
-     */
     class MyQueue {
         Stack<Integer> oldStack = new Stack<>();
         Stack<Integer> newStack = new Stack<>();

@@ -3,9 +3,6 @@ package question;
 import java.util.Arrays;
 
 public class Q1385 {
-    /*
-    Time Complexity: O((m + n) log n)  Space Complexity: O(n)
-     */
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
         int result = 0;
 

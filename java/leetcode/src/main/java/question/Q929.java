@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q929 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(mn)
-     */
     public int numUniqueEmails(String[] emails) {
         Set<String> set = new HashSet<>();
 

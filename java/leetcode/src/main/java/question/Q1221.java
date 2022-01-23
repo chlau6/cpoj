@@ -1,9 +1,6 @@
 package question;
 
 public class Q1221 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int balancedStringSplit(String s) {
         int result = 0;
         int balance = 0;

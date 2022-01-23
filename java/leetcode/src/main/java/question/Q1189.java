@@ -1,9 +1,6 @@
 package question;
 
 public class Q1189 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int maxNumberOfBalloons(String text) {
         int[] counts = new int[26];
         int length = text.length();

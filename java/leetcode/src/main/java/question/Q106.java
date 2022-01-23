@@ -6,9 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q106 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         Map<Integer, Integer> map = new HashMap<>();
         int n = postorder.length;

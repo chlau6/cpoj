@@ -1,9 +1,6 @@
 package question;
 
 public class Q1281 {
-    /*
-    Time Complexity: O(log n)   Space Complexity: O(1)
-     */
     public int subtractProductAndSum(int n) {
         int product = 1;
         int sum = 0;

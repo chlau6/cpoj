@@ -1,9 +1,6 @@
 package question;
 
 public class Q812 {
-    /*
-    Time Complexity: O(n^3)   Space Complexity: O(1)
-     */
     public double largestTriangleArea(int[][] points) {
         double result = 0;
         int length = points.length;

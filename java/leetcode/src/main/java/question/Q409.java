@@ -1,9 +1,6 @@
 package question;
 
 public class Q409 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public int longestPalindrome(String s) {
         int[] counts = new int[128];
 

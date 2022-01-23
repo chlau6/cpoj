@@ -1,9 +1,6 @@
 package question;
 
 public class Q434 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int countSegments(String s) {
         int count = 0;
         int length = s.length();

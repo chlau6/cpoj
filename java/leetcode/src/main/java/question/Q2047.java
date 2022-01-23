@@ -1,9 +1,6 @@
 package question;
 
 public class Q2047 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int countValidWords(String sentence) {
         int result = 0;
         String[] strs = sentence.strip().split("\\s+");

@@ -3,9 +3,6 @@ package question;
 import java.util.List;
 
 public class Q1773 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(1)
-     */
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int result = 0;
         int key;

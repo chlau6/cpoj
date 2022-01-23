@@ -1,9 +1,6 @@
 package question;
 
 public class Q2000 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String reversePrefix(String word, char ch) {
         char[] str = word.toCharArray();
         int pos = -1;

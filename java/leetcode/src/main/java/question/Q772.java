@@ -5,9 +5,6 @@ public class Q772 {
         System.out.println(new Q772().calculate("2*(5+5*2)/3+(6/2+8)"));
     }
 
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int calculate(String s) {
         int len = s.length();
         int num = 0;

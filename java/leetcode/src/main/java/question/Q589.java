@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q589 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(h)
-     */
     public List<Integer> preorder(Node root) {
         List<Integer> list = new ArrayList<>();
 

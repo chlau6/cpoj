@@ -1,9 +1,6 @@
 package question;
 
 public class Q1779 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int nearestValidPoint(int x, int y, int[][] points) {
         int minDist = Integer.MAX_VALUE;
         int n = points.length;

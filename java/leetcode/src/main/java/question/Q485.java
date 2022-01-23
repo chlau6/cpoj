@@ -1,9 +1,6 @@
 package question;
 
 public class Q485 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int findMaxConsecutiveOnes(int[] nums) {
         int localMax = 0;
         int globalMax = 0;

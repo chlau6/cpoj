@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q78 {
-    /*
-    Time Complexity: O(n * 2^n)   Space Complexity: O(n * 2^n)
-     */
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 

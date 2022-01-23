@@ -1,9 +1,6 @@
 package question;
 
 public class Q63 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(n)
-     */
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int n = obstacleGrid[0].length;
         int[] dp = new int[n];

@@ -5,9 +5,6 @@ public class Q76 {
         System.out.println(new Q76().minWindow("ADOBECODEBANC", "ABC"));
     }
 
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(n)
-     */
     public String minWindow(String s, String t) {
         int[] letters = new int[128];
 

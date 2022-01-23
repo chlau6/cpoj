@@ -3,9 +3,6 @@ package question;
 import datastructure.TreeNode;
 
 public class Q108 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(log n)
-     */
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums.length == 0) return null;
 

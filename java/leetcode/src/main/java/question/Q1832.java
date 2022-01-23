@@ -1,9 +1,6 @@
 package question;
 
 public class Q1832 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public boolean checkIfPangram(String sentence) {
         int[] counts = new int[26];
         int count = 0;

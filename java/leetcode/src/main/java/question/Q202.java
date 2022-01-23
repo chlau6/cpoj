@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q202 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(n)
-     */
     public boolean isHappy(int n) {
         Set<Integer> set = new HashSet<>();
 

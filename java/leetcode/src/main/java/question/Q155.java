@@ -3,12 +3,6 @@ package question;
 import java.util.Stack;
 
 public class Q155 {
-    /*
-    push:   Time Complexity: O(1)   Space Complexity: O(1)
-    pop:    Time Complexity: O(1)   Space Complexity: O(1)
-    top:    Time Complexity: O(1)   Space Complexity: O(1)
-    getMin: Time Complexity: O(1)   Space Complexity: O(1)
-     */
     class MinStack {
         Stack<Integer> stack;
         int min;

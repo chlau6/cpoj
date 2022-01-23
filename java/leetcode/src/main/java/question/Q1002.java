@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q1002 {
-    /*
-    Time Complexity: O(mn) Space Complexity: O(m)
-     */
     public List<String> commonChars(String[] words) {
         int[] count = new int[26];
         Arrays.fill(count, Integer.MAX_VALUE);

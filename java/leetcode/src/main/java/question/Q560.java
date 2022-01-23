@@ -6,7 +6,6 @@ import java.util.Map;
 public class Q560 {
     /*
     Prefix Sum
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public int subarraySum(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();

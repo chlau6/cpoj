@@ -2,9 +2,6 @@
 package question;
 
 public class Q345 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(n)
-     */
     public String reverseVowels(String s) {
         int i = 0;
         int j = s.length() - 1;

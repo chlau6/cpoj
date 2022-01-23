@@ -3,9 +3,6 @@ package question;
 import java.util.concurrent.Semaphore;
 
 public class Q1114 {
-    /*
-    Time Complexity: O(1)   Space Complexity: O(1)
-     */
     class Foo {
         Semaphore two = new Semaphore(0);
         Semaphore three = new Semaphore(0);

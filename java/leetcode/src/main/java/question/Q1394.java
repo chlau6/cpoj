@@ -1,9 +1,6 @@
 package question;
 
 public class Q1394 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public int findLucky(int[] arr) {
         int[] counts = new int[501];
 

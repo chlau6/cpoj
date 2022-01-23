@@ -1,9 +1,6 @@
 package question;
 
 public class Q167 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int[] twoSum(int[] numbers, int target) {
         int head = 0;
         int tail = numbers.length - 1;

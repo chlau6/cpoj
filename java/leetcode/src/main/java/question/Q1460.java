@@ -1,9 +1,6 @@
 package question;
 
 public class Q1460 {
-    /*
-    Time Complexity: O(n)  Space Complexity: O(1)
-     */
     public boolean canBeEqual(int[] target, int[] arr) {
         int[] counts = new int[1001];
 

@@ -1,9 +1,6 @@
 package question;
 
 public class Q1004 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int longestOnes(int[] nums, int k) {
         int left = 0;
         int right;

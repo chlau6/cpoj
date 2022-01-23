@@ -6,7 +6,6 @@ import java.util.Queue;
 public class Q487 {
     /*
     Infinite Stream
-    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public int findMaxConsecutiveOnes(int[] nums) {
         int left = 0;
@@ -28,9 +27,6 @@ public class Q487 {
         return max;
     }
 
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public int findMaxConsecutiveOnes3(int[] nums) {
         int max = 0;
         int current = 0;

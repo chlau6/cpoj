@@ -6,7 +6,6 @@ import java.util.Stack;
 public class Q84 {
     /*
     Monotonic Stack
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public int largestRectangleArea(int[] heights) {
         int n = heights.length;

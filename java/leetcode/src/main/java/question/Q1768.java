@@ -1,9 +1,6 @@
 package question;
 
 public class Q1768 {
-    /*
-    Time Complexity: O(m + n)   Space Complexity: O(m + n)
-     */
     public String mergeAlternately(String word1, String word2) {
         int i = 0;
         int j = 0;

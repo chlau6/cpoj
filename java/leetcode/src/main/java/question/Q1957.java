@@ -1,9 +1,6 @@
 package question;
 
 public class Q1957 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public String makeFancyString(String s) {
         char[] str = s.toCharArray();
         int n = str.length;

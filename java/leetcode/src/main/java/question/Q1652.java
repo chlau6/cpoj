@@ -1,9 +1,6 @@
 package question;
 
 public class Q1652 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(n)
-     */
     public int[] decrypt(int[] code, int k) {
         int n = code.length;
         int[] result = new int[n];

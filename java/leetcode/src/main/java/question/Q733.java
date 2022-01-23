@@ -1,9 +1,6 @@
 package question;
 
 public class Q733 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
         if (image[sr][sc] == newColor) return image;
 

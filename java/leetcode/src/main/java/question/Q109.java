@@ -4,9 +4,6 @@ import datastructure.ListNode;
 import datastructure.TreeNode;
 
 public class Q109 {
-    /*
-    Time Complexity: O(n log n)   Space Complexity: O(n)
-     */
     public TreeNode sortedListToBST(ListNode head) {
         if (head == null) return null;
 

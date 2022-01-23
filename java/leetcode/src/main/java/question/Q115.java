@@ -1,9 +1,6 @@
 package question;
 
 public class Q115 {
-    /*
-    Time Complexity: O(mn)  Space Complexity: O(mn)
-     */
     public int numDistinct(String s, String t) {
         int m = s.length();
         int n = t.length();

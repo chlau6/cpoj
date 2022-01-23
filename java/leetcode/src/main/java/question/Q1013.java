@@ -1,9 +1,6 @@
 package question;
 
 public class Q1013 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean canThreePartsEqualSum(int[] arr) {
         int sum = 0;
 

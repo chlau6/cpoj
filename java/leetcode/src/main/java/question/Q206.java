@@ -5,7 +5,6 @@ import datastructure.ListNode;
 public class Q206 {
     /*
     Iterative
-    Time Complexity: O(n)   Space Complexity: O(1)
      */
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
@@ -22,7 +21,6 @@ public class Q206 {
 
     /*
     Recursive
-    Time Complexity: O(n)   Space Complexity: O(n)
      */
     public ListNode reverseList2(ListNode head) {
         if (head == null || head.next == null) return head;

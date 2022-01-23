@@ -1,9 +1,6 @@
 package question;
 
 public class Q1909 {
-    /*
-    Time Complexity: O(n)   Space Complexity: O(1)
-     */
     public boolean canBeIncreasing(int[] nums) {
         int count = 0;
         int n = nums.length;

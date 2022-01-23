@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q1260 {
-    /*
-    Time Complexity: O(mn)   Space Complexity: O(mn)
-     */
     public List<List<Integer>> shiftGrid(int[][] grid, int k) {
         List<List<Integer>> result = new ArrayList<>();
 
