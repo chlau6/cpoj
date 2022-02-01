@@ -2,31 +2,31 @@ package question;
 
 public class Q117 {
     public Node connect(Node root) {
-        if (root == null) return null;
+        Node node = root;
+        Node dummy = new Node(-1);
+        Node dummyHead = dummy;
 
-        Node dummy = new Node(0);
-        Node curr = dummy;
-        Node head = root;
-
-        while (root != null) {
-            if (root.left != null) {
-                curr.next = root.left;
-                curr = curr.next;
+        while (node != null) {
+            if (node.left != null) {
+                dummy.next = node.left;
+                dummy = dummy.next;
             }
 
-            if (root.right != null) {
-                curr.next = root.right;
-                curr = curr.next;
+            if (node.right != null) {
+                dummy.next = node.right;
+                dummy = dummy.next;
             }
 
-            root = root.next;
-            if (root == null) {
-                curr = dummy;
-                root = dummy.next;
+            node = node.next;
+
+            if (node == null) {
+                node = dummyHead.next;
+                dummy = dummyHead;
                 dummy.next = null;
             }
         }
-        return head;
+
+        return root;
     }
 
     class Node {

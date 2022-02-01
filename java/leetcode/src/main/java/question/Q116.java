@@ -4,29 +4,57 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Q116 {
+    /*
+    BFS
+     */
     public Node connect(Node root) {
         if (root == null) return null;
-        Node prev = root;
-        Node curr;
 
-        while (prev.left != null) {
-            curr = prev;
-            while (curr != null) {
-                curr.left.next = curr.right;
-                if (curr.next != null) {
-                    curr.right.next = curr.next.left;
+        Node node = root;
+
+        while (node.left != null) {
+            Node parent = node;
+
+            while (parent != null) {
+                parent.left.next = parent.right;
+
+                if (parent.next != null) {
+                    parent.right.next = parent.next.left;
                 }
-                curr = curr.next;
+                parent = parent.next;
+
             }
-            prev = prev.left;
+
+            node = node.left;
         }
+
+        return root;
+    }
+
+    /*
+    DFS
+     */
+    public Node connect2(Node root) {
+        if (root == null) return null;
+
+        if (root.left != null) {
+            root.left.next = root.right;
+        }
+
+        if (root.right != null) {
+            root.right.next = (root.next != null) ? root.next.left : null;
+        }
+
+        connect(root.left);
+        connect(root.right);
+
         return root;
     }
 
     /*
     Queue
      */
-    public Node connect2(Node root) {
+    public Node connect3(Node root) {
         if (root == null) return null;
 
         Queue<Node> queue = new LinkedList<>();
