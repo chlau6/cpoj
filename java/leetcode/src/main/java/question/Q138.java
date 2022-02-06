@@ -6,29 +6,23 @@ import java.util.Map;
 public class Q138 {
     public Node copyRandomList(Node head) {
         Map<Node, Node> map = new HashMap<>();
-        Node pointer = head;
+        Node dummy = head;
 
-        while (pointer != null) {
-            Node deepCopy = new Node(pointer.val);
-            map.put(pointer, deepCopy);
-
-            pointer = pointer.next;
+        while (dummy != null) {
+            map.put(dummy, new Node(dummy.val));
+            dummy = dummy.next;
         }
 
-        Node dummy = new Node(-1);
-        pointer = dummy;
+        dummy = head;
 
-        while (head != null) {
-            Node newNode = map.get(head);
-            newNode.next = map.get(head.next);
-            newNode.random = map.get(head.random);
-
-            pointer.next = newNode;
-            pointer = pointer.next;
-            head = head.next;
+        while (dummy != null) {
+            Node node = map.get(dummy);
+            node.next = map.get(dummy.next);
+            node.random = map.get(dummy.random);
+            dummy = dummy.next;
         }
 
-        return dummy.next;
+        return map.get(head);
     }
 
     class Node {

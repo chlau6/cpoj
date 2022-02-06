@@ -6,12 +6,13 @@ import java.util.Set;
 
 public class Q139 {
     public boolean wordBreak(String s, List<String> wordDict) {
-        int len = s.length();
-        boolean[] dp = new boolean[len + 1];
-        dp[0] = true;
         Set<String> set = new HashSet<>(wordDict);
 
-        for (int i = 1; i < len + 1; i++) {
+        int n = s.length();
+        boolean[] dp = new boolean[n + 1];
+        dp[0] = true;
+
+        for (int i = 1; i <= n; i++) {
             for (int j = 0; j < i; j++) {
                 if (dp[j] && set.contains(s.substring(j, i))) {
                     dp[i] = true;
@@ -20,7 +21,7 @@ public class Q139 {
             }
         }
 
-        return dp[dp.length - 1];
+        return dp[n];
     }
 
     public static void main(String[] args) {

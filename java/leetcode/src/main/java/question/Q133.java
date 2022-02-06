@@ -8,22 +8,23 @@ public class Q133 {
      */
     public Node cloneGraph(Node node) {
         Map<Node, Node> map = new HashMap<>();
-        return helper(node, map);
+
+        return helper(map, node);
     }
 
-    private Node helper(Node node, Map<Node, Node> map) {
+    private Node helper(Map<Node, Node> map, Node node) {
         if (node == null) return null;
 
         if (map.containsKey(node)) return map.get(node);
 
-        Node clone = new Node(node.val);
-        map.put(node, clone);
+        Node copy = new Node(node.val);
+        map.put(node, copy);
 
         for (Node neighbor : node.neighbors) {
-            clone.neighbors.add(helper(neighbor, map));
+            copy.neighbors.add(helper(map, neighbor));
         }
 
-        return clone;
+        return copy;
     }
 
     /*
@@ -31,28 +32,29 @@ public class Q133 {
      */
     public Node cloneGraph2(Node node) {
         if (node == null) return null;
+
+        Map<Node, Node> map = new HashMap<>();
         Queue<Node> queue = new LinkedList<>();
+
+        Node copy = new Node(node.val);
+        map.put(node, copy);
+
         queue.add(node);
 
-        Node clone = new Node(node.val);
-        Map<Node, Node> map = new HashMap<>();
-        map.put(node, clone);
-
         while (!queue.isEmpty()) {
-            int size = queue.size();
-            for (int i = 0; i < size; i++) {
-                Node n = queue.remove();
+            Node n = queue.remove();
 
-                for (Node neighbor : n.neighbors) {
-                    if (!map.containsKey(neighbor)) {
-                        map.put(neighbor, new Node(neighbor.val));
-                        queue.add(neighbor);
-                    }
-                    map.get(n).neighbors.add(map.get(neighbor));
+            for (Node neighbor : n.neighbors) {
+                if (!map.containsKey(neighbor)) {
+                    map.put(neighbor, new Node(neighbor.val));
+                    queue.add(neighbor);
                 }
+
+                map.get(n).neighbors.add(map.get(neighbor));
             }
         }
-        return clone;
+
+        return map.get(node);
     }
 
     class Node {
