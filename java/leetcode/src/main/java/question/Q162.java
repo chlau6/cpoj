@@ -1,24 +1,24 @@
 package question;
 
-public class Q153 {
-    public int findMin(int[] nums) {
+public class Q162 {
+    public int findPeakElement(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
 
         while (left < right) {
             int mid = left + (right - left) / 2;
 
-            if (nums[mid] > nums[right]) {
+            if (nums[mid] < nums[mid + 1]) {
                 left = mid + 1;
             } else {
                 right = mid;
             }
         }
 
-        return nums[left];
+        return left;
     }
 }
 
 /*
-153. Find Minimum in Rotated Sorted Array
+162. Find Peak Element
  */

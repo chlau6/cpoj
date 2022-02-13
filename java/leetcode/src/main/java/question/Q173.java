@@ -9,21 +9,21 @@ public class Q173 {
         Stack<TreeNode> stack = new Stack<>();
 
         public BSTIterator(TreeNode root) {
-            push(root);
+            pushAll(root);
         }
 
         public int next() {
-            TreeNode treeNode = stack.pop();
-            push(treeNode.right);
+            TreeNode node = stack.pop();
+            pushAll(node.right);
 
-            return treeNode.val;
+            return node.val;
         }
 
         public boolean hasNext() {
-            return !stack.isEmpty();
+            return !stack.empty();
         }
 
-        private void push(TreeNode root) {
+        public void pushAll(TreeNode root) {
             while (root != null) {
                 stack.push(root);
                 root = root.left;

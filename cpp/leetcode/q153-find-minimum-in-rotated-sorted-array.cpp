@@ -1,9 +1,12 @@
-package question;
+#include<bits/stdc++.h>
 
-public class Q153 {
-    public int findMin(int[] nums) {
+using namespace std;
+
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
         int left = 0;
-        int right = nums.length - 1;
+        int right = nums.size() - 1;
 
         while (left < right) {
             int mid = left + (right - left) / 2;
@@ -17,8 +20,4 @@ public class Q153 {
 
         return nums[left];
     }
-}
-
-/*
-153. Find Minimum in Rotated Sorted Array
- */
+};
