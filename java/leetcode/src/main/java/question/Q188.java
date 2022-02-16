@@ -2,33 +2,38 @@ package question;
 
 public class Q188 {
     public int maxProfit(int k, int[] prices) {
-        if (k >= prices.length) {
-            return quickFind(prices);
-        }
+        if (k > prices.length) return maxProfit(prices);
 
-        int[][] dp = new int[k + 1][prices.length];
+        int n = prices.length;
 
-        for (int i = 1; i <= k; i++) {
-            int tempMax = -prices[0];
-            for (int j = 1; j < prices.length; j++) {
-                dp[i][j] = Math.max(dp[i][j - 1], prices[j] + tempMax);
-                tempMax = Math.max(tempMax, dp[i - 1][j - 1] - prices[j]);
+        int[][] localMax = new int[n][k + 1];
+        int[][] globalMax = new int[n][k + 1];
+
+        for (int i = 1; i < n; i++) {
+            int diff = prices[i] - prices[i - 1];
+
+            for (int j = 1; j <= k; j++) {
+                localMax[i][j] = Math.max(globalMax[i - 1][j - 1] + Math.max(0, diff), localMax[i - 1][j] + diff);
+                globalMax[i][j] = Math.max(globalMax[i - 1][j], localMax[i][j]);
             }
         }
 
-        return dp[k][prices.length - 1];
+        return globalMax[n - 1][k];
     }
 
-    private int quickFind(int[] prices) {
-        int profit = 0;
+    public int maxProfit(int[] prices) {
+        int result = 0;
+        int n = prices.length;
 
-        for (int i = 1; i < prices.length; i++) {
-            if (prices[i] > prices[i - 1]) {
-                profit += (prices[i] - prices[i - 1]);
+        for (int i = 1; i < n; i++) {
+            int diff = prices[i] - prices[i - 1];
+
+            if (diff > 0) {
+                result += diff;
             }
         }
 
-        return profit;
+        return result;
     }
 }
 
