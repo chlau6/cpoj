@@ -29,8 +29,9 @@ public class Q123 {
         int[][] globalMax = new int[n][3];
 
         for (int i = 1; i < n; i++) {
+            int diff = prices[i] - prices[i - 1];
+
             for (int j = 1; j < 3; j++) {
-                int diff = prices[i] - prices[i - 1];
                 localMax[i][j] = Math.max(globalMax[i - 1][j - 1] + Math.max(diff, 0), localMax[i - 1][j] + diff);
                 globalMax[i][j] = Math.max(globalMax[i - 1][j], localMax[i][j]);
             }
