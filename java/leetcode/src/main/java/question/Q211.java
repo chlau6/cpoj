@@ -2,51 +2,51 @@ package question;
 
 public class Q211 {
     class WordDictionary {
-        TrieNode root;
+        TrieNode root = new TrieNode();
 
-        /**
-         * Initialize your data structure here.
-         */
         public WordDictionary() {
-            root = new TrieNode();
+
         }
 
         public void addWord(String word) {
-            TrieNode temp = root;
-            for (int i = 0; i < word.length(); i++) {
-                int index = word.charAt(i) - 'a';
-                if (temp.children[index] == null) {
-                    temp.children[index] = new TrieNode();
+            TrieNode r = root;
+
+            for (char c : word.toCharArray()) {
+                int j = c - 'a';
+
+                if (r.children[j] == null) {
+                    r.children[j] = new TrieNode();
                 }
-                temp = temp.children[index];
+
+                r = r.children[j];
             }
-            temp.isLeaf = true;
+
+            r.isWord = true;
         }
 
         public boolean search(String word) {
-            return dfs(word, 0, root);
+            return search(root, word, 0);
         }
 
-        public boolean dfs(String word, int index, TrieNode node) {
-            if (index >= word.length()) return node.isLeaf;
+        public boolean search(TrieNode node, String word, int i) {
+            if (i == word.length()) return node.isWord;
 
-            char c = word.charAt(index);
+            char c = word.charAt(i);
 
             if (c != '.') {
-                return node.children[c - 'a'] != null && dfs(word, index + 1, node.children[c - 'a']);
-            } else {
-                for (int i = 0; i < 26; i++) {
-                    if (node.children[i] != null && dfs(word, index + 1, node.children[i])) {
-                        return true;
-                    }
-                }
+                return (node.children[c - 'a'] != null && search(node.children[c - 'a'], word, i + 1));
             }
+
+            for (TrieNode child : node.children) {
+                if (child != null && search(child, word, i + 1)) return true;
+            }
+
             return false;
         }
+    }
 
-        class TrieNode {
-            TrieNode[] children = new TrieNode[26];
-            boolean isLeaf;
-        }
+    class TrieNode {
+        TrieNode[] children = new TrieNode[26];
+        boolean isWord = false;
     }
 }

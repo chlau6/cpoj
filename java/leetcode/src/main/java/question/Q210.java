@@ -11,49 +11,40 @@ public class Q210 {
      Kahn's Algorithm (Topological Sort)
      */
     public int[] findOrder(int numCourses, int[][] prerequisites) {
+        int[] result = new int[numCourses];
         List<List<Integer>> graph = new ArrayList<>();
-        List<Integer> order = new ArrayList<>();
-        Queue<Integer> bfs = new LinkedList<>();
-        int[] inDegrees = new int[numCourses];
+        Queue<Integer> queue = new LinkedList<>();
+        int[] inDegree = new int[numCourses];
+        int index = 0;
 
         for (int i = 0; i < numCourses; i++) {
             graph.add(new ArrayList<>());
         }
 
         for (int[] pre : prerequisites) {
-            int from = pre[1];
-            int to = pre[0];
-            graph.get(from).add(to);
-            inDegrees[to]++;
+            graph.get(pre[1]).add(pre[0]);
+            inDegree[pre[0]]++;
         }
 
-        for (int i = 0; i < inDegrees.length; i++) {
-            if (inDegrees[i] == 0) {
-                bfs.add(i);
+        for (int i = 0; i < numCourses; i++) {
+            if (inDegree[i] == 0) {
+                queue.add(i);
             }
         }
 
-        while (!bfs.isEmpty()) {
-            int course = bfs.poll();
-            order.add(course);
+        while (!queue.isEmpty()) {
+            int node = queue.remove();
 
-            for (int v : graph.get(course)) {
-                if (--inDegrees[v] == 0) {
-                    bfs.add(v);
+            result[index++] = node;
+
+            for (int v : graph.get(node)) {
+                if (--inDegree[v] == 0) {
+                    queue.add(v);
                 }
             }
         }
 
-        if (order.size() == numCourses) {
-            int[] ans = new int[numCourses];
-
-            for (int i = 0; i < order.size(); i++) {
-                ans[i] = order.get(i);
-            }
-            return ans;
-        } else {
-            return new int[]{};
-        }
+        return index == numCourses ? result : new int[]{};
     }
 }
 

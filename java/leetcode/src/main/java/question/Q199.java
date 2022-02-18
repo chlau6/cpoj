@@ -12,43 +12,48 @@ public class Q199 {
     DFS
      */
     public List<Integer> rightSideView(TreeNode root) {
-        List<Integer> ans = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
 
-        dfs(ans, 1, root);
+        dfs(result, root, 0);
 
-        return ans;
+        return result;
     }
 
-    private void dfs(List<Integer> list, int level, TreeNode root) {
+    public void dfs(List<Integer> result, TreeNode root, int level) {
         if (root == null) return;
 
-        if (level > list.size()) {
-            list.add(root.val);
+        if (level >= result.size()) {
+            result.add(root.val);
         }
 
-        dfs(list, level + 1, root.right);
-        dfs(list, level + 1, root.left);
+        dfs(result, root.right, level + 1);
+        dfs(result, root.left, level + 1);
     }
 
     /*
     BFS
      */
     public List<Integer> rightSideView2(TreeNode root) {
+        if (root == null) return new ArrayList<>();
+
         Queue<TreeNode> queue = new LinkedList<>();
-        List<Integer> ans = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
 
         queue.add(root);
-        while (!queue.isEmpty()) {
-            int size = queue.size();
 
-            for (int i = 0; i < size; i++) {
+        while (!queue.isEmpty()) {
+            int n = queue.size();
+
+            for (int i = 0; i < n; i++) {
                 TreeNode node = queue.remove();
-                if (i == 0) ans.add(node.val);
-                if (node.left != null) queue.add(node.left);
+
+                if (i == 0) result.add(node.val);
                 if (node.right != null) queue.add(node.right);
+                if (node.left != null) queue.add(node.left);
             }
         }
-        return ans;
+
+        return result;
     }
 }
 

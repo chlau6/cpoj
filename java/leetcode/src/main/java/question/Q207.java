@@ -10,38 +10,40 @@ public class Q207 {
      Kahn's Algorithm
      */
     public boolean canFinish(int numCourses, int[][] prerequisites) {
+        Queue<Integer> queue = new LinkedList<>();
         List<List<Integer>> graph = new ArrayList<>();
-        Queue<Integer> bfs = new LinkedList<>();
-        List<Integer> order = new ArrayList<>();
         int[] inDegree = new int[numCourses];
 
         for (int i = 0; i < numCourses; i++) {
             graph.add(new ArrayList<>());
         }
 
-        for (int[] edge : prerequisites) {
-            graph.get(edge[1]).add(edge[0]);
-            inDegree[edge[0]]++;
+        for (int[] pre : prerequisites) {
+            graph.get(pre[1]).add(pre[0]);
+            inDegree[pre[0]]++;
         }
 
-        for (int i = 0; i < inDegree.length; i++) {
+        for (int i = 0; i < numCourses; i++) {
             if (inDegree[i] == 0) {
-                bfs.add(i);
+                queue.add(i);
             }
         }
 
-        while (!bfs.isEmpty()) {
-            int vertex = bfs.poll();
-            order.add(vertex);
+        while (!queue.isEmpty()) {
+            int node = queue.remove();
 
-            for (int v : graph.get(vertex)) {
+            for (int v : graph.get(node)) {
                 if (--inDegree[v] == 0) {
-                    bfs.add(v);
+                    queue.add(v);
                 }
             }
         }
 
-        return order.size() == numCourses;
+        for (int in : inDegree) {
+            if (in > 0) return false;
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {
