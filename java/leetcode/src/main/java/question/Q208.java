@@ -12,13 +12,13 @@ public class Q208 {
             TrieNode r = root;
 
             for (char c : word.toCharArray()) {
-                int j = c - 'a';
+                int i = c - 'a';
 
-                if (r.children[j] == null) {
-                    r.children[j] = new TrieNode();
+                if (r.children[i] == null) {
+                    r.children[i] = new TrieNode();
                 }
 
-                r = r.children[j];
+                r = r.children[i];
 
             }
 
@@ -29,13 +29,13 @@ public class Q208 {
             TrieNode r = root;
 
             for (char c : word.toCharArray()) {
-                int j = c - 'a';
+                int i = c - 'a';
 
-                if (r.children[j] == null) {
+                if (r.children[i] == null) {
                     return false;
                 }
 
-                r = r.children[j];
+                r = r.children[i];
             }
 
             return r.isWord;
@@ -45,13 +45,13 @@ public class Q208 {
             TrieNode r = root;
 
             for (char c : prefix.toCharArray()) {
-                int j = c - 'a';
+                int i = c - 'a';
 
-                if (r.children[j] == null) {
+                if (r.children[i] == null) {
                     return false;
                 }
 
-                r = r.children[j];
+                r = r.children[i];
             }
 
             return true;

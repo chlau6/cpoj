@@ -12,13 +12,13 @@ public class Q211 {
             TrieNode r = root;
 
             for (char c : word.toCharArray()) {
-                int j = c - 'a';
+                int i = c - 'a';
 
-                if (r.children[j] == null) {
-                    r.children[j] = new TrieNode();
+                if (r.children[i] == null) {
+                    r.children[i] = new TrieNode();
                 }
 
-                r = r.children[j];
+                r = r.children[i];
             }
 
             r.isWord = true;
@@ -50,3 +50,7 @@ public class Q211 {
         boolean isWord = false;
     }
 }
+
+/*
+211. Design Add and Search Words Data Structure
+ */

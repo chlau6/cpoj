@@ -24,13 +24,13 @@ public:
         TrieNode* r = root;
 
         for (auto c : word) {
-            int j = c - 'a';
+            int i = c - 'a';
 
-            if (!r->children[j]) {
-                r->children[j] = new TrieNode();
+            if (!r->children[i]) {
+                r->children[i] = new TrieNode();
             }
 
-            r = r->children[j];
+            r = r->children[i];
         }
 
         r->isWord = true;
@@ -40,13 +40,13 @@ public:
         TrieNode* r = root;
 
         for (auto c : word) {
-            int j = c - 'a';
+            int i = c - 'a';
 
-            if (!r->children[j]) {
+            if (!r->children[i]) {
                 return false;
             }
 
-            r = r->children[j];
+            r = r->children[i];
         }
 
         return r->isWord;
@@ -56,13 +56,13 @@ public:
         TrieNode* r = root;
 
         for (auto c : prefix) {
-            int j = c - 'a';
+            int i = c - 'a';
 
-            if (!r->children[j]) {
+            if (!r->children[i]) {
                 return false;
             }
 
-            r = r->children[j];
+            r = r->children[i];
         }
 
         return true;

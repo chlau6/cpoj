@@ -1,7 +1,8 @@
 package question;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.PriorityQueue;
-import java.util.Queue;
 import java.util.Random;
 
 public class Q215 {
@@ -11,43 +12,48 @@ public class Q215 {
     public int findKthLargest(int[] nums, int k) {
         shuffle(nums);
 
-        int left = 0;
-        int right = nums.length - 1;
+        int i = 0;
+        int j = nums.length - 1;
 
-        while (left < right) {
-            int mid = partition(nums, left, right);
+        while (true) {
+            int pos = partition(nums, i, j);
 
-            if (mid == k - 1) break;
-            if (mid < k - 1) {
-                left = mid + 1;
+            if (pos == k - 1) {
+                return nums[k - 1];
+            } else if (pos > k - 1) {
+                j = pos - 1;
             } else {
-                right = mid - 1;
+                i = pos + 1;
             }
         }
-
-        return nums[k - 1];
     }
 
     public int partition(int[] nums, int left, int right) {
-        int pivot = nums[right];
-        int swapIndex = left - 1;
+        int pivot = nums[left];
+        int i = left + 1;
+        int j = right;
 
-        for (int i = left; i < right; i++) {
-            if (pivot <= nums[i]) {
-                swap(nums, ++swapIndex, i);
+        while (i <= j) {
+            if (nums[i] < pivot && nums[j] > pivot) {
+                swap(nums, i++, j--);
             }
+
+            if (nums[i] >= pivot) i++;
+            if (nums[j] <= pivot) j--;
         }
 
-        swap(nums, ++swapIndex, right);
-        return swapIndex;
+        swap(nums, left, j);
+
+        return j;
     }
 
-    private void shuffle(int[] nums) {
-        int len = nums.length;
+    public void shuffle(int[] nums) {
+        int n = nums.length;
+
         Random random = new Random();
-        for (int i = 0; i < len; i++) {
-            int change = random.nextInt(len);
-            swap(nums, i, change);
+        for (int i = 0; i < n; i++) {
+            int j = random.nextInt(n);
+            swap(nums, i, j);
         }
     }
 
@@ -61,16 +67,28 @@ public class Q215 {
     Heap
      */
     public int findKthLargest2(int[] nums, int k) {
-        Queue<Integer> queue = new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
 
         for (int num : nums) {
-            queue.add(num);
-            if (queue.size() > k) {
-                queue.poll();
-            }
+            pq.add(num);
         }
 
-        return queue.element();
+        for (int i = 0; i < k - 1; i++) {
+            pq.remove();
+        }
+
+        return pq.peek();
+    }
+
+    /*
+    Mergesort
+     */
+    public int findKthLargest3(int[] nums, int k) {
+        int n = nums.length;
+
+        Arrays.sort(nums);
+
+        return nums[n - k];
     }
 }
 
