@@ -5,30 +5,32 @@ import java.util.Deque;
 
 public class Q239 {
     public int[] maxSlidingWindow(int[] nums, int k) {
-        int len = nums.length;
-        int[] ans = new int[len - k + 1];
-        int index = 0;
+        int n = nums.length;
+        int size = n - k + 1;
+        int j = 0;
+        int[] result = new int[size];
+        Deque<Integer> deque = new ArrayDeque<>();
 
-        Deque<Integer> q = new ArrayDeque<>();
-        for (int i = 0; i < nums.length; i++) {
-            if (!q.isEmpty() && q.peek() < i - k + 1) {
-                q.poll();
+        for (int i = 0; i < n; i++) {
+            if (!deque.isEmpty() && deque.peekFirst() == i - k) {
+                deque.removeFirst();
             }
 
-            while (!q.isEmpty() && nums[q.peekLast()] < nums[i]) {
-                q.pollLast();
+            while (!deque.isEmpty() && nums[deque.peekLast()] < nums[i]) {
+                deque.removeLast();
             }
 
-            q.offer(i);
+            deque.addLast(i);
 
             if (i >= k - 1) {
-                ans[index++] = nums[q.peek()];
+                result[j++] = nums[deque.peekFirst()];
             }
         }
-        return ans;
+
+        return result;
     }
 }
 
 /*
-238. Product of Array Except Self
+239. Sliding Window Maximum
  */

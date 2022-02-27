@@ -5,15 +5,16 @@ import datastructure.TreeNode;
 public class Q236 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) return root;
-        TreeNode leftLCA = lowestCommonAncestor(root.left, p, q);
-        TreeNode rightLCR = lowestCommonAncestor(root.right, p, q);
 
-        if (leftLCA != null && rightLCR != null) {
-            return root;
-        } else if (leftLCA != null) {
-            return leftLCA;
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+
+        if (left == null) {
+            return right;
+        } else if (right == null) {
+            return left;
         } else {
-            return rightLCR;
+            return root;
         }
     }
 }
