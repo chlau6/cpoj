@@ -4,34 +4,36 @@ import java.util.Iterator;
 
 public class Q284 {
     class PeekingIterator implements Iterator<Integer> {
-        public Integer peek = null;
-        public Iterator<Integer> it;
+        Iterator<Integer> iterator;
+        Integer next = null;
 
         public PeekingIterator(Iterator<Integer> iterator) {
             // initialize any member here.
-            it = iterator;
-            if (it.hasNext()) {
-                peek = it.next();
+            this.iterator = iterator;
+            if (this.iterator.hasNext()) {
+                next = iterator.next();
             }
         }
 
         // Returns the next element in the iteration without advancing the iterator.
         public Integer peek() {
-            return this.peek;
+            return next;
         }
 
         // hasNext() and next() should behave the same as in the Iterator interface.
         // Override them if needed.
         @Override
         public Integer next() {
-            Integer res = peek;
-            peek = it.hasNext() ? it.next() : null;
-            return res;
+            Integer result = next;
+
+            next = iterator.hasNext() ? iterator.next() : null;
+
+            return result;
         }
 
         @Override
         public boolean hasNext() {
-            return peek != null;
+            return next != null;
         }
     }
 }

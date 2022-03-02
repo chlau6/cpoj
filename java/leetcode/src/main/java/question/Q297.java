@@ -3,7 +3,7 @@ package question;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class Q295 {
+public class Q297 {
     class MedianFinder {
         PriorityQueue<Integer> upper = new PriorityQueue<>();
         PriorityQueue<Integer> lower = new PriorityQueue<>(Collections.reverseOrder());
@@ -36,5 +36,5 @@ public class Q295 {
 }
 
 /*
-295. Find Median from Data Stream
+297. Serialize and Deserialize Binary Tree
  */

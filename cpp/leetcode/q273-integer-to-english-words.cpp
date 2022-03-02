@@ -1,16 +1,19 @@
-package question;
+#include<bits/stdc++.h>
 
-public class Q273 {
-    String[] lessThanTwenty = new String[]{"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
-    String[] tens = new String[]{"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+using namespace std;
 
-    public String numberToWords(int num) {
+class Solution {
+public:
+    vector<string> lessThanTwenty = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+    vector<string> tens = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+
+    string numberToWords(int num) {
         if (num == 0) return "Zero";
 
-        return helper(num).substring(1);
+        return helper(num).substr(1);
     }
 
-    public String helper(int num) {
+    string helper(int num) {
         if (num >= 1000000000) {
             return helper(num / 1000000000) + " Billion" + helper(num % 1000000000);
         } else if (num >= 1000000) {
@@ -25,10 +28,6 @@ public class Q273 {
             return " " + lessThanTwenty[num];
         }
 
-        return lessThanTwenty[num];
+        return "";
     }
-}
-
-/*
-227. Basic Calculator II
- */
+};
