@@ -1,36 +1,43 @@
 package question;
 
-import java.util.Collections;
-import java.util.PriorityQueue;
+import datastructure.TreeNode;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Q297 {
-    class MedianFinder {
-        PriorityQueue<Integer> upper = new PriorityQueue<>();
-        PriorityQueue<Integer> lower = new PriorityQueue<>(Collections.reverseOrder());
-        boolean isEven = true;
+    public class Codec {
+        // Encodes a tree to a single string.
+        public String serialize(TreeNode root) {
+            if (root == null) return "#";
 
-        public MedianFinder() {
-
+            return root.val + " " + serialize(root.left) + " " + serialize(root.right);
         }
 
-        public void addNum(int num) {
-            if (isEven) {
-                upper.add(num);
-                lower.add(upper.remove());
-            } else {
-                lower.add(num);
-                upper.add(lower.remove());
-            }
+        // Decodes your encoded data to tree.
+        public TreeNode deserialize(String data) {
+            String[] nodes = data.split(" ");
 
-            isEven = !isEven;
+            Queue<String> queue = new LinkedList<>(Arrays.asList(nodes));
+
+            return helper(queue);
         }
 
-        public double findMedian() {
-            if (isEven) {
-                return (upper.peek() + lower.peek()) / 2.0;
-            } else {
-                return lower.peek();
+        public TreeNode helper(Queue<String> queue) {
+            if (queue.peek().equals("#")) {
+                queue.remove();
+
+                return null;
             }
+
+            int value = Integer.parseInt(queue.remove());
+            TreeNode root = new TreeNode(value);
+
+            root.left = helper(queue);
+            root.right = helper(queue);
+
+            return root;
         }
     }
 }

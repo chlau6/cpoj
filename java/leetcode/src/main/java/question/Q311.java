@@ -24,5 +24,5 @@ public class Q311 {
 }
 
 /*
-Sparse Matrix Multiplication
+311. Sparse Matrix Multiplication
  */

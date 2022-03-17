@@ -4,57 +4,54 @@ import java.util.*;
 
 public class Q301 {
     public List<String> removeInvalidParentheses(String s) {
-        List<String> res = new ArrayList<>();
-
-        // sanity check
-        if (s == null) return res;
-
-        Set<String> visited = new HashSet<>();
+        List<String> result = new ArrayList<>();
         Queue<String> queue = new LinkedList<>();
+        Set<String> visited = new HashSet<>();
+        boolean found = false;
 
-        // initialize
         queue.add(s);
         visited.add(s);
 
-        boolean found = false;
-
         while (!queue.isEmpty()) {
-            s = queue.poll();
+            String str = queue.remove();
 
-            if (isValid(s)) {
-                // found an answer, add to the result
-                res.add(s);
+            if (isValid(str)) {
+                result.add(str);
                 found = true;
             }
 
             if (found) continue;
 
-            // generate all possible states
-            for (int i = 0; i < s.length(); i++) {
-                // we only try to remove left or right paren
-                if (s.charAt(i) != '(' && s.charAt(i) != ')') continue;
+            int n = str.length();
+            for (int i = 0; i < n; i++) {
+                char c = str.charAt(i);
 
-                String t = s.substring(0, i) + s.substring(i + 1);
+                if (c != '(' && c != ')') continue;
+
+                String t = str.substring(0, i) + str.substring(i + 1);
 
                 if (!visited.contains(t)) {
-                    // for each state, if it's not visited, add it to the queue
                     queue.add(t);
                     visited.add(t);
                 }
             }
         }
 
-        return res;
+        return result;
     }
 
-    // helper function checks if string s contains valid parentheses
-    boolean isValid(String s) {
+    public boolean isValid(String s) {
         int count = 0;
+        int n = s.length();
 
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < n; i++) {
             char c = s.charAt(i);
-            if (c == '(') count++;
-            if (c == ')' && count-- == 0) return false;
+
+            if (c == '(') {
+                count++;
+            } else if (c == ')' && --count < 0) {
+                return false;
+            }
         }
 
         return count == 0;
