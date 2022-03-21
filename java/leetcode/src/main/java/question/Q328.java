@@ -4,24 +4,29 @@ import datastructure.ListNode;
 
 public class Q328 {
     public ListNode oddEvenList(ListNode head) {
-        if (head == null || head.next == null) return head;
+        ListNode odd = new ListNode();
+        ListNode even = new ListNode();
+        ListNode d1 = odd;
+        ListNode d2 = even;
+        boolean isOdd = true;
 
-        ListNode odd = head;
-        ListNode even = head.next;
+        while (head != null) {
+            if (isOdd) {
+                d1.next = head;
+                d1 = d1.next;
+            } else {
+                d2.next = head;
+                d2 = d2.next;
+            }
 
-        ListNode evenHead = even;
-
-        while (even != null && even.next != null) {
-            odd.next = even.next;
-            odd = odd.next;
-
-            even.next = odd.next;
-            even = even.next;
+            head = head.next;
+            isOdd = !isOdd;
         }
 
-        odd.next = evenHead;
+        d2.next = null;
+        d1.next = even.next;
 
-        return head;
+        return odd.next;
     }
 }
 /*

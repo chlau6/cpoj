@@ -12,7 +12,10 @@ public:
         vector<int> result;
 
         for (int i = start; i <= end; i++) {
-            result = max(result, mergeVector(findVector(nums1, i), findVector(nums2, k - i)));
+            vector<int> v1 = findVector(nums1, i);
+            vector<int> v2 = findVector(nums2, k - i);
+
+            result = max(result, mergeVector(v1, v2));
         }
 
         return result;
@@ -35,11 +38,11 @@ public:
         return result;
     }
 
-    vector<int> mergeVector(vector<int> a1, vector<int> a2) {
+    vector<int> mergeVector(vector<int>& v1, vector<int>& v2) {
         vector<int> result;
 
-        while (!a1.empty() || !a2.empty()) {
-            vector<int>& temp = (a1 > a2) ? a1 : a2;
+        while (!v1.empty() || !v2.empty()) {
+            vector<int>& temp = (v1 > v2) ? v1 : v2;
             result.push_back(temp[0]);
             temp.erase(temp.begin());
         }

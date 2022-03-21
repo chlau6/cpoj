@@ -1,42 +1,43 @@
 package question;
 
 public class Q329 {
-    int[][] directions = new int[][]{{0, -1}, {-1, 0}, {0, 1}, {1, 0}};
+    int[][] dir = new int[][]{{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
 
     public int longestIncreasingPath(int[][] matrix) {
-        if (matrix.length == 0 || matrix[0].length == 0) return 0;
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int[][] dp = new int[m][n];
+        int result = 1;
 
-        int[][] dp = new int[matrix.length][matrix[0].length];
-        int ans = 1;
-
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                ans = Math.max(ans, dfs(matrix, dp, i, j));
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                result = Math.max(result, dfs(matrix, dp, i, j));
             }
         }
-        return ans;
+
+        return result;
     }
 
     private int dfs(int[][] matrix, int[][] dp, int i, int j) {
         if (dp[i][j] > 0) return dp[i][j];
 
-        int max = 1;
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int result = 1;
 
-        for (int[] dir : directions) {
-            int x = i + dir[0];
-            int y = j + dir[1];
+        for (int[] d : dir) {
+            int x = i + d[0];
+            int y = j + d[1];
 
-            if (x < 0 || y < 0 || x >= matrix.length || y >= matrix[0].length || matrix[x][y] <= matrix[i][j]) continue;
-            int len = 1 + dfs(matrix, dp, x, y);
-            max = Math.max(max, len);
+            if (x < 0 || y < 0 || x >= m || y >= n || matrix[x][y] <= matrix[i][j]) continue;
+
+            int length = 1 + dfs(matrix, dp, x, y);
+            result = Math.max(result, length);
         }
 
-        dp[i][j] = max;
-        return max;
-    }
+        dp[i][j] = result;
 
-    public static void main(String[] args) {
-        System.out.println(new Q329().longestIncreasingPath(new int[][]{{1, 2}}));
+        return result;
     }
 }
 
