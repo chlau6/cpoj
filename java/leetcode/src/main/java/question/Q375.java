@@ -21,7 +21,6 @@ public class Q375 {
     }
 }
 
-
 /*
 375. Guess Number Higher or Lower II
  */

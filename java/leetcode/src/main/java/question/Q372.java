@@ -20,6 +20,7 @@ public class Q372 {
         return pow(num % 1337, index / 2) * pow(num % 1337, index - index / 2) % 1337;
     }
 }
+
 /*
 372. Super Pow
  */
