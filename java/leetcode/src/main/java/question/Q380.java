@@ -23,11 +23,16 @@ public class Q380 {
         public boolean remove(int val) {
             if (!map.containsKey(val)) return false;
 
-            int tail = list.get(list.size() - 1);
-            int valuePos = map.get(val);
-            map.put(tail, valuePos);
-            list.set(valuePos, tail);
-            list.remove(list.size() - 1);
+            int index = map.get(val);
+            int last = list.size() - 1;
+
+            if (index != last) {
+                int tail = list.get(last);
+                map.put(tail, index);
+                list.set(index, tail);
+            }
+
+            list.remove(last);
             map.remove(val);
 
             return true;
