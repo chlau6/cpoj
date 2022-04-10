@@ -1,15 +1,16 @@
 package question;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Q399 {
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
         Map<String, Map<String, Double>> graph = new HashMap<>();
 
-        for (int i = 0; i < equations.size(); i++) {
+        int m = equations.size();
+        int n = queries.size();
+        double[] results = new double[n];
+
+        for (int i = 0; i < m; i++) {
             String u = equations.get(i).get(0);
             String v = equations.get(i).get(1);
 
@@ -19,15 +20,18 @@ public class Q399 {
             graph.get(v).put(u, 1 / values[i]);
         }
 
-        double[] results = new double[queries.size()];
-        for (int i = 0; i < queries.size(); i++) {
-            results[i] = helper(queries.get(i).get(0), queries.get(i).get(1), new HashSet<>(), graph);
+
+        for (int i = 0; i < n; i++) {
+            String from = queries.get(i).get(0);
+            String to = queries.get(i).get(1);
+
+            results[i] = helper(graph, new HashSet<>(), from, to);
         }
 
         return results;
     }
 
-    private double helper(String from, String to, HashSet<String> visited, Map<String, Map<String, Double>> graph) {
+    private double helper(Map<String, Map<String, Double>> graph, Set<String> visited, String from, String to) {
         if (!graph.containsKey(from)) return -1.0;
 
         if (graph.get(from).containsKey(to)) {
@@ -37,13 +41,17 @@ public class Q399 {
         visited.add(from);
 
         for (Map.Entry<String, Double> neighbour : graph.get(from).entrySet()) {
-            if (!visited.contains(neighbour.getKey())) {
-                double product = helper(neighbour.getKey(), to, visited, graph);
-                if (product != -1.0) {
-                    return neighbour.getValue() * product;
-                }
+            String key = neighbour.getKey();
+            Double value = neighbour.getValue();
+
+            if (visited.contains(key)) continue;
+
+            double product = helper(graph, visited, key, to);
+            if (product != -1.0) {
+                return value * product;
             }
         }
+
         return -1.0;
     }
 }

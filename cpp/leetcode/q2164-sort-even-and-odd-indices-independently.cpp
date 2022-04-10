@@ -6,7 +6,7 @@ class Solution {
 public:
     vector<int> sortEvenOdd(vector<int>& nums) {
         priority_queue<int> odd;
-        priority_queue<int, vector<int>, greater<>> even;
+        priority_queue<int, vector<int>, greater<int>> even;
         int n = nums.size();
 
         for (int i = 0; i < n; i++) {

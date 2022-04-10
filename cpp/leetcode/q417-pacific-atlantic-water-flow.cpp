@@ -1,16 +1,16 @@
-package question;
+#include<bits/stdc++.h>
 
-import java.util.ArrayList;
-import java.util.List;
+using namespace std;
 
-public class Q417 {
-    public List<List<Integer>> pacificAtlantic(int[][] heights) {
-        List<List<Integer>> result = new ArrayList<>();
+class Solution {
+public:
+    vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
+        vector<vector<int>> result;
 
-        int m = heights.length;
-        int n = heights[0].length;
-        boolean[][] pacific = new boolean[m][n];
-        boolean[][] atlantic = new boolean[m][n];
+        int m = heights.size();
+        int n = heights[0].size();
+        vector<vector<bool>> pacific(m, vector<bool>(n));
+        vector<vector<bool>> atlantic(m, vector<bool>(n));
 
         for (int i = 0; i < m; i++) {
             dfs(heights, pacific, 0, i, 0);
@@ -25,7 +25,7 @@ public class Q417 {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (pacific[i][j] && atlantic[i][j]) {
-                    result.add(List.of(i, j));
+                    result.push_back({i, j});
                 }
             }
         }
@@ -33,11 +33,11 @@ public class Q417 {
         return result;
     }
 
-    public void dfs(int[][] heights, boolean[][] visited, int height, int i, int j) {
-        int m = heights.length;
-        int n = heights[0].length;
+    void dfs(vector<vector<int>>& heights, vector<vector<bool>>& visited, int height, int i, int j) {
+        int m = heights.size();
+        int n = heights[0].size();
 
-        if (i < 0 || j < 0 || i == m || j == n || visited[i][j] || heights[i][j] < height) return;
+        if (i < 0 || j < 0 || i == m || j == n || visited[i][j] || height > heights[i][j]) return;
 
         visited[i][j] = true;
 
@@ -46,8 +46,4 @@ public class Q417 {
         dfs(heights, visited, heights[i][j], i, j + 1);
         dfs(heights, visited, heights[i][j], i, j - 1);
     }
-}
-
-/*
-417. Pacific Atlantic Water Flow
- */
+};

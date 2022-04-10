@@ -7,16 +7,22 @@ public class Q430 {
         while (curr != null) {
             if (curr.child != null) {
                 Node next = curr.next;
-                Node last = curr.child;
+                Node child = curr.child;
 
-                while (last.next != null) last = last.next;
+                while (child.next != null) {
+                    child = child.next;
+                }
+
                 curr.next = curr.child;
                 curr.next.prev = curr;
                 curr.child = null;
-                last.next = next;
+                child.next = next;
 
-                if (next != null) next.prev = last;
+                if (next != null) {
+                    next.prev = child;
+                }
             }
+
             curr = curr.next;
         }
 
