@@ -24,17 +24,17 @@ public class Q437 {
         // update the prefix sum by adding the current val
         sum += root.val;
         // get the number of valid path, ended by the current node
-        int ans = map.getOrDefault(sum - targetSum, 0);
+        int result = map.getOrDefault(sum - targetSum, 0);
 
         // update the map with the current sum, so the map is good to be passed to the next recursion
         map.put(sum, map.getOrDefault(sum, 0) + 1);
 
-        ans += dfs(root.left, map, sum, targetSum) + dfs(root.right, map, sum, targetSum);
+        result += dfs(root.left, map, sum, targetSum) + dfs(root.right, map, sum, targetSum);
 
         // restore the map, as the recursion goes from the bottom to the top
         map.put(sum, map.get(sum) - 1);
 
-        return ans;
+        return result;
     }
 
     /*

@@ -13,7 +13,6 @@ struct TreeNode {
 
 class Codec {
 public:
-
     // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
         string s = "";
@@ -24,10 +23,7 @@ public:
     }
 
     void serialize(TreeNode* root, string& s) {
-        if (!root) {
-            s += "# ";
-            return;
-        }
+        if (!root) return;
 
         s += to_string(root->val) + " ";
         serialize(root->left, s);
@@ -38,26 +34,28 @@ public:
     TreeNode* deserialize(string data) {
         queue<string> queue;
         istringstream iss(data);
-        string token;
 
+        string token;
         while (iss >> token) {
             queue.push(token);
         }
 
-        return deserialize(queue);
+        return deserialize(queue, INT_MIN, INT_MAX);
     }
 
-    TreeNode* deserialize(queue<string>& queue) {
+    TreeNode* deserialize(queue<string>& queue, int lower, int upper) {
+        if (queue.empty()) return NULL;
+
         string s = queue.front();
-        queue.pop();
-
-        if (s == "#") return NULL;
-
         int value = stoi(s);
 
+        if (value < lower || value > upper) return NULL;
+
+        queue.pop();
+
         TreeNode* root = new TreeNode(value);
-        root->left = deserialize(queue);
-        root->right = deserialize(queue);
+        root->left = deserialize(queue, lower, value);
+        root->right = deserialize(queue, value, upper);
 
         return root;
     }

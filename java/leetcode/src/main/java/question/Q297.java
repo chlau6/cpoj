@@ -8,11 +8,25 @@ import java.util.Queue;
 
 public class Q297 {
     public class Codec {
+
         // Encodes a tree to a single string.
         public String serialize(TreeNode root) {
-            if (root == null) return "#";
+            StringBuilder builder = new StringBuilder();
 
-            return root.val + " " + serialize(root.left) + " " + serialize(root.right);
+            serialize(root, builder);
+
+            return builder.toString();
+        }
+
+        public void serialize(TreeNode root, StringBuilder builder) {
+            if (root == null) {
+                builder.append("#").append(" ");
+                return;
+            }
+
+            builder.append(root.val).append(",");
+            serialize(root.left, builder);
+            serialize(root.right, builder);
         }
 
         // Decodes your encoded data to tree.
@@ -21,21 +35,19 @@ public class Q297 {
 
             Queue<String> queue = new LinkedList<>(Arrays.asList(nodes));
 
-            return helper(queue);
+            return deserialize(queue);
         }
 
-        public TreeNode helper(Queue<String> queue) {
-            if (queue.peek().equals("#")) {
-                queue.remove();
+        public TreeNode deserialize(Queue<String> queue) {
+            String s = queue.poll();
 
-                return null;
-            }
+            if (s.equals("#")) return null;
 
-            int value = Integer.parseInt(queue.remove());
+            int value = Integer.parseInt(s);
             TreeNode root = new TreeNode(value);
 
-            root.left = helper(queue);
-            root.right = helper(queue);
+            root.left = deserialize(queue);
+            root.right = deserialize(queue);
 
             return root;
         }
