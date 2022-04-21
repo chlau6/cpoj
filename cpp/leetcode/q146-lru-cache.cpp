@@ -2,74 +2,35 @@
 
 using namespace std;
 
-class Node {
-public:
-    int key;
-    int val;
-    Node* prev;
-    Node* next;
-
-    Node(int key, int val) {
-        this->key = key;
-        this->val = val;
-    }
-};
-
 class LRUCache {
 public:
-    unordered_map<int, Node*> cache;
-    int maxCapacity;
-    Node* head;
-    Node* tail;
+    list<pair<int, int>> cache;
+    unordered_map<int, list<pair<int, int>>::iterator> map;
+    int maxSize;
 
     LRUCache(int capacity) {
-        maxCapacity = capacity;
-        head = new Node(0, 0);
-        tail = new Node(0, 0);
-        head->prev = NULL;
-        head->next = tail;
-        tail->prev = head;
-        tail->next = NULL;
-    }
-
-    void deleteNode(Node* node) {
-        node->prev->next = node->next;
-        node->next->prev = node->prev;
-    }
-
-    void add(Node* node) {
-        node->next = head->next;
-        head->next->prev = node;
-        head->next = node;
-        node->prev = head;
+        maxSize = capacity;
     }
 
     int get(int key) {
-        if (!cache.count(key)) return -1;
+        auto it = map.find(key);
 
-        Node* node = cache[key];
-        deleteNode(node);
-        add(node);
+        if (it == map.end()) return -1;
 
-        return node->val;
+        cache.splice(cache.begin(), cache, it->second);
+        return it->second->second;
     }
 
     void put(int key, int value) {
-        if (cache.count(key)) {
-            Node* node = cache[key];
-            node->val = value;
-            deleteNode(node);
-            add(node);
-        } else {
-            Node* newNode = new Node(key, value);
-            cache[key] = newNode;
-            add(newNode);
-        }
+        auto it = map.find(key);
+        if (it != map.end()) cache.erase(it->second);
+        cache.push_front(make_pair(key, value));
+        map[key] = cache.begin();
 
-        if (cache.size() > maxCapacity) {
-            Node* oldNode = tail->prev;
-            cache.erase(oldNode->key);
-            deleteNode(oldNode);
+        if (map.size() > maxSize) {
+            int oldKey = cache.rbegin()->first;
+            cache.pop_back();
+            map.erase(oldKey);
         }
     }
 };

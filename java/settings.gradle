@@ -1,4 +1,3 @@
 rootProject.name = 'java'
 include 'leetcode'
 include 'dsa'
-include 'ds'

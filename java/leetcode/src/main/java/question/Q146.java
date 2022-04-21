@@ -1,9 +1,25 @@
 package question;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Q146 {
+    /*
+    HashMap + Doubly LinkedList
+     */
+    class Node {
+        public int key;
+        public int val;
+        public Node prev;
+        public Node next;
+
+        public Node(int key, int val) {
+            this.key = key;
+            this.val = val;
+        }
+    }
+
     class LRUCache {
         Map<Integer, Node> cache = new HashMap<>();
         int maxCapacity;
@@ -61,15 +77,29 @@ public class Q146 {
         }
     }
 
-    class Node {
-        public int key;
-        public int val;
-        public Node prev;
-        public Node next;
+    /*
+    LinkedHashMap
+     */
+    class LRUCache2 {
+        LinkedHashMap<Integer, Integer> cache;
+        int maxCapacity = 0;
 
-        public Node(int key, int val) {
-            this.key = key;
-            this.val = val;
+        public LRUCache2(int capacity) {
+            maxCapacity = capacity;
+
+            cache = new LinkedHashMap<Integer, Integer>(16, 0.75f, true) {
+                protected boolean removeEldestEntry(Map.Entry eldest) {
+                    return size() > maxCapacity;
+                }
+            };
+        }
+
+        public int get(int key) {
+            return cache.getOrDefault(key, -1);
+        }
+
+        public void put(int key, int value) {
+            cache.put(key, value);
         }
     }
 }

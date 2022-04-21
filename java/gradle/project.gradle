@@ -10,7 +10,7 @@ subprojects {
 
     tasks.withType(JavaCompile).configureEach {
         options.encoding = 'UTF-8'
-        options.compilerArgs += ['-Xlint:all', '-proc:none', '-Werror']
+        // options.compilerArgs += ['-Xlint:all', '-proc:none', '-Werror']
     }
 
     repositories {
@@ -54,13 +54,6 @@ subprojects {
             }
         }
     }
-}
-
-apply from: file("${rootDir}/gradle/check.gradle")
-
-allprojects {
-    apply plugin: 'idea'
-    idea.module.inheritOutputDirs = true
 }
 
 tasks.named('wrapper') {

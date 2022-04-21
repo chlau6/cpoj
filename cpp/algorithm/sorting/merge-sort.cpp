@@ -18,7 +18,7 @@ public:
         for (int i = 0; i < rightSize; i++) {
             rightSubarray[i] = nums[mid + 1 + i];
         }
-w
+
         int i = 0, j = 0, k = start;
 
         while (i < leftSize && j < rightSize) {
