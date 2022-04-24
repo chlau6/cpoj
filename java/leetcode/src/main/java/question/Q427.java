@@ -5,8 +5,6 @@ public class Q427 {
         return build(grid, grid.length, 0, 0);
     }
 
-    ;
-
     public Node build(int[][] grid, int n, int x, int y) {
         if (n <= 0) return null;
 
