@@ -7,24 +7,23 @@ public class Q658 {
     Two Pointers
      */
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
-        int low = 0;
-        int high = 0;
+        List<Integer> result = new ArrayList<>();
+        int left = 0;
+        int right = arr.length - 1;
 
-        for (int num : arr) {
-            if (high - low < k) {
-                high++;
-            } else if (Math.abs(num - x) < Math.abs(arr[low] - x) || num == arr[low]) {
-                low++;
-                high++;
+        while (right - left >= k) {
+            if (Math.abs(arr[left] - x) > Math.abs(arr[right] - x)) {
+                left++;
+            } else {
+                right--;
             }
         }
 
-        List<Integer> ans = new ArrayList<>();
-        for (int i = low; i < high; i++) {
-            ans.add(arr[i]);
+        for (int i = left; i <= right; i++) {
+            result.add(arr[i]);
         }
 
-        return ans;
+        return result;
     }
 
     /*

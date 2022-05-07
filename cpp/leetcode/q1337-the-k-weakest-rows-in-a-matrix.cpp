@@ -2,22 +2,11 @@
 
 using namespace std;
 
-class Comparator {
-public:
-    bool operator() (pair<int, int>& a, pair<int, int>& b) {
-        if (a.first == b.first) {
-            return a.second < b.second;
-        } else {
-            return a.first < b.first;
-        }
-    }
-};
-
 class Solution {
 public:
     vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
         int length = mat.size();
-        priority_queue<pair<int, int>, vector<pair<int, int>>, Comparator> pq;
+        priority_queue<pair<int, int>> pq;
 
         for (int i = 0; i < length; i++) {
             pq.push({numOfOnes(mat[i]), i});

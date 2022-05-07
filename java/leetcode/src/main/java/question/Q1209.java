@@ -2,16 +2,16 @@ package question;
 
 public class Q1209 {
     public String removeDuplicates(String s, int k) {
-        int len = s.length();
-        char[] chars = s.toCharArray();
-        int[] count = new int[len];
-        int i = 0;
+        int n = s.length();
+        char[] stack = s.toCharArray();
+        int[] count = new int[n];
+
         int j = 0;
 
-        while (i < len) {
-            chars[j] = chars[i];
+        for (int i = 0; i < n; i++, j++) {
+            stack[j] = stack[i];
 
-            if (j > 0 && chars[j] == chars[j - 1]) {
+            if (j > 0 && stack[j] == stack[j - 1]) {
                 count[j] = count[j - 1] + 1;
             } else {
                 count[j] = 1;
@@ -20,12 +20,9 @@ public class Q1209 {
             if (count[j] == k) {
                 j -= k;
             }
-
-            i++;
-            j++;
         }
 
-        return new String(chars, 0, j);
+        return new String(stack, 0, j);
     }
 }
 
