@@ -1,17 +1,17 @@
 package graph;
 
 public class DisjointSetUnion {
-    int[] disjointSet;
+    int[] parent;
 
     public DisjointSetUnion(int num) {
-        disjointSet = new int[num];
+        parent = new int[num];
 
         for (int i = 0; i < num; i++) {
-            disjointSet[i] = i;
+            parent[i] = i;
         }
     }
 
-    public boolean find(int u, int v) {
+    public boolean isJoin(int u, int v) {
         return root(u) == root(v);
     }
 
@@ -19,12 +19,12 @@ public class DisjointSetUnion {
         int uRoot = root(u);
         int vRoot = root(v);
 
-        disjointSet[uRoot] = vRoot;
+        parent[uRoot] = vRoot;
     }
 
     public int root(int node) {
-        while (disjointSet[node] != node) {
-            node = disjointSet[node];
+        while (parent[node] != node) {
+            node = parent[node];
         }
 
         return node;
