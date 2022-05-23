@@ -3,14 +3,17 @@ package question;
 import java.util.*;
 
 public class Q721 {
+    Map<String, Set<String>> union = new HashMap<>();
     Map<String, String> parents = new HashMap<>();
     Map<String, String> emailOwner = new HashMap<>();
-    Map<String, Set<String>> union = new HashMap<>();
 
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        List<List<String>> result = new ArrayList<>();
 
         for (List<String> account : accounts) {
-            for (int i = 1; i < account.size(); i++) {
+            int n = account.size();
+
+            for (int i = 1; i < n; i++) {
                 parents.put(account.get(i), account.get(i));
                 emailOwner.put(account.get(i), account.get(0));
             }
@@ -25,29 +28,36 @@ public class Q721 {
 
         for (List<String> account : accounts) {
             String parent = find(account.get(1));
+            union.putIfAbsent(parent, new TreeSet<>());
 
-            Set<String> set = union.computeIfAbsent(parent, k -> new TreeSet<>());
             for (int i = 1; i < account.size(); i++) {
-                set.add(account.get(i));
+                union.get(parent).add(account.get(i));
             }
         }
 
-        List<List<String>> ans = new ArrayList<>();
-
         for (Map.Entry<String, Set<String>> entry : union.entrySet()) {
-            List<String> account = new ArrayList<>();
-            account.add(emailOwner.get(entry.getKey()));
-            account.addAll(entry.getValue());
+            List<String> subList = new ArrayList<>();
+            subList.add(emailOwner.get(entry.getKey()));
+            subList.addAll(entry.getValue());
 
-            ans.add(account);
+            result.add(subList);
         }
 
-        return ans;
+        return result;
     }
 
-    private String find(String u) {
-        String parent = parents.get(u);
-        return u.equals(parent) ? u : find(parent);
+    public String find(String email) {
+        String parent = parents.get(email);
+
+        if (parent.equals(email)) {
+            return parent;
+        } else {
+            String root = find(parent);
+
+            parents.put(email, root);
+
+            return root;
+        }
     }
 }
 
