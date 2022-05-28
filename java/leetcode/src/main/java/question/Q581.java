@@ -8,10 +8,10 @@ public class Q581 {
      */
     public int findUnsortedSubarray(int[] nums) {
         int n = nums.length;
-        int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        int start = -1;
-        int end = -2;
+        int min = Integer.MAX_VALUE;
+        int end = -1;
+        int start = 0;
 
         for (int i = 0; i < n; i++) {
             max = Math.max(max, nums[i]);
