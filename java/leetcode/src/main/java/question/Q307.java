@@ -2,45 +2,47 @@ package question;
 
 public class Q307 {
     class NumArray {
-        int[] tree;
+        int[] nums;
+        int[] bit;
         int n;
 
         public NumArray(int[] nums) {
+            this.nums = nums;
+
             n = nums.length;
-            tree = new int[n * 2];
+            bit = new int[n + 1];
 
-            for (int i = n; i < n * 2; i++) {
-                tree[i] = nums[i - n];
+            for (int i = 0; i < n; i++) {
+                init(i, nums[i]);
             }
+        }
 
-            for (int i = n - 1; i > 0; i--) {
-                tree[i] = tree[i * 2] + tree[i * 2 + 1];
+        public void init(int i, int val) {
+            i++;
+
+            while (i <= n) {
+                bit[i] += val;
+                i += (i & -i);
             }
         }
 
         public void update(int index, int val) {
-            int i = index + n;
-
-            tree[i] = val;
-
-            while (i > 0) {
-                tree[i / 2] = tree[i] + tree[i ^ 1];
-                i /= 2;
-            }
+            int diff = val - nums[index];
+            nums[index] = val;
+            init(index, diff);
         }
 
         public int sumRange(int left, int right) {
+            return getSum(right) - getSum(left - 1);
+        }
+
+        public int getSum(int i) {
             int sum = 0;
+            i++;
 
-            int i = left + n;
-            int j = right + n;
-
-            while (i <= j) {
-                if (i % 2 == 1) sum += tree[i++];
-                if (j % 2 == 0) sum += tree[j--];
-
-                i /= 2;
-                j /= 2;
+            while (i > 0) {
+                sum += bit[i];
+                i -= (i & -i);
             }
 
             return sum;

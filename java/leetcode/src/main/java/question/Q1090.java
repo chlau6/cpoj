@@ -7,7 +7,6 @@ import java.util.PriorityQueue;
 public class Q1090 {
     public int largestValsFromLabels(int[] values, int[] labels, int numWanted, int useLimit) {
         int n = values.length;
-        int[][] pairs = new int[n][2];
         Map<Integer, Integer> map = new HashMap<>();
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> b[0] - a[0]);
         int result = 0;
