@@ -2,23 +2,29 @@ package question;
 
 public class Q1004 {
     public int longestOnes(int[] nums, int k) {
-        int left = 0;
-        int right;
+        int i = 0;
+        int n = nums.length;
+        int result = 0;
+        int zero = 0;
 
-        for (right = 0; right < nums.length; right++) {
-            if (nums[right] == 0) {
-                k--;
+        for (int j = 0; j < n; j++) {
+            if (nums[j] == 0) {
+                zero++;
             }
 
-            if (k < 0 && nums[left++] == 0) {
-                k++;
+            while (zero > k) {
+                if (nums[i] == 0) {
+                    zero--;
+                }
+
+                i++;
             }
+
+            result = Math.max(result, j - i + 1);
         }
 
-        return right - left;
+        return result;
     }
-
-
 }
 
 /*

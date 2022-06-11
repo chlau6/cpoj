@@ -3,19 +3,15 @@ package question;
 import datastructure.TreeNode;
 
 public class Q1038 {
-    int suffixSum = 0;
+    int sum = 0;
 
     public TreeNode bstToGst(TreeNode root) {
-        if (root.right != null) {
-            bstToGst(root.right);
-        }
+        if (root == null) return null;
 
-        suffixSum += root.val;
-        root.val = suffixSum;
-
-        if (root.left != null) {
-            bstToGst(root.left);
-        }
+        bstToGst(root.right);
+        sum += root.val;
+        root.val = sum;
+        bstToGst(root.left);
 
         return root;
     }
