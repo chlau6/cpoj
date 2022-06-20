@@ -12,7 +12,7 @@ public class Q666 {
             int prefix = num / 10;
             int value = num % 10;
 
-            map.put(prefix, num);
+            map.put(prefix, value);
         }
 
         helper(nums[0] / 10, 0);
@@ -36,8 +36,6 @@ public class Q666 {
         if (map.containsKey(left)) helper(left, currSum);
         if (map.containsKey(right)) helper(right, currSum);
     }
-
-
 }
 
 /*
