@@ -11,13 +11,13 @@ public class Q269 {
     Kahn's Algorithm (Topological Sort)
      */
     public String alienOrder(String[] words) {
-        Map<Character, Set<Character>> map = new HashMap<>();
+        Map<Character, Set<Character>> graph = new HashMap<>();
         int[] inDegrees = new int[26];
 
         for (String word : words) {
             for (char c : word.toCharArray()) {
-                if (!map.containsKey(c)) {
-                    map.put(c, new HashSet<>());
+                if (!graph.containsKey(c)) {
+                    graph.put(c, new HashSet<>());
                 }
             }
         }
@@ -26,7 +26,7 @@ public class Q269 {
             String s1 = words[i];
             String s2 = words[i + 1];
 
-            int j = 0;
+            int j;
             int limit = Math.min(s1.length(), s2.length());
 
             for (j = 0; j < limit; j++) {
@@ -34,7 +34,7 @@ public class Q269 {
                 char c2 = s2.charAt(j);
 
                 if (c1 != c2) {
-                    Set<Character> set = map.get(c1);
+                    Set<Character> set = graph.get(c1);
                     if (!set.contains(c2)) {
                         inDegrees[c2 - 'a']++;
                         set.add(c2);
@@ -49,7 +49,7 @@ public class Q269 {
         StringBuilder order = new StringBuilder();
         Queue<Character> q = new LinkedList<>();
 
-        for (char c : map.keySet()) {
+        for (char c : graph.keySet()) {
             if (inDegrees[c - 'a'] == 0) {
                 q.offer(c);
             }
@@ -58,14 +58,14 @@ public class Q269 {
         while (!q.isEmpty()) {
             char curr = q.poll();
             order.append(curr);
-            for (char c : map.get(curr)) {
+            for (char c : graph.get(curr)) {
                 if (--inDegrees[c - 'a'] == 0) {
                     q.add(c);
                 }
             }
         }
 
-        return order.length() == map.size() ? order.toString() : "";
+        return order.length() == graph.size() ? order.toString() : "";
     }
 }
 

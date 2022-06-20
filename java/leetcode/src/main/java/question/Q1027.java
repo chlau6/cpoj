@@ -2,17 +2,22 @@ package question;
 
 public class Q1027 {
     public int longestArithSeqLength(int[] nums) {
-        int[][] dp = new int[nums.length][1001];
-        int max = 0;
+        int n = nums.length;
+        int[][] dp = new int[n][1001];
+        int result = 0;
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < n; i++) {
             for (int j = 0; j < i; j++) {
-                int diffCell = nums[i] - nums[j] + 500;
-                dp[i][diffCell] = dp[j][diffCell] + 1;
-                max = Math.max(dp[i][diffCell], max);
+                int diff = nums[i] - nums[j] + 500;
+
+                dp[i][diff] = dp[j][diff] + 1;
+
+                result = Math.max(result, dp[i][diff]);
             }
         }
-        return max;
+
+
+        return result + 1;
     }
 }
 

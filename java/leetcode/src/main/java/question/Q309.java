@@ -5,8 +5,8 @@ public class Q309 {
         if (prices.length == 1) return 0;
 
         int n = prices.length;
-        int buy = -prices[0];
         int hold = -prices[0];
+        int buy = -prices[0];
         int sell = 0;
         int cooldown = 0;
 
@@ -20,7 +20,7 @@ public class Q309 {
             cooldown = Math.max(cooldown, originalSell);
         }
 
-        return Math.max(sell, cooldown);
+        return Math.max(cooldown, sell);
     }
 }
 

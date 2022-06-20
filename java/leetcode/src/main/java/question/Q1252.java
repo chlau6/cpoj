@@ -2,23 +2,26 @@ package question;
 
 public class Q1252 {
     public int oddCells(int m, int n, int[][] indices) {
-        boolean[] rows = new boolean[m];
-        boolean[] cols = new boolean[n];
+        boolean[] rowOdd = new boolean[m];
+        boolean[] colOdd = new boolean[n];
 
         for (int[] index : indices) {
-            rows[index[0]] = !rows[index[0]];
-            cols[index[1]] = !cols[index[1]];
+            rowOdd[index[0]] ^= true;
+            colOdd[index[1]] ^= true;
         }
 
-        int count = 0;
+        int rowOddCount = 0;
+        int colOddCount = 0;
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (rows[i] ^ cols[j]) count++;
-            }
+        for (boolean r : rowOdd) {
+            rowOddCount += r ? 1 : 0;
         }
 
-        return count;
+        for (boolean c : colOdd) {
+            colOddCount += c ? 1 : 0;
+        }
+
+        return rowOddCount * n + colOddCount * m - 2 * rowOddCount * colOddCount;
     }
 }
 

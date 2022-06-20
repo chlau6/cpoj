@@ -21,7 +21,6 @@ public class Q727 {
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= Math.min(i, n); j++) {
                 dp[i][j] = s.charAt(i - 1) == t.charAt(j - 1) ? dp[i - 1][j - 1] : dp[i - 1][j];
-
             }
 
             if (dp[i][n] != -1) {
@@ -34,7 +33,7 @@ public class Q727 {
             }
         }
 
-        return start == -1 ? "" : s.substring(start, minLen);
+        return start == -1 ? "" : s.substring(start, start + minLen);
     }
 }
 

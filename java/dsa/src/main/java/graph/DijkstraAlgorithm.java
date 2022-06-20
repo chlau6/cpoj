@@ -9,7 +9,7 @@ public class DijkstraAlgorithm {
     public static List<List<int[]>> generateGraph() {
         List<List<int[]>> graph = new ArrayList<>();
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i <= 6; i++) {
             graph.add(new ArrayList<>());
         }
 
@@ -50,27 +50,25 @@ public class DijkstraAlgorithm {
         parent[source] = source;
         pq.add(new int[]{source, dist[source]});
 
-        for (int i = 0; i < 6; i++) {
-            while (!pq.isEmpty()) {
-                int[] v = pq.poll();
+        while (!pq.isEmpty()) {
+            int[] v = pq.poll();
 
-                int currNode = v[0];
-                int currDist = v[1];
+            int currNode = v[0];
+            int currDist = v[1];
 
-                if (currDist > dist[currNode])
-                    continue;
+            if (currDist > dist[currNode])
+                continue;
 
-                for (int[] neighbor : graph.get(currNode)) {
-                    int neighborNode = neighbor[0];
-                    int neighborDist = neighbor[1];
+            for (int[] neighbor : graph.get(currNode)) {
+                int neighborNode = neighbor[0];
+                int neighborDist = neighbor[1];
 
-                    int newDist = currDist + neighborDist;
+                int newDist = currDist + neighborDist;
 
-                    if (newDist < dist[neighborNode]) {
-                        dist[neighborNode] = newDist;
-                        parent[neighborNode] = currNode;
-                        pq.add(new int[]{neighborNode, newDist});
-                    }
+                if (newDist < dist[neighborNode]) {
+                    dist[neighborNode] = newDist;
+                    parent[neighborNode] = currNode;
+                    pq.add(new int[]{neighborNode, newDist});
                 }
             }
         }

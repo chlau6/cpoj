@@ -11,7 +11,7 @@ public class Q552 {
 
             currState[0] = (prevState[1] + prevState[3] + prevState[5]) % m;
 
-            currState[1] = currState[0];
+            currState[1] = (prevState[1] + prevState[3] + prevState[5]) % m;
 
             currState[2] = (prevState[0] + prevState[2] + prevState[4] + prevState[6]) % m;
 

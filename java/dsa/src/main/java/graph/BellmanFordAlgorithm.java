@@ -48,32 +48,8 @@ public class BellmanFordAlgorithm {
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[source] = 0;
         parent[source] = source;
-        pq.add(new int[]{source, dist[source]});
 
-        for (int i = 0; i < 6; i++) {
-            while (!pq.isEmpty()) {
-                int[] v = pq.poll();
-
-                int currNode = v[0];
-                int currDist = v[1];
-
-                if (currDist > dist[currNode])
-                    continue;
-
-                for (int[] neighbor : graph.get(currNode)) {
-                    int neighborNode = neighbor[0];
-                    int neighborDist = neighbor[1];
-
-                    int newDist = currDist + neighborDist;
-
-                    if (newDist < dist[neighborNode]) {
-                        dist[neighborNode] = newDist;
-                        parent[neighborNode] = currNode;
-                        pq.add(new int[]{neighborNode, newDist});
-                    }
-                }
-            }
-        }
+        // TODO implement
 
         findPath(parent, 5);
     }
