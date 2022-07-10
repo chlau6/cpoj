@@ -2,97 +2,112 @@ package question;
 
 public class Q707 {
     class MyLinkedList {
-        ListNode head;
-        ListNode tail;
-        int size;
+        Node head = null;
+        Node tail = null;
+        int size = 0;
 
-        /** Initialize your data structure here. */
         public MyLinkedList() {
-            head = null;
-            tail = null;
-            size = 0;
+            head = tail;
         }
 
-        /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
         public int get(int index) {
-            if (index < 0 || index >= size) return -1;
+            if (index < 0 || index >= size) {
+                return -1;
+            }
 
-            ListNode curr = head;
+            Node dummy = head;
 
-            for (int i = 0; i < index; i++) curr = curr.next;
+            for (int i = 0; i < index; i++) {
+                dummy = dummy.next;
+            }
 
-            return curr.val;
+            return dummy.val;
         }
 
-        /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
         public void addAtHead(int val) {
-            ListNode newHead = new ListNode(val, head);
+            Node node = new Node(val, head);
 
-            head = newHead;
-
-            if (size == 0) tail = newHead;
-
-            size++;
-
-        }
-
-        /** Append a node of value val to the last element of the linked list. */
-        public void addAtTail(int val) {
-            ListNode newTail = new ListNode(val, null);
+            head = node;
 
             if (size == 0) {
-                tail = newTail;
-                head = newTail;
-            } else {
-                tail.next = newTail;
-                tail = newTail;
+                tail = node;
             }
 
             size++;
         }
 
-        /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
+        public void addAtTail(int val) {
+            Node node = new Node(val, null);
+
+            if (size == 0) {
+                head = node;
+                tail = node;
+            } else {
+                tail.next = node;
+                tail = node;
+            }
+
+            size++;
+        }
+
         public void addAtIndex(int index, int val) {
-            if (index < 0 || index > size) return;
-            if (index == 0) {
+            if (index > size) return;
+
+            if (index <= 0) {
                 addAtHead(val);
                 return;
             }
+
             if (index == size) {
                 addAtTail(val);
                 return;
             }
 
-            ListNode curr = head;
-            for (int i = 0; i < index - 1; i++) curr = curr.next;
-            curr.next = new ListNode(val, curr.next);
+            Node dummy = head;
+
+            for (int i = 0; i < index - 1; i++) {
+                dummy = dummy.next;
+            }
+
+            Node node = new Node(val, dummy.next);
+            dummy.next = node;
+
             size++;
         }
 
-        /** Delete the index-th node in the linked list, if the index is valid. */
         public void deleteAtIndex(int index) {
             if (index < 0 || index >= size) return;
+
             if (index == 0) {
                 head = head.next;
                 size--;
                 return;
             }
 
-            ListNode curr = head;
-            for (int i = 0; i < index - 1; i++) curr = curr.next;
-            curr.next = curr.next.next;
+            Node dummy = head;
+
+            for (int i = 0; i < index - 1; i++) {
+                dummy = dummy.next;
+            }
+
+            dummy.next = dummy.next.next;
 
             if (index == size - 1) {
-                tail = curr;
+                tail = dummy;
             }
+
             size--;
         }
 
-        private class ListNode {
+        class Node {
             int val;
-            ListNode next;
+            Node next;
 
-            public ListNode(int val, ListNode next) {
+            public Node(int val) {
+                this.val = val;
+            }
+
+            public Node(int val, Node next) {
                 this.val = val;
                 this.next = next;
             }

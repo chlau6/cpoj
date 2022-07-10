@@ -13,5 +13,5 @@ public class Q2073 {
     }
 }
 /*
-2068. Check Whether Two Strings are Almost Equivalent
+2073. Time Needed to Buy Tickets
  */

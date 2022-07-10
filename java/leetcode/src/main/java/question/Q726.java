@@ -1,51 +1,85 @@
 package question;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.Map;
+import java.util.Stack;
+import java.util.TreeMap;
 
 public class Q726 {
-    public int networkDelayTime(int[][] times, int n, int k) {
-        List<List<int[]>> graph = new ArrayList<>();
-        boolean[] visited = new boolean[n + 1];
-        int result = 0;
+    public String countOfAtoms(String formula) {
+        Stack<TreeMap<String, Integer>> stack = new Stack<>();
+        TreeMap<String, Integer> map = new TreeMap<>();
 
-        for (int i = 0; i <= n; i++) {
-            graph.add(new ArrayList<>());
-        }
+        int i = 0;
+        int n = formula.length();
 
-        for (int[] time : times) {
-            graph.get(time[0]).add(new int[]{time[1], time[2]});
-        }
+        while (i < n) {
+            char c = formula.charAt(i++);
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[1]));
-        pq.add(new int[]{k, 0});
+            if (c == '(') {
+                stack.push(map);
+                map = new TreeMap<>();
+            } else if (c == ')') {
+                int count = 0;
 
-        while (!pq.isEmpty()) {
-            int[] current = pq.poll();
+                while (i < n && Character.isDigit(formula.charAt(i))) {
+                    count = count * 10 + formula.charAt(i++) - '0';
+                }
 
-            int currNode = current[0];
-            int currWeight = current[1];
+                if (count == 0) {
+                    count = 1;
+                }
 
-            if (visited[currNode]) continue;
+                TreeMap<String, Integer> parent = stack.pop();
+                merge(parent, map, count);
+                map = parent;
+            } else {
+                int start = i - 1;
 
-            visited[currNode] = true;
-            result = currWeight;
+                while (i < n && Character.isLowerCase(formula.charAt(i))) {
+                    i++;
+                }
 
-            n--;
+                String element = formula.substring(start, i);
 
-            for (int[] next : graph.get(currNode)) {
-                int nextNode = next[0];
-                int nextWeight = next[1];
-                pq.add(new int[]{nextNode, currWeight + nextWeight});
+                int count = 0;
+
+                while (i < n && Character.isDigit(formula.charAt(i))) {
+                    count = count * 10 + formula.charAt(i++) - '0';
+                }
+
+                if (count == 0) {
+                    count = 1;
+                }
+
+                map.put(element, map.getOrDefault(element, 0) + count);
             }
         }
 
-        return n == 0 ? result : -1;
+        StringBuilder builder = new StringBuilder();
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            String element = entry.getKey();
+            int count = entry.getValue();
+
+            builder.append(element);
+
+            if (count > 1) {
+                builder.append(count);
+            }
+        }
+
+        return builder.toString();
+    }
+
+    public void merge(TreeMap<String, Integer> parent, TreeMap<String, Integer> child, int count) {
+        for (Map.Entry<String, Integer> entry : child.entrySet()) {
+            String key = entry.getKey();
+            int val = entry.getValue();
+
+            parent.put(key, parent.getOrDefault(key, 0) + count * val);
+        }
     }
 }
 
 /*
-743. Network Delay Time
+726. Number of Atoms
  */

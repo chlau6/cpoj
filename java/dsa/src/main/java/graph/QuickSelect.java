@@ -7,7 +7,6 @@ public class QuickSelect {
 
         while (true) {
             int pos = partition(nums, i, j);
-
             if (pos == k - 1) {
                 return nums[k - 1];
             } else if (pos > k - 1) {
@@ -41,5 +40,9 @@ public class QuickSelect {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
+    }
+
+    public static void main(String[] args) {
+        new QuickSelect().findKthLargest(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 3);
     }
 }

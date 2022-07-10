@@ -25,10 +25,10 @@ public class Q273 {
             return " " + lessThanTwenty[num];
         }
 
-        return lessThanTwenty[num];
+        return "";
     }
 }
 
 /*
-227. Basic Calculator II
+273. Integer to English Words
  */
