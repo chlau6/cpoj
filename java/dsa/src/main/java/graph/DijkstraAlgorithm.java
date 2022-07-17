@@ -56,9 +56,6 @@ public class DijkstraAlgorithm {
             int currNode = v[0];
             int currDist = v[1];
 
-            if (currDist > dist[currNode])
-                continue;
-
             for (int[] neighbor : graph.get(currNode)) {
                 int neighborNode = neighbor[0];
                 int neighborDist = neighbor[1];

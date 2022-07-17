@@ -1,11 +1,38 @@
 package question;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Q690 {
     public int getImportance(List<Employee> employees, int id) {
+        Map<Integer, Employee> map = new HashMap<>();
+
+        for (Employee e : employees) {
+            map.put(e.id, e);
+        }
+
+        int result = 0;
+        Queue<Employee> q = new LinkedList<>();
+
+        q.add(map.get(id));
+
+        while (!q.isEmpty()) {
+            int size = q.size();
+
+            for (int i = 0; i < size; i++) {
+                Employee e = q.poll();
+
+                result += e.importance;
+
+                for (Integer sub : e.subordinates) {
+                    q.add(map.get(sub));
+                }
+            }
+        }
+
+        return result;
+    }
+
+    public int getImportance2(List<Employee> employees, int id) {
         Map<Integer, Employee> map = new HashMap<>();
 
         for (Employee e : employees) {

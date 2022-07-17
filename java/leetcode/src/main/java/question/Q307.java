@@ -1,6 +1,15 @@
 package question;
 
 public class Q307 {
+    public static void main(String[] args) {
+        int i = 6;
+        int n = 8;
+        while (i <= n) {
+            System.out.println(i);
+            i += (i & -i);
+        }
+    }
+
     class NumArray {
         int[] nums;
         int[] bit;
@@ -21,6 +30,7 @@ public class Q307 {
             i++;
 
             while (i <= n) {
+                System.out.println(i);
                 bit[i] += val;
                 i += (i & -i);
             }
