@@ -43,6 +43,6 @@ public class QuickSelect {
     }
 
     public static void main(String[] args) {
-        new QuickSelect().findKthLargest(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 3);
+        System.out.println(new QuickSelect().findKthLargest(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 3));
     }
 }
