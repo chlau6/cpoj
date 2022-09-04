@@ -29,6 +29,10 @@ public class Q1260 {
 
         return result;
     }
+
+    public static void main(String[] args) {
+        System.out.println((-32 % 26 + 26) + 'a');
+    }
 }
 
 /*

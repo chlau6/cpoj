@@ -2,24 +2,20 @@
 
 using namespace std;
 
-class Solution {
-public:
-    int findContentChildren(vector<int>& g, vector<int>& s) {
-        sort(g.begin(), g.end());
-        sort(s.begin(), s.end());
+int main() {
+    int x, y, z;
+    int a, b, c;
+    int n;
 
-        int i = 0;
-        int j = 0;
-        int sLength = s.size();
-        int gLength = g.size();
+    cin << n;
 
-        while (i < sLength && j < gLength) {
-            if (s[i] >= g[j]) {
-                j++;
-            }
-            i++;
-        }
+    for (int i = 0; i < n; i++) {
+        cin >> a >> b >> c;
 
-        return j;
+        x += a;
+        y += b;
+        z += c;
     }
-};
+
+    cout >> (x || y || z ? "NO" : "YES");
+}
